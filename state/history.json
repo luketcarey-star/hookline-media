@@ -1,1 +1,47 @@
-{"posts": [], "ideas": []}
+{
+  "posts": [
+    {
+      "date": "2026-10-05",
+      "n": 1,
+      "type": "list",
+      "format": "carousel",
+      "style": "tweet",
+      "topic": "5 lawsuits too bizarre to be real: Chambers v. God, Crunch Berries, Starbucks ice, Pringles VAT, Velveeta cook time",
+      "slides": 7,
+      "sources": [
+        {
+          "item": "Chambers v. God (2007-08)",
+          "source": "https://www.mentalfloss.com/history/government-politics/politician-who-sued-god"
+        },
+        {
+          "item": "Sugawara v. PepsiCo, Crunch Berries (2009)",
+          "source": "https://consumerist.com/2009/06/04/alert-crunchberries-are-not-real-berries"
+        },
+        {
+          "item": "Starbucks iced drinks case (2016)",
+          "source": "https://www.cnbc.com/2016/08/23/no-starbucks-isnt-cheating-customers-by-adding-ice-to-drinks.html"
+        },
+        {
+          "item": "HMRC v Procter & Gamble UK [2009] EWCA Civ 407",
+          "source": "https://cms.law/en/gbr/legal-updates/are-pringles-crisps-the-court-of-appeal-decides"
+        },
+        {
+          "item": "Ramirez v. Kraft Heinz, Velveeta (2023)",
+          "source": "https://www.tastingtable.com/1354460/velveeta-shells-cheese-lawsuit-thrown-out"
+        }
+      ],
+      "imageFolder": "posts/2026-10-05/1-list",
+      "facebook": {
+        "postId": "6ac425df4e17d6a1b25b1dde",
+        "plannedAt": "2026-10-05T20:17:00-04:00"
+      },
+      "instagram": {
+        "postId": "6ac425e638629554e344fc7b",
+        "plannedAt": "2026-10-05T19:38:00-04:00"
+      },
+      "status": "draft",
+      "metrics": {}
+    }
+  ],
+  "ideas": []
+}
