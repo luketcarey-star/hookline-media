@@ -33,14 +33,19 @@
       "imageFolder": "posts/2026-10-05/1-list",
       "facebook": {
         "postId": "6ac425df4e17d6a1b25b1dde",
-        "plannedAt": "2026-10-05T20:17:00-04:00"
+        "plannedAt": "2026-10-05T20:17:00-04:00",
+        "sentAt": "2026-10-05T18:35:45-04:00",
+        "url": "https://facebook.com/879850111887291_122137741827199899"
       },
       "instagram": {
         "postId": "6ac425e638629554e344fc7b",
-        "plannedAt": "2026-10-05T19:38:00-04:00"
+        "plannedAt": "2026-10-05T19:38:00-04:00",
+        "sentAt": "2026-10-05T18:35:44-04:00",
+        "url": "https://www.instagram.com/p/DeIS5wdlOmO/"
       },
-      "status": "draft",
-      "metrics": {}
+      "status": "sent",
+      "metrics": {},
+      "note": "Posted immediately at Luke's request; use sentAt (not plannedAt) for time-of-day learning."
     }
   ],
   "ideas": []

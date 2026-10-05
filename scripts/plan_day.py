@@ -52,7 +52,7 @@ def pick_time(window, platform, avoid=None):
     hours = list(range(lo, hi))
     hour_scores = defaultdict(list)
     for p in hist["posts"]:
-        t = (p.get(platform) or {}).get("plannedAt")
+        t = (p.get(platform) or {}).get("sentAt") or (p.get(platform) or {}).get("plannedAt")
         r = rate(p, platform)
         if t and r is not None:
             hour_scores[dt.datetime.fromisoformat(t).astimezone(TZ).hour].append(r)
