@@ -1,0 +1,26 @@
+{
+  "postsPerDay": 3,
+  "mode": "draft",
+  "modeNote": "draft = save every post as a Buffer draft for Luke to approve. queue = schedule posts directly at their planned times. Only Luke changes this.",
+  "timezone": "America/Toronto",
+  "windows": {"morning": [8, 12], "afternoon": [12, 17], "evening": [17, 22]},
+  "exploreShare": 0.3,
+  "minPostsBeforeLearningType": 5,
+  "minPostsBeforeLearningTime": 30,
+  "keepImagesDays": 30,
+  "buffer": {
+    "organizationId": "6abe9db4a36d65d042ae3a5f",
+    "facebookChannelId": "6abea284ea19ca0bde46d805",
+    "instagramChannelId": "6ac409d06a5c39ccb624d36c"
+  },
+  "imageModel": "flare",
+  "imageQuality": "medium",
+  "formats": {
+    "list":    [["carousel", "tweet"], ["single", "photo"]],
+    "myth":    [["carousel", "tweet"]],
+    "laws":    [["carousel", "tweet"], ["single", "photo"]],
+    "history": [["carousel", "photo"], ["single", "tweet"]],
+    "engage":  [["single", "tweet"]],
+    "humour":  [["single", "tweet"]]
+  }
+}

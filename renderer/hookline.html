@@ -1584,6 +1584,20 @@ if (window.claude && claude.use){
   claude.use("downloads").then(d => { downloads = d; });
   startImageCaps();
 } else { refsReady = true; renderRefs(); renderAI(); }
+
+// ---- Bot render hook: spec = {page, style, slides:[{text, image?(data URL)}]} -> JPEG data URLs ----
+window.hooklineRender = async (spec) => {
+  await Promise.all(['400 56px "Inter"','700 56px "Inter"','400 80px "Bebas Neue"','500 44px "Montserrat"','700 44px "Montserrat"','800 100px "Montserrat"','italic 500 44px "Montserrat"'].map(f => document.fonts.load(f)));
+  switchTo(spec.page);
+  const d = decks[spec.page];
+  d.style = spec.style; d.example = false; d.idx = 0; d.caption = spec.caption || "";
+  d.slides = spec.slides.map(s => mkSlide(s.text, s.scene || ""));
+  for (let k = 0; k < spec.slides.length; k++){
+    if (spec.slides[k].image){ const blob = await (await fetch(spec.slides[k].image)).blob(); await setPic(d.slides[k], blob); }
+  }
+  buildCarousel();
+  return canvases().map(c => c.toDataURL("image/jpeg", 0.9));
+};
 })();
 document.getElementById("postCap").addEventListener("click", e => e.currentTarget.classList.toggle("open"));
 </script>

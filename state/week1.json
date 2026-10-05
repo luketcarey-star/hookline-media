@@ -1,0 +1,40 @@
+{
+  "note": "Fixed plan for the first week. Topics are starting picks; every real fact is still checked, and anything that doesn't check out is swapped for another real case.",
+  "days": {
+    "2026-10-06": [
+      {"window": "morning", "type": "list", "format": "carousel", "style": "tweet", "topic": "5 bizarre lawsuits, e.g. the state senator who sued God (Chambers v. God, 2007) (save the $54 million pants case for its own post on Oct 7)"},
+      {"window": "afternoon", "type": "engage", "format": "single", "style": "tweet", "topic": "Would you rather get a jury duty summons or a dentist appointment? style light question"},
+      {"window": "evening", "type": "laws", "format": "single", "style": "photo", "topic": "Switzerland's animal welfare rule that social animals like guinea pigs must not be kept alone"}
+    ],
+    "2026-10-07": [
+      {"window": "morning", "type": "history", "format": "carousel", "style": "photo", "topic": "4 strangest trials in history, e.g. the 1522 Autun trial where rats were summoned and defended by a lawyer (no trials ending in executions or violence)"},
+      {"window": "afternoon", "type": "humour", "format": "single", "style": "tweet", "topic": "jury duty summons meme"},
+      {"window": "evening", "type": "list", "format": "single", "style": "photo", "topic": "the $54 million lost pants lawsuit (Pearson v. Chung, Washington DC); photo of pants on a dry cleaner's rack, no people"}
+    ],
+    "2026-10-08": [
+      {"window": "morning", "type": "myth", "format": "carousel", "style": "tweet", "topic": "what people get wrong about the McDonald's hot coffee case (Liebeck v. McDonald's, 1994); injuries in plain, non-graphic words"},
+      {"window": "afternoon", "type": "engage", "format": "single", "style": "tweet", "topic": "everyday fairness question: refunds, tipping or neighbours"},
+      {"window": "evening", "type": "laws", "format": "carousel", "style": "tweet", "topic": "5 real weird laws still on the books (only laws you can confirm are real and in force)"}
+    ],
+    "2026-10-09": [
+      {"window": "morning", "type": "list", "format": "carousel", "style": "tweet", "topic": "companies sued over their own slogans or ads"},
+      {"window": "afternoon", "type": "humour", "format": "single", "style": "tweet", "topic": "lawyers and fine print joke"},
+      {"window": "evening", "type": "history", "format": "single", "style": "tweet", "topic": "Whistler v. Ruskin (1878): the painter who sued a critic and won one farthing"}
+    ],
+    "2026-10-10": [
+      {"window": "morning", "type": "laws", "format": "single", "style": "photo", "topic": "Singapore's ban on selling chewing gum"},
+      {"window": "afternoon", "type": "engage", "format": "single", "style": "tweet", "topic": "landlord or roommate dispute question"},
+      {"window": "evening", "type": "myth", "format": "carousel", "style": "tweet", "topic": "the Pepsi Harrier jet case (Leonard v. PepsiCo): did he almost win?"}
+    ],
+    "2026-10-11": [
+      {"window": "morning", "type": "list", "format": "single", "style": "photo", "topic": "the Subway footlong length lawsuit; photo of a sandwich next to a tape measure"},
+      {"window": "afternoon", "type": "humour", "format": "single", "style": "tweet", "topic": "courtroom TV vs. real court"},
+      {"window": "evening", "type": "history", "format": "carousel", "style": "photo", "topic": "trials over whether something counts as art, food or an animal (e.g. Brancusi v. United States, Nix v. Hedden tomato case)"}
+    ],
+    "2026-10-12": [
+      {"window": "morning", "type": "laws", "format": "carousel", "style": "tweet", "topic": "weird laws still on the books (different laws from Oct 8)"},
+      {"window": "afternoon", "type": "engage", "format": "single", "style": "tweet", "topic": "contract or fine print question"},
+      {"window": "evening", "type": "list", "format": "carousel", "style": "tweet", "topic": "bizarre food lawsuits"}
+    ]
+  }
+}
