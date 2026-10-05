@@ -64,7 +64,12 @@ Read these before writing anything:
 
 ### 5. Fact-check (types list, myth, laws, history)
 - Search the web for every claim. Fix or drop anything wrong. Put the confirmed sources in
-  `sources`. The caption's "Source:" line must match.
+  `sources` (publication, headline, URL).
+- The caption ends with the hashtags, a blank line, `References:` and one short line per source:
+  `Publication: Headline` using the real headline of an article you actually read (shorten long
+  ones). No URLs in the caption. Example:
+  `References:` / `CNBC: No, Starbucks isn't cheating customers by adding ice to drinks` /
+  `Mental Floss: The Politician Who Sued God`
 
 ### 6. Make the slides
 - First check hard rule 6 (`imagesPaused`). If images are paused, render photo posts as tweet style.

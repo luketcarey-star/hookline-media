@@ -9,7 +9,21 @@ Voice: simple, natural and easy to follow, like someone telling a surprising leg
 Real cases, laws and historical trials must be real and widely documented. Only use names, dates, amounts and outcomes you are highly confident of; if unsure, leave the detail out. Never invent cases, quotes or laws.
 
 ## Caption
-Also write a caption: a first line that is a short title in title case naming the topic (like "5 Lawsuits Too Bizarre to Be Real"), a blank line, 1 or 2 short, punchy sentences that tease the most surprising detail and end with an open question (keep it under 35 words, and don't retell the slides) (never tell people to comment, vote, like, share or tag), then for real cases or laws a line starting "Source:" with the case names/years or law references, then a blank line and 3 or 4 hashtags starting with #JuryJuice.
+Layout for posts with sources (exact order):
+```
+Title In Title Case
+
+One or two punchy sentences ending with an open question.
+
+#JuryJuice #Tag2 #Tag3
+
+References:
+Publication: Short headline
+Publication: Short headline
+```
+Posts without real facts (engagement, humour) end after the hashtags. In this bot, each References line uses the real publication name and the real article headline you found during the fact-check (shortened if long). One line per case or law, no URLs.
+
+Also write a caption: a first line that is a short title in title case naming the topic (like "5 Lawsuits Too Bizarre to Be Real"), a blank line, 1 or 2 short, punchy sentences that tease the most surprising detail and end with an open question (keep it under 35 words, and don't retell the slides) (never tell people to comment, vote, like, share or tag), then a blank line and 3 or 4 hashtags starting with #JuryJuice, (only for real cases, laws or history) a blank line, the line "References:" and one short line per source in the form "Publication: Short headline" (for example "CNBC: Judge tosses Starbucks iced drinks lawsuit" or "Cornell Law: Leonard v. PepsiCo"). One line per case or law, no URLs, no dates in brackets, nothing else after the references. Only list sources you are confident really reported it; if you don't know an exact headline, write a short plain description of the story instead of inventing a headline.
 
 ## Slide call to action
 Follow for more
