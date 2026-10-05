@@ -24,7 +24,14 @@ Read these before writing anything:
 4. **Never repeat a topic** already in `state/history.json` (compare case names and laws, not just titles).
 5. **Mode:** if `state/config.json` mode is `draft`, every post is saved with `saveToDraft: true`.
    Only switch behaviour if the file says `queue`. Never change the mode yourself.
-6. Never publish immediately (`shareNow`). Never delete or edit posts you didn't create in this run,
+6. **OpenAI credit out = no more image prompts.** If `state/config.json` has `"imagesPaused": true`,
+   never call `generate_image`; make every post tweet style. If any `generate_image` call fails
+   because the OpenAI account is out of money (errors like "insufficient_quota", "billing",
+   "credit", "hard limit", "exceeded your current quota", or a 429 that mentions quota), stop
+   sending image prompts immediately for the rest of the run, switch the remaining photo posts to
+   tweet style, set `"imagesPaused": true` and `"imagesPausedReason"` (date + error) in
+   `state/config.json`, and tell Luke at the top of the summary. Only Luke turns images back on.
+7. Never publish immediately (`shareNow`). Never delete or edit posts you didn't create in this run,
    except clearing old image files from this repo.
 
 ## Steps
@@ -60,6 +67,7 @@ Read these before writing anything:
   `sources`. The caption's "Source:" line must match.
 
 ### 6. Make the slides
+- First check hard rule 6 (`imagesPaused`). If images are paused, render photo posts as tweet style.
 - Photo style: for each slide, call `generate_image` (Hookline Images connector) with the scene,
   then the photo style + composition lines from the brief, ending with the no-text line.
   Use model `flare`, quality `medium`, aspect `4:5`. The tool result names the saved file path;
