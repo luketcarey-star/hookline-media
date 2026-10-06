@@ -1,0 +1,34 @@
+{
+  "page": "oldcrow",
+  "postsPerDay": 5,
+  "postsPerRun": 3,
+  "mode": "queue",
+  "modeNote": "queue = schedule posts directly at their planned times (Luke chose auto-posting). draft = save as Buffer drafts. Only Luke changes this.",
+  "timezone": "America/Toronto",
+  "runs": {
+    "am": {"runsAround": "7:12", "windows": {"early": ["08:00", "10:30"], "late-morning": ["10:30", "12:30"], "midday": ["12:30", "14:30"]}},
+    "pm": {"runsAround": "15:12", "windows": {"afternoon": ["15:30", "18:30"], "evening": ["18:30", "22:30"], "late": ["21:00", "22:30"]}}
+  },
+  "exploreShare": 0.3,
+  "minPostsBeforeLearningType": 5,
+  "minPostsBeforeLearningTime": 30,
+  "keepImagesDays": 30,
+  "buffer": {
+    "organizationId": "6abe9db4a36d65d042ae3a5f",
+    "facebookChannelId": "6ac409eb6a5c39ccb624d43d",
+    "instagramChannelId": null
+  },
+  "platforms": ["facebook"],
+  "imageModel": "sunburst",
+  "imageQuality": "high",
+  "imagesPaused": false,
+  "imagesPausedReason": "",
+  "maxCarouselsPerDay": 2,
+  "formats": {
+    "thennow":  [["single", "illus"]],
+    "price":    [["single", "illus"]],
+    "question": [["single", "illus"]],
+    "sold":     [["carousel", "illus"]],
+    "note":     [["carousel", "illus"]]
+  }
+}

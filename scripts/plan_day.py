@@ -1,7 +1,8 @@
 #!/usr/bin/env python3
 """Plan one run of Jury Juice posts.
 
-Usage: python3 scripts/plan_day.py YYYY-MM-DD am|pm  > plan.json
+Usage: python3 scripts/plan_day.py YYYY-MM-DD am|pm [jury|oldcrow]  > plan.json
+(page defaults to jury; oldcrow reads state/oldcrow/config.json and history.json)
 
 The bot runs twice a day. Each run makes up to `postsPerRun` posts in its own time
 windows (am run: 8:00 to 14:30, pm run: 15:30 to 22:30), never more than
@@ -18,13 +19,15 @@ from pathlib import Path
 from zoneinfo import ZoneInfo
 
 ROOT = Path(__file__).resolve().parent.parent
-cfg = json.loads((ROOT / "state/config.json").read_text())
-hist = json.loads((ROOT / "state/history.json").read_text())
-week1 = json.loads((ROOT / "state/week1.json").read_text())
+PAGE = sys.argv[3] if len(sys.argv) > 3 else "jury"
+SD = ROOT / "state" if PAGE == "jury" else ROOT / "state" / PAGE
+cfg = json.loads((SD / "config.json").read_text())
+hist = json.loads((SD / "history.json").read_text())
+week1 = json.loads((SD / "week1.json").read_text()) if (SD / "week1.json").exists() else {"days": {}}
 TZ = ZoneInfo(cfg["timezone"])
 day = dt.date.fromisoformat(sys.argv[1])
 run = sys.argv[2] if len(sys.argv) > 2 else ("am" if dt.datetime.now(TZ).hour < 12 else "pm")
-rng = random.Random(f"jj-{day.isoformat()}-{run}")  # same plan if re-run
+rng = random.Random(f"{PAGE}-{day.isoformat()}-{run}")  # same plan if re-run
 EXPLORE = cfg["exploreShare"]
 WINDOWS = cfg["runs"][run]["windows"]          # {name: ["HH:MM", "HH:MM"]}
 now = dt.datetime.now(TZ)
@@ -118,10 +121,14 @@ def plan_slots(n):
         used[p["type"]] += 1
     slots = []
     for window in names:
-        options = [t for t in cfg["formats"] if used[t] < 1] or [t for t in cfg["formats"] if used[t] < 2]
+        cap = cfg.get("maxCarouselsPerDay")
+        carousels = sum(1 for p in today_posts if p.get("format") == "carousel") + sum(1 for x in slots if x["format"] == "carousel")
+        allowed = [t for t in cfg["formats"] if not (cap is not None and carousels >= cap and all(c[0] == "carousel" for c in cfg["formats"][t]))]
+        options = [t for t in allowed if used[t] < 1] or [t for t in allowed if used[t] < 2] or allowed
         t, why = weighted_pick(options, type_scores, cfg["minPostsBeforeLearningType"])
         used[t] += 1
-        combos = [tuple([t] + c) for c in cfg["formats"][t]]
+        combos = [tuple([t] + c) for c in cfg["formats"][t]
+                  if not (cap is not None and carousels >= cap and c[0] == "carousel")] or [tuple([t] + c) for c in cfg["formats"][t]]
         c, why2 = weighted_pick(combos, combo_scores, 3)
         slots.append({"window": window, "type": t, "format": c[1], "style": c[2], "topic": None,
                       "why": f"type {why}, format {why2}"})
@@ -137,6 +144,6 @@ for s in plan_slots(n):
     if not fb or not ig:
         continue  # window already over
     taken["facebook"].append(fb); taken["instagram"].append(ig)
-    out.append(dict(s, facebookAt=fb.isoformat(), instagramAt=ig.isoformat()))
-print(json.dumps({"date": day.isoformat(), "run": run, "mode": cfg["mode"],
+    out.append(dict(s, facebookAt=fb.isoformat(), instagramAt=ig.isoformat() if "instagram" in cfg.get("platforms", ["facebook", "instagram"]) else None))
+print(json.dumps({"page": PAGE, "date": day.isoformat(), "run": run, "mode": cfg["mode"],
                   "alreadyToday": len(today_posts), "posts": out}, indent=2))

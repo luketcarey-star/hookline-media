@@ -1658,18 +1658,39 @@ if (window.claude && claude.use){
   startImageCaps();
 } else { refsReady = true; renderRefs(); renderAI(); }
 
-// ---- Bot render hook: spec = {page, style, slides:[{text, image?(data URL)}]} -> JPEG data URLs ----
+// ---- Bot hooks (added only to the bot's renderer copy) ----
+// Render: spec = {page, style, format?, caption?, slides:[{text, scene?, image?(data URL)}]} -> JPEG data URLs
 window.hooklineRender = async (spec) => {
   await Promise.all(['400 56px "Inter"','700 56px "Inter"','400 80px "Bebas Neue"','500 44px "Montserrat"','700 44px "Montserrat"','800 100px "Montserrat"','italic 500 44px "Montserrat"'].map(f => document.fonts.load(f)));
   switchTo(spec.page);
   const d = decks[spec.page];
   d.style = spec.style; d.example = false; d.idx = 0; d.caption = spec.caption || "";
+  if (spec.format) d.format = spec.format;
   d.slides = spec.slides.map(s => mkSlide(s.text, s.scene || ""));
   for (let k = 0; k < spec.slides.length; k++){
     if (spec.slides[k].image){ const blob = await (await fetch(spec.slides[k].image)).blob(); await setPic(d.slides[k], blob); }
   }
   buildCarousel();
   return canvases().map(c => c.toDataURL("image/jpeg", 0.9));
+};
+// Writing prompt Hookline would send for this page/format/style (topic auto-chosen, avoiding earlier topics).
+window.hooklineWritePrompt = (page, format, style, n, avoid) => {
+  switchTo(page);
+  const d = decks[page]; d.format = format; d.style = style;
+  $("format").value = format; updateFormat();
+  const f = page && PAGES[page].formats.find(x => x.id === format);
+  const count = f.single ? 1 : (n || f.count || 7);
+  return buildPrompt(PAGES[page], f, "", "", count, style, avoid || []);
+};
+// Image prompts for each slide, and which reference set Hookline would send ("sheets", "style" or none).
+window.hooklineImagePrompts = (page, style, format, slides) => {
+  const P = PAGES[page];
+  return slides.map((s, i) => {
+    const sl = {text: s.text || "", scene: s.scene || ""};
+    const isStyleRef = style === "illus" && /^\s*(flashback|split|splitv)\s*:/i.test(sl.scene) && P.flashRef;
+    const refs = isStyleRef ? "style" : (P.sheets && style === "illus" ? "sheets" : "none");
+    return {slide: i + 1, prompt: imagePrompt(P, style, sl, i, refs !== "none"), refs};
+  });
 };
 })();
 document.getElementById("postCap").addEventListener("click", e => e.currentTarget.classList.toggle("open"));
