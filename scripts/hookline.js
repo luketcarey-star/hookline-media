@@ -7,7 +7,7 @@
 //       Prints JSON: one entry per slide with the image prompt and the reference_urls to send.
 const fs = require("fs"), path = require("path");
 const { chromium } = require("playwright");
-const REPO = "luketcarey-star/hookline-media";
+const REPO = "luketcarey-star/juryjuice-media";
 const RAW = `https://raw.githubusercontent.com/${REPO}/main/refs/`;
 const REFS = {
   oldcrow: { sheets: [RAW + "oldcrow-young.jpg", RAW + "oldcrow-old.jpg"], style: [RAW + "oldcrow-flash.jpg"] },

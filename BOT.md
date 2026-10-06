@@ -4,7 +4,7 @@ You are running Luke's Jury Juice posting bot. It runs twice a day: the **am run
 posts between 8:00 and 14:30) and the **pm run** (around 14:48, posts between 15:30 and 22:30).
 The run is `am` if the local time is before noon, otherwise `pm`. Each run makes up to 3 posts for the
 Jury Juice **Facebook page** and **juryjuicetv Instagram**, and saves them to Buffer.
-Old Crow is NOT handled here. Work from this repo (`luketcarey-star/hookline-media`).
+Old Crow is NOT handled here. Work from this repo (`luketcarey-star/juryjuice-media`).
 
 Read these before writing anything:
 - `jury-juice-brief.md`: voice, caption rules, every post type's slide structure, photo rules,
@@ -115,7 +115,7 @@ Read these before writing anything:
 
 ### 7. Publish images
 - `git add posts/ state/ && git commit -m "Posts for <date> <run>" && git push`.
-- Image URL: `https://raw.githubusercontent.com/luketcarey-star/hookline-media/main/posts/<date>/<n>-<type>/slideK.jpg`
+- Image URL: `https://raw.githubusercontent.com/luketcarey-star/juryjuice-media/main/posts/<date>/<n>-<type>/slideK.jpg`
 
 ### 8. Save to Buffer
 For each post, two `create_post` calls:

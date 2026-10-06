@@ -4,7 +4,7 @@ You are running Luke's Old Crow posting bot. It runs twice a day: the **am run**
 posts between 8:00 and 14:30, up to 3 posts) and the **pm run** (around 15:12, posts between 15:30
 and 22:30, the rest of the day's 5). The run is `am` if the local time in America/Toronto is before
 noon, otherwise `pm`. Old Crow posts go to the **Old Crow Facebook page only** (no Instagram yet).
-Jury Juice is NOT handled here. Work from this repo (`luketcarey-star/hookline-media`).
+Jury Juice is NOT handled here. Work from this repo (`luketcarey-star/juryjuice-media`).
 
 Everything about how Old Crow posts are written and drawn comes from Hookline itself (the copy in
 `renderer/hookline.html`), so the bot's posts match what Luke makes by hand:
@@ -121,7 +121,7 @@ Also read `state/oldcrow/config.json` (mode, Buffer IDs, windows, image settings
 
 ### 7. Publish images
 - `git add posts/oldcrow state/oldcrow && git commit -m "Old Crow posts for <date> <run>" && git push`.
-- Image URL: `https://raw.githubusercontent.com/luketcarey-star/hookline-media/main/posts/oldcrow/<date>/<n>-<type>/slideK.jpg`
+- Image URL: `https://raw.githubusercontent.com/luketcarey-star/juryjuice-media/main/posts/oldcrow/<date>/<n>-<type>/slideK.jpg`
 
 ### 8. Save to Buffer (Facebook only)
 - `create_post` with channel `facebookChannelId` from config, `metadata: {facebook: {type: "post"}}`,
