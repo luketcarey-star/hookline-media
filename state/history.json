@@ -104,7 +104,8 @@
       "imageFolder": "posts/2026-10-06/2-engage",
       "facebook": {
         "postId": "6ac4d4ff504ed07fb48900f5",
-        "plannedAt": "2026-10-06T15:28:00-04:00"
+        "plannedAt": "2026-10-06T15:28:00-04:00",
+        "sentAt": "2026-10-06T15:28:05-04:00"
       },
       "instagram": {
         "postId": "6ac4d504504ed07fb4890358",
@@ -190,7 +191,8 @@
       },
       "instagram": {
         "postId": "6ac5436c0231af6af7beec45",
-        "plannedAt": "2026-10-06T15:35:00-04:00"
+        "plannedAt": "2026-10-06T15:35:00-04:00",
+        "sentAt": "2026-10-06T15:35:08-04:00"
       },
       "status": "scheduled",
       "metrics": {}
