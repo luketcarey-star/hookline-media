@@ -27,7 +27,11 @@ const REFS = {
   } else if (cmd === "images") {
     const spec = JSON.parse(fs.readFileSync(args[0], "utf8"));
     const list = await page.evaluate(s => window.hooklineImagePrompts(s.page, s.style, s.format, s.slides), spec);
-    for (const it of list) it.reference_urls = (REFS[spec.page] || {})[it.refs] || [];
+    for (const it of list) {
+      it.reference_urls = (REFS[spec.page] || {})[it.refs] || [];
+      // The image worker reads these lines out of the prompt (works even if the connector strips reference_urls).
+      if (it.reference_urls.length) it.prompt += "\n\n" + it.reference_urls.map(u => "REFERENCE_URL: " + u).join("\n");
+    }
     console.log(JSON.stringify(list, null, 2));
   } else {
     console.error("usage: write <page> <format> <style> [avoid.json] | images <spec.json>");

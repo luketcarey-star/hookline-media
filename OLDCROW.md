@@ -86,7 +86,9 @@ Also read `state/oldcrow/config.json` (mode, Buffer IDs, windows, image settings
 - Check rules 3, 4 and 7 first.
 - Write `work/p<n>/spec.json`: `{"page":"oldcrow","style":"illus","format":"<type>","caption":"...","slides":[{"text":"...","scene":"..."}]}`.
 - `node scripts/hookline.js images work/p<n>/spec.json` → for each slide call `generate_image`
-  with that `prompt`, `reference_urls`, model `sunburst`, quality `high`, aspect `4:5`. The result
+  with that `prompt` exactly as given (it ends with `REFERENCE_URL:` lines that the image server
+  reads), model `sunburst`, quality `high`, aspect `4:5`. Also pass `reference_urls` if the tool
+  offers that field. The result
   names the saved file; copy it to `work/p<n>/img<k>.jpg` and add `"image":"img<k>.jpg"` to that slide.
 - `node render.js work/p<n>/spec.json posts/oldcrow/<date>/<n>-<type>/`.
 - Look at every rendered slide. Check the ravens look like the character sheets, split images are

@@ -1,4 +1,4 @@
-# juryjuice-media
+# hookline-media
 
 Images and code for the Jury Juice daily posting bot.
 
