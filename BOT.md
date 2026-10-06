@@ -41,6 +41,23 @@ Read these before writing anything:
 7. Never publish immediately (`shareNow`). Never delete or edit posts you didn't create in this run,
    except clearing old image files from this repo.
 
+## Alerts (Luke wants to know about EVERY problem)
+- If anything at all goes wrong in this run, the summary's FIRST line is `⚠️ PROBLEM: <one-line
+  plain description>` followed by what happened, what was skipped, and exactly what Luke needs to
+  do (if anything). Examples: a post skipped or swapped, an image that failed or came out wrong,
+  OpenAI credit out, the image connector or Buffer missing or erroring, Buffer's post limit hit,
+  a GitHub push refused, a fact that couldn't be verified, a render error, a post rejected by
+  Facebook or Instagram.
+- Check recent posts for failures: for every post in this page's history planned in the last 2
+  days that has a Buffer `postId`, call Buffer `get_post` (no metrics needed). If its status is
+  `error`, or it's more than 1 hour past its planned time and still not `sent`, report it as a
+  PROBLEM with the error text, and update its `status` in history.
+- Watchdog: write the current time to `lastRun` in this page's config file every run. Then read
+  the OTHER page's config (`state/config.json` for Jury Juice, `state/oldcrow/config.json` for Old
+  Crow). If its `lastRun` is more than 10 hours old (or missing after its first day), report
+  `⚠️ PROBLEM: the <other page> bot hasn't run since <time>` so Luke can check its scheduled task.
+- If nothing went wrong, start the summary with `✅ All good` instead.
+
 ## Steps
 
 ### 1. Setup
