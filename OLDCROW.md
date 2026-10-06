@@ -17,12 +17,12 @@ Everything about how Old Crow posts are written and drawn comes from Hookline it
 Also read `state/oldcrow/config.json` (mode, Buffer IDs, windows, image settings) and use the
 `meta-posting-rules` and `humanizer` skills if they are available.
 
-## Post types (all Illustrated)
+## Post types (Illustrated, except some question posts)
 | id | what | format | images |
 |---|---|---|---|
 | thennow | Then vs. now: one split image (old object in colour on top, today's in black and white below), no text; caption explains | single | 1 |
 | price | The price in hours of work: split left/right with price tags; how much less work things took to afford back then | single | 1 |
-| question | One question from the old raven, shown as the title over the old raven | single | 1 |
+| question | One question from the old raven: Illustrated (question as the title over the old raven) about 2 in 3 times, or a Tweet slide (Old Crow tweet card with blue check, no image) about 1 in 3 | single | 1 or 0 |
 | sold | Things we're sold: the old raven explains the history, black-and-white animal flashbacks | carousel (~7) | ~7 |
 | note | The old raven's note to the reader | carousel (~6) | ~6 |
 
@@ -41,8 +41,8 @@ Also read `state/oldcrow/config.json` (mode, Buffer IDs, windows, image settings
    0 (the image connector hasn't been updated yet) or reference downloads fail, stop making images,
    make nothing for that post, and tell Luke at the top of the summary. Never post raven images
    made without the character sheets.
-4. **OpenAI credit out = no more image prompts.** If config has `"imagesPaused": true`, make no
-   posts that need images (all Old Crow types do), and say so in the summary. If any
+4. **OpenAI credit out = no more image prompts.** If config has `"imagesPaused": true`, make only
+   tweet-style question posts (no images), and say so in the summary. If any
    `generate_image` call fails because the account is out of money ("insufficient_quota", "billing",
    "credit", "hard limit", "exceeded your current quota", or a 429 about quota), stop all image
    prompts immediately, set `"imagesPaused": true` and `"imagesPausedReason"` (date + error) in
@@ -76,7 +76,8 @@ Also read `state/oldcrow/config.json` (mode, Buffer IDs, windows, image settings
 
 ### 4. Write each post
 - Write `avoid.json` (array of every earlier topic and title in history), then run
-  `node scripts/hookline.js write oldcrow <type> illus avoid.json` and follow that prompt exactly.
+  `node scripts/hookline.js write oldcrow <type> <style> avoid.json` (style from the plan: `illus`
+  or `tweet`) and follow that prompt exactly.
   Produce the same JSON it asks for: `topic`, `slides` (`text` + `scene`), `caption`, and `sources`
   for real types.
 
@@ -88,7 +89,8 @@ Also read `state/oldcrow/config.json` (mode, Buffer IDs, windows, image settings
 
 ### 6. Make the images and slides
 - Check rules 3, 4 and 7 first.
-- Write `work/p<n>/spec.json`: `{"page":"oldcrow","style":"illus","format":"<type>","caption":"...","slides":[{"text":"...","scene":"..."}]}`.
+- Write `work/p<n>/spec.json`: `{"page":"oldcrow","style":"<illus|tweet>","format":"<type>","caption":"...","slides":[{"text":"...","scene":"..."}]}`.
+- Tweet-style posts need no images: skip straight to `node render.js`.
 - `node scripts/hookline.js images work/p<n>/spec.json` → for each slide call `generate_image`
   with that `prompt` exactly as given (it ends with `REFERENCE_URL:` lines that the image server
   reads), model `sunburst`, quality `high`, aspect `4:5`. Also pass `reference_urls` if the tool

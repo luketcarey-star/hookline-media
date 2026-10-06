@@ -6,8 +6,40 @@
   "modeNote": "queue = schedule posts directly at their planned times (Luke chose auto-posting). draft = save as Buffer drafts. Only Luke changes this.",
   "timezone": "America/Toronto",
   "runs": {
-    "am": {"runsAround": "7:12", "windows": {"early": ["08:00", "10:30"], "late-morning": ["10:30", "12:30"], "midday": ["12:30", "14:30"]}},
-    "pm": {"runsAround": "15:12", "windows": {"afternoon": ["15:30", "18:30"], "evening": ["18:30", "22:30"], "late": ["21:00", "22:30"]}}
+    "am": {
+      "runsAround": "7:12",
+      "windows": {
+        "early": [
+          "08:00",
+          "10:30"
+        ],
+        "late-morning": [
+          "10:30",
+          "12:30"
+        ],
+        "midday": [
+          "12:30",
+          "14:30"
+        ]
+      }
+    },
+    "pm": {
+      "runsAround": "15:12",
+      "windows": {
+        "afternoon": [
+          "15:30",
+          "18:30"
+        ],
+        "evening": [
+          "18:30",
+          "22:30"
+        ],
+        "late": [
+          "21:00",
+          "22:30"
+        ]
+      }
+    }
   },
   "exploreShare": 0.3,
   "minPostsBeforeLearningType": 5,
@@ -18,17 +50,53 @@
     "facebookChannelId": "6ac409eb6a5c39ccb624d43d",
     "instagramChannelId": null
   },
-  "platforms": ["facebook"],
+  "platforms": [
+    "facebook"
+  ],
   "imageModel": "sunburst",
   "imageQuality": "high",
   "imagesPaused": false,
   "imagesPausedReason": "",
   "maxCarouselsPerDay": 2,
   "formats": {
-    "thennow":  [["single", "illus"]],
-    "price":    [["single", "illus"]],
-    "question": [["single", "illus"]],
-    "sold":     [["carousel", "illus"]],
-    "note":     [["carousel", "illus"]]
-  }
+    "thennow": [
+      [
+        "single",
+        "illus"
+      ]
+    ],
+    "price": [
+      [
+        "single",
+        "illus"
+      ]
+    ],
+    "question": [
+      [
+        "single",
+        "illus"
+      ],
+      [
+        "single",
+        "illus"
+      ],
+      [
+        "single",
+        "tweet"
+      ]
+    ],
+    "sold": [
+      [
+        "carousel",
+        "illus"
+      ]
+    ],
+    "note": [
+      [
+        "carousel",
+        "illus"
+      ]
+    ]
+  },
+  "formatsNote": "Listed combos are picked at random while testing; question is illustrated about 2 times in 3 and a tweet slide about 1 time in 3."
 }
