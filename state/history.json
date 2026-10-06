@@ -87,9 +87,10 @@
         "postId": "6ac4d4f9cd5ae4a005f83a0b",
         "plannedAt": "2026-10-06T08:00:00-04:00"
       },
-      "status": "scheduled",
+      "status": "deleted",
       "metrics": {},
-      "title": "5 Lawsuits Too Bizarre to Be Real"
+      "title": "5 Lawsuits Too Bizarre to Be Real",
+      "note": "Both Buffer posts no longer exist (404 on 2026-10-06 pm run), presumably removed by Luke."
     },
     {
       "date": "2026-10-06",
@@ -171,6 +172,67 @@
       "status": "sent",
       "metrics": {},
       "note": "Extra post made by hand at Luke's request because the morning carousel reused an old title."
+    },
+    {
+      "date": "2026-10-06",
+      "n": 5,
+      "type": "humour",
+      "format": "single",
+      "style": "tweet",
+      "title": "Terms and Conditions Be Like",
+      "topic": "Terms and conditions nobody reads joke",
+      "slides": 1,
+      "sources": [],
+      "imageFolder": "posts/2026-10-06/5-humour",
+      "facebook": {
+        "postId": "6ac5436e8815e4f757092666",
+        "plannedAt": "2026-10-06T17:07:00-04:00"
+      },
+      "instagram": {
+        "postId": "6ac5436c0231af6af7beec45",
+        "plannedAt": "2026-10-06T15:35:00-04:00"
+      },
+      "status": "scheduled",
+      "metrics": {}
+    },
+    {
+      "date": "2026-10-06",
+      "n": 6,
+      "type": "myth",
+      "format": "carousel",
+      "style": "tweet",
+      "title": "The McDonald's Coffee Case, Fact Checked",
+      "topic": "Liebeck v. McDonald's hot coffee myth",
+      "slides": 7,
+      "sources": [
+        {
+          "item": "Liebeck v. McDonald's facts",
+          "source": "https://www.findlaw.com/injury/product-liability/the-mcdonald-s-coffee-cup-case-separating-mcfacts-from-mcfiction.html"
+        },
+        {
+          "item": "Verdict, 20% fault, reduction to $480k, 158F",
+          "source": "https://sso.billmarler.com/blog/the-mcdonalds-coffee-case"
+        },
+        {
+          "item": "Damages summary",
+          "source": "https://www.quimbee.com/cases/liebeck-v-mcdonald-s-restaurants"
+        },
+        {
+          "item": "Parked car, 700 reports, $800 offer",
+          "source": "https://www.caoc.org/?pg=facts"
+        }
+      ],
+      "imageFolder": "posts/2026-10-06/6-myth",
+      "facebook": {
+        "postId": "6ac543788815e4f75709279b",
+        "plannedAt": "2026-10-06T18:44:00-04:00"
+      },
+      "instagram": {
+        "postId": "6ac543736cefee8493228fec",
+        "plannedAt": "2026-10-06T17:34:00-04:00"
+      },
+      "status": "scheduled",
+      "metrics": {}
     }
   ],
   "ideas": []
