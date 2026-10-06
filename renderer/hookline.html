@@ -565,7 +565,7 @@ Avoid broad lectures, preachy morals, blanket claims that the past was better, a
 - Be fair to both sides: no blanket "the past was better" claims, and say what got better too when it's true.
 - Every historical detail (dates, prices, practices) must be real and well documented. If you are not highly confident of a detail, leave it out.
 - In the Illustrated style, the scene for each THEN slide puts the same two ravens in a setting from that era (period room, tools and light, warm sepia tones), and each NOW slide puts them in a present-day setting; the ravens' own outfits stay the same.`},
-      {id:"sold", label:"Things we're sold: the history", count:7, real:true,
+      {id:"sold", label:"Things we're sold: the history", count:7, real:true, noLabels:true,
        caption:`Also write a caption in the same voice: 2 or 3 short sentences that end with a question to the audience (never tell people to comment, vote, like, share or tag), then a blank line and 3 or 4 hashtags starting with #oldcrow, then a blank line, the line "References:" and one short line per source in the form "Publication or institution: Short headline or title" (for example "Smithsonian Magazine: How the diamond engagement ring became a must"). No URLs. Only list sources you are confident exist; if you don't know an exact headline, write a short plain description instead of inventing one.`,
        hint:"The real history behind something we're told or sold. Fact-checked before posting.",
        guide:`The old raven explains the real history behind one belief or habit we were told or sold (like "drink 2 litres of water a day", diamond engagement rings, breakfast as the most important meal).
@@ -886,7 +886,8 @@ function drawIllus(canvas, i){
   const ctx = canvas.getContext("2d"), p = pf(), d = deck(), s = d.slides[i], scale = p.size/100;
   ctx.save();
   if (!coverImage(ctx, s)) placeholder(ctx, "#1B2232", "#A8977A", "Image not generated yet");
-  const blocks = parseBlocks(s.text);
+  const fdef = (page().formats || []).find(x => x.id === d.format) || {};
+  const blocks = parseBlocks(s.text).map(b => fdef.noLabels ? {...b, label:null} : b);
   if (i === 0 && blocks.length){
     const title = blocks[0].text.replace(/\*\*|__/g, "").toUpperCase();
     const tg = ctx.createLinearGradient(0, 0, 0, H*0.42);
