@@ -84,6 +84,31 @@
       },
       "status": "scheduled",
       "metrics": {}
+    },
+    {
+      "date": "2026-10-06",
+      "n": 4,
+      "type": "thennow",
+      "format": "single",
+      "style": "illus",
+      "title": "Then vs. Now: The Cast Iron Skillet",
+      "topic": "Vintage vs modern cast iron skillet",
+      "slides": [
+        "The cast iron skillet"
+      ],
+      "sources": [
+        {
+          "item": "Vintage vs modern cast iron finish and weight",
+          "source": "Field Company; Tasting Table"
+        }
+      ],
+      "imageFolder": "posts/oldcrow/2026-10-06/4-thennow",
+      "facebook": {
+        "postId": "6ac556f49b4b7d7d77d6df74",
+        "plannedAt": "2026-10-06T17:07:00-04:00"
+      },
+      "status": "scheduled",
+      "metrics": {}
     }
   ],
   "ideas": []
