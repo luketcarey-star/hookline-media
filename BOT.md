@@ -99,6 +99,10 @@ Read these before writing anything:
   line (max ~20 words) ending with an open question, a blank line, then 2 or 3 hashtags starting
   with #JuryJuice. No `References:` block, no sources, no case citations, no links, and no
   explaining every detail; a little mystery is fine. Facts are still checked, just not shown.
+- **Hashtags:** the page tag first, then 1 or 2 popular, widely searched tags that name the post's
+  actual subject, in CamelCase (e.g. #McDonalds #LawFacts, #GuineaPigs #WeirdLaws, #Nostalgia,
+  #SlowLiving, #EngagementRing). Never made-up or niche tags nobody searches (#oldcrowasks,
+  #thingswearesold, #notes, #busy) and never vague filler (#history, #facts).
 
 ### 6. Make the slides
 - First check hard rule 6 (`imagesPaused`). If images are paused, render photo posts as tweet style.

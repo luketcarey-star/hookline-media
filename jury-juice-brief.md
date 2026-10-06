@@ -15,7 +15,8 @@ One short line (max about 20 words) that teases the post and ends with an open q
 
 #JuryJuice #Tag2
 ```
-- 2 or 3 hashtags starting with #JuryJuice.
+- 2 or 3 hashtags: #JuryJuice first, then 1 or 2 popular, widely searched tags that name the
+  subject (e.g. #McDonalds #LawFacts, #GuineaPigs #WeirdLaws). No made-up or vague filler tags.
 - No sources, no "References:" list, no case citations, no links, no dates in brackets.
 - Don't explain every detail; a little mystery is fine. Facts are still checked behind the scenes
   (sources go in history only).
