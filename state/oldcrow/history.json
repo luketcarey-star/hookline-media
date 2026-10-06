@@ -127,10 +127,10 @@
       "sources": [],
       "imageFolder": "posts/oldcrow/2026-10-06/5-question",
       "facebook": {
-        "postId": null,
+        "postId": "6ac55e58544ff8353dfafc2c",
         "plannedAt": "2026-10-06T17:38:00-04:00"
       },
-      "status": "pending",
+      "status": "scheduled",
       "metrics": {}
     }
   ],
