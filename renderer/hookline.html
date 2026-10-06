@@ -554,20 +554,17 @@ Avoid broad lectures, preachy morals, blanket claims that the past was better, a
     cta:"Follow Old Crow for more things we never thought to question.",
     caption:"Also write a caption in the same voice: 2 or 3 short sentences that end with a question to the audience, then a blank line and 3 or 4 hashtags starting with #oldcrow.",
     formats:[
-      {id:"scene", label:"Raven scene (dialogue)", count:7,
-       hint:"A short scene between the two ravens, built around one object.",
-       guide:`Write the carousel as a short scene between the two ravens.
-- Each slide has 1 to 3 paragraphs. A narration paragraph is one plain sentence of stage direction (max 22 words). A dialogue paragraph starts with exactly "Young:" or "Old:" followed by the line in double quotes (max 30 words).
-- Slide 1: the everyday moment, built around one specific object, ending with the young raven stating the assumption.
-- Middle slides: the old raven asks questions and helps him look beneath it, through the history behind the belief or who benefits from it today. The young raven pushes back at least once.
-- Second-to-last slide: the young raven sees it differently, shown through the object, not stated as a moral.
-- Last slide: no labels; one reflective question to the reader, a blank line, then the call to action.`},
-      {id:"note", label:"The old raven's note", count:6,
-       hint:"The old raven speaks straight to the reader about one object.",
-       guide:`The old raven speaks directly to the reader, first person, no dialogue labels.
-- Slide 1: a concrete object or moment and the assumption hidden in it, as a hook (max 20 words).
-- Middle slides: one short observation each (max 40 words), moving from the object, to the history behind it or who benefits now, to what the reader might notice tomorrow.
-- Last slide: one reflective question, a blank line, then the call to action.`},
+      {id:"thennow", label:"Then vs. now", count:7, real:true,
+       caption:`Also write a caption in the same voice: 2 or 3 short sentences that end with a question to the audience (never tell people to comment, vote, like, share or tag), then a blank line and 3 or 4 hashtags starting with #oldcrow, then a blank line, the line "References:" and one short line per source in the form "Publication or institution: Short headline or title" (for example "Smithsonian Magazine: How the diamond engagement ring became a must"). No URLs. Only list sources you are confident exist; if you don't know an exact headline, write a short plain description instead of inventing one.`,
+       hint:"How one everyday thing worked in the past compared with today. Fact-checked before posting.",
+       guide:`The old raven shows the young raven how one everyday object or habit worked in the past compared with today, and what the change says about something we now accept without thinking (like buying water in bottles, wedding gifts, repairing shoes, writing letters, store hours, mortgages, family dinners).
+- Slide 1: a hook naming the object, like "Then vs. now: the pair of shoes" or a short question (max 14 words).
+- Slides 2 to 5 alternate THEN and NOW. A THEN slide starts with "**Then:**" and gives one specific, real detail of how it worked in the past, with the decade or century. A NOW slide starts with "**Now:**" and gives the matching detail today. Max 35 words each. At most one short "Old:" or "Young:" line may follow on a slide.
+- Second-to-last slide: the old raven names what changed and who gains from it today, shown through the object, not as a lecture.
+- Last slide: no labels; one reflective question to the reader, a blank line, then the call to action.
+- Be fair to both sides: no blanket "the past was better" claims, and say what got better too when it's true.
+- Every historical detail (dates, prices, practices) must be real and well documented. If you are not highly confident of a detail, leave it out.
+- In the Illustrated style, the scene for each THEN slide puts the same two ravens in a setting from that era (period room, tools and light, warm sepia tones), and each NOW slide puts them in a present-day setting; the ravens' own outfits stay the same.`},
       {id:"sold", label:"Things we're sold: the history", count:7, real:true,
        caption:`Also write a caption in the same voice: 2 or 3 short sentences that end with a question to the audience (never tell people to comment, vote, like, share or tag), then a blank line and 3 or 4 hashtags starting with #oldcrow, then a blank line, the line "References:" and one short line per source in the form "Publication or institution: Short headline or title" (for example "Smithsonian Magazine: How the diamond engagement ring became a must"). No URLs. Only list sources you are confident exist; if you don't know an exact headline, write a short plain description instead of inventing one.`,
        hint:"The real history behind something we're told or sold. Fact-checked before posting.",
@@ -578,33 +575,30 @@ Avoid broad lectures, preachy morals, blanket claims that the past was better, a
 - Second-to-last slide: who benefits from the belief today, or what the young raven now sees differently in the object.
 - Last slide: no labels; one reflective question to the reader, a blank line, then the call to action.
 - Every historical claim (names, dates, companies, campaigns, studies) must be real and well documented. If you are not highly confident of a detail, leave it out. Never invent quotes.`},
-      {id:"quote", label:"Old raven's quote (single)", count:1, single:true,
-       hint:"One line of quiet wisdom from the old raven, about one object. Always a single post.",
-       illusSingle:" The slide text is a short title in capitals (2 to 4 words, naming the object or the question), a blank line, then one line starting with \"Old:\" followed by the quote in double quotes (max 25 words).",
-       guide:`One line from the old raven that makes people look twice at an everyday object or habit.
-- The slide: the old raven's line, built around one specific object (a receipt, a lawn, a gift card, a phone charger), at most 25 words. It should gently question the assumption, not lecture or moralise.
-- In tweet style, write just the line in double quotes with no label.
-- The caption gives one or two sentences of context in the same voice and ends with a question to the audience, then a blank line and 3 or 4 hashtags starting with #oldcrow.`}
+      {id:"note", label:"The old raven's note", count:6,
+       hint:"The old raven speaks straight to the reader about one object.",
+       guide:`The old raven speaks directly to the reader, first person, no dialogue labels.
+- Slide 1: a concrete object or moment and the assumption hidden in it, as a hook (max 20 words).
+- Middle slides: one short observation each (max 40 words), moving from the object, to the history behind it or who benefits now, to what the reader might notice tomorrow.
+- Last slide: one reflective question, a blank line, then the call to action.`}
     ],
     ideas:[
-      {fmt:"scene", title:"Why we're told to drink 2 litres of water a day"},
-      {fmt:"scene", title:"Why the expensive tin of tea feels better than the cheap one"},
-      {fmt:"scene", title:"Why we feel we must return a gift of equal value"},
+      {fmt:"sold", title:"Why we're told to drink 2 litres of water a day"},
+      {fmt:"thennow", title:"Then vs. now: getting your shoes repaired"},
       {fmt:"note", title:"Why a broken watch gets replaced instead of repaired"},
-      {fmt:"scene", title:"Why breakfast became “the most important meal of the day”"},
-      {fmt:"note", title:"Why an engagement ring is supposed to cost a fortune"},
-      {fmt:"scene", title:"Why a perfect green lawn makes a good neighbour"},
+      {fmt:"sold", title:"Why breakfast became “the most important meal of the day”"},
+      {fmt:"thennow", title:"Then vs. now: the family dinner table"},
+      {fmt:"sold", title:"Why an engagement ring is supposed to cost a fortune"},
       {fmt:"note", title:"Why we keep the good china for a day that never comes"}
     ],
     example:{
-      topic:"Why a fully booked week feels like proof of a good life", format:"scene",
+      topic:"Why a fully booked week feels like proof of a good life", format:"note",
       slides:[
-        "The young raven drops his diary on the table. Every square is filled in.\n\nYoung: \"Look at that. Not one free hour all week. I've never felt so important.\"",
-        "The old raven turns the diary slowly in his wing.\n\nOld: \"Impressive. Which of these hours is yours?\"\n\nYoung: \"All of them. It's my diary.\"",
-        "He taps a square marked 'call back about the invoice.'\n\nOld: \"This one belongs to someone else's deadline. And this one. And this.\"",
-        "Old: \"There was a time when looking busy meant you had to work. People showed they'd done well by having hours to spare.\"",
-        "Young: \"So who decided busy was the good kind?\"\n\nOld: \"Ask who gains when you never stop. Someone sells you the diary. Someone else fills it.\"",
-        "The young raven looks at the one empty square left, Sunday afternoon. He puts the pen down.",
+        "A diary with every square filled in feels like proof that you matter.",
+        "I watched a young raven show me his week once. Not one free hour. He was proud of it.",
+        "So I asked him which of those hours were his. He looked again. Most belonged to someone else's deadline.",
+        "There was a time when having hours to spare was the sign you'd done well. Somewhere along the way, busy became the good kind.",
+        "Someone sells you the diary. Someone else fills it. Neither of them asks what you'd keep for yourself.",
         "Which hour of your week would you guard, if you believed it mattered?\n\nFollow Old Crow for more things we never thought to question."
       ],
       caption:"A full diary feels like proof that we matter. The old raven isn't so sure.\n\nWhose deadlines are filling your week?\n\n#oldcrow #philosophy #slowliving"
@@ -1234,7 +1228,7 @@ Every slide is a realistic photo with short overlay text in big capital letters.
 - "scene": one or two sentences describing a realistic, ordinary-looking photo for that moment: who, where, what they are doing, their expression. No visible text, signs, logos or brand names. If a real, named person is involved, describe a generic person who does not resemble them. For the last slide, an establishing shot such as a courthouse exterior.`;
   if (st === "illus") return `SLIDE STYLE: ILLUSTRATED
 Every slide is an illustration of the two ravens with text added on top. So for every slide give:
-- "text": slide 1 is ONLY a short punchy title in capital letters, 2 to 5 words, often a question (like "WHY SO EXPENSIVE?"). Every other slide: at most 28 words, either one dialogue paragraph starting with "Young:" or "Old:" followed by the line in double quotes, or one short narration sentence, at most two paragraphs. The last slide is one reflective question to the reader, then a blank line and the call to action.
+- "text": slide 1 is ONLY a short punchy title in capital letters, 2 to 5 words, often a question (like "WHY SO EXPENSIVE?"). Every other slide: at most 28 words, either one dialogue paragraph starting with "Young:" or "Old:" followed by the line in double quotes, or one short narration sentence (a narration sentence may start with a bold label like **Then:** or **Now:** when the type uses them), at most two paragraphs. The last slide is one reflective question to the reader, then a blank line and the call to action.
 - "scene": what the picture shows: where the ravens are, what they are doing with the object, their expressions, and the framing (close-up, medium shot, wide). Keep the same location across slides unless the story moves. No text in the picture.`;
   return "";
 }
