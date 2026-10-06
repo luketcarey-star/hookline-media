@@ -590,13 +590,13 @@ Avoid broad lectures, preachy morals, blanket claims that the past was better, a
 - Second-to-last slide: the old raven says what the numbers say about how we buy, use and replace things now.
 - Last slide: no labels; one reflective question to the reader, a blank line, then the call to action.
 - In the Illustrated style, every THEN slide's "scene" starts with "FLASHBACK:" and shows an anthropomorphic animal worker of that era earning or buying the object (a shop counter, a pay envelope, a workshop), drawn in black and white. Every NOW slide shows the object today in full colour with the two ravens. Slide 1 and the last two slides show the two ravens in full colour.`},
-      {id:"question", label:"One question from the old raven", count:1, single:true,
+      {id:"question", label:"One question from the old raven", count:1, single:true, noQuotes:true,
        hint:"A single slide: the old raven asks one question that makes people stop. Always a single post.",
        illusSingle:" The slide text is only the old raven's question, at most 14 words, with no label and no quotes; it is shown as the big title. The scene shows the old raven alone in warm colour, quietly looking at or holding the everyday object the question is about.",
        guide:`One question from the old raven that makes people stop scrolling and look at an everyday habit or object differently (for example: "When did you last fix something instead of replacing it?", "Who taught you that busy means important?").
 - At most 14 words. A real question people can answer from their own life. Gentle, never preachy, never a trick.
 - Tied to one concrete thing: a receipt, a phone upgrade, a lawn, a gift, a lunch break, a drawer of chargers.
-- In tweet style, write just the question in double quotes, no label.
+- Write just the question with no quotation marks and no label, in any style.
 - The caption: one or two short sentences in the old raven's voice adding a little context, then a blank line and 3 or 4 hashtags starting with #oldcrow. Never tell people to comment, vote, like, share or tag.`}
     ],
     ideas:[
@@ -779,7 +779,8 @@ function drawTweet(canvas, i){
   const ctx = canvas.getContext("2d"), p = pf(), d = deck(), total = d.slides.length;
   const T = THEMES[p.theme] || THEMES.black, scale = p.size/100;
   const P = 120, AV = 100, LH = 1.5;
-  const raw = d.slides[i].text;
+  const fq = (page().formats || []).find(x => x.id === d.format) || {};
+  const raw = fq.noQuotes ? d.slides[i].text.replace(/["“”]/g, "") : d.slides[i].text;
   const handle = "@" + (p.handle || "handle").replace(/^@+/, "");
   ctx.save();
   ctx.fillStyle = T.bg; ctx.fillRect(0,0,W,H);
@@ -905,7 +906,7 @@ function drawIllus(canvas, i){
   if (!coverImage(ctx, s)) placeholder(ctx, "#1B2232", "#A8977A", "Image not generated yet");
   const fdef = (page().formats || []).find(x => x.id === d.format) || {};
   if (fdef.noText){ ctx.restore(); return; }  // image-only post: the caption tells the story
-  const blocks = parseBlocks(s.text).map(b => fdef.noLabels ? {...b, label:null} : b);
+  const blocks = parseBlocks(fdef.noQuotes ? s.text.replace(/["“”]/g, "") : s.text).map(b => fdef.noLabels ? {...b, label:null} : b);
   if (i === 0 && blocks.length){
     const title = blocks[0].text.replace(/\*\*|__/g, "").toUpperCase();
     const tg = ctx.createLinearGradient(0, 0, 0, H*0.42);
