@@ -579,17 +579,13 @@ Avoid broad lectures, preachy morals, blanket claims that the past was better, a
 - Slide 1: a concrete object or moment and the assumption hidden in it, as a hook (max 20 words).
 - Middle slides: one short observation each (max 40 words), moving from the object, to the history behind it or who benefits now, to what the reader might notice tomorrow.
 - Last slide: one reflective question, a blank line, then the call to action.`},
-      {id:"price", label:"The price in hours of work", count:7, real:true,
-       caption:`Also write a caption in the same voice: 2 or 3 short sentences that end with a question to the audience (never tell people to comment, vote, like, share or tag), then a blank line and 3 or 4 hashtags starting with #oldcrow, then a blank line, the line "References:" and one short line per source in the form "Publication or institution: Short headline or title" (for example "Smithsonian Magazine: How the diamond engagement ring became a must"). No URLs. Only list sources you are confident exist; if you don't know an exact headline, write a short plain description instead of inventing one.`,
-       hint:"What one everyday thing cost in hours of work, then vs. now. Black-and-white then, colour now. Fact-checked.",
-       guide:`The old raven measures what one everyday object cost, not in dollars, but in hours of work for an ordinary worker, then and now (like a pair of shoes, a radio, a loaf of bread, a bicycle, a house, a car, a winter coat).
-- Slide 1: a hook built on the surprise, like "How many hours of work did a pair of shoes cost in 1950?" (max 16 words).
-- Slides 2 to 5 alternate THEN and NOW. A THEN slide starts with "**Then:**" and gives the year, the price and the typical wage at the time, and the hours of work that adds up to. A NOW slide starts with "**Now:**" with the same figures for today. Max 35 words each. Show the hours number in bold.
-- Only use prices and wages from well-documented sources (government statistics, historical catalogues, major newspapers). Use round, clearly sourced figures and say "about". If you are not confident of a figure, pick a different object.
-- Be honest about what the numbers show. If the thing is cheaper in hours today, say so and point to what changed in quality or how long it lasts.
-- Second-to-last slide: the old raven says what the numbers say about how we buy, use and replace things now.
-- Last slide: no labels; one reflective question to the reader, a blank line, then the call to action.
-- In the Illustrated style, every THEN slide's "scene" starts with "FLASHBACK:" and shows an anthropomorphic animal worker of that era earning or buying the object (a shop counter, a pay envelope, a workshop), drawn in black and white. Every NOW slide shows the object today in full colour with the two ravens. Slide 1 and the last two slides show the two ravens in full colour.`},
+      {id:"price", label:"The price in hours of work", count:1, single:true, real:true, priceTags:true,
+       caption:`Write the caption: it carries the message, because the image only shows the two objects and their price tags. Layout: a first line that is a short title in title case (like "What a Pair of Shoes Cost in Hours of Work"), a blank line, then 3 to 5 short sentences in the old raven's calm voice: what the left half shows (the object as it used to be, in colour) and the right half (today's version, in black and white), the real price and typical wage behind each tag and how the hours were worked out, and what the difference in quality says about what we get for our time now. Be honest: if it costs fewer hours today, say so and point to what changed in quality or how long it lasts. End with one reflective question to the audience (never tell people to comment, vote, like, share or tag). Then a blank line and 3 or 4 hashtags starting with #oldcrow, then a blank line, the line "References:" and one short line per source in the form "Publication or institution: Short headline or title". No URLs. Only list sources you are confident exist; if you don't know an exact headline, write a short plain description instead of inventing one.`,
+       hint:"One image split left and right: the old version in colour, today's in black and white, each with a price tag in hours of work. Fact-checked.",
+       illusSingle:" The slide text is exactly two lines, one per price tag, in the form \"YEAR | HOURS | PRICE\", for example \"1950 | 9 hours | $12.95\" on the first line and \"Today | 3 hours | $95\" on the second. Use round, well-sourced figures (hours = price ÷ typical hourly wage of that year, rounded). The scene must start with \"SPLITV:\" and describe only the object, no animals, no people and no ravens: LEFT HALF, the object as it used to be made in that year, in rich full colour, showing its quality (solid materials, fine details, sturdy build); RIGHT HALF, the same kind of object as it is often made today, in black and white, showing the drop in quality; both placed and framed the same way.",
+       guide:`One image split down the middle that compares what one everyday object cost in hours of work for an ordinary worker, then and now (like a pair of shoes, a radio, a winter coat, a bicycle, a toaster, a kitchen chair), and the difference in quality you got for that time.
+- The image shows only the object, never animals, people or the ravens. Hookline adds a price tag on each half showing the year, the hours of work and the price.
+- Only use prices and wages from well-documented sources (government statistics, historical catalogues, major newspapers). If you are not confident of a figure, pick a different object.`},
       {id:"question", label:"One question from the old raven", count:1, single:true, noQuotes:true,
        hint:"A single slide: the old raven asks one question that makes people stop. Always a single post.",
        illusSingle:" The slide text is only the old raven's question, at most 14 words, with no label and no quotes; it is shown as the big title. The scene shows the old raven alone in warm colour, quietly looking at or holding the everyday object the question is about.",
@@ -900,12 +896,50 @@ function drawPhoto(canvas, i){
 }
 
 // Old Crow illustrated: generated scene, gold title on slide 1, dialogue band on the rest
+// Two hanging price tags, one per half: "YEAR | HOURS | PRICE" per line. Left tag warm, right tag greyscale.
+function drawPriceTags(ctx, text){
+  const rows = String(text || "").split(/\n+/).map(l => l.replace(/\*\*/g, "").split("|").map(x => x.trim())).filter(r => r[0]).slice(0, 2);
+  rows.forEach((r, k) => {
+    const [label, hours = "", price = ""] = r;
+    const m = hours.match(/([\d.,½¼¾]+)\s*(\w*)/), num = m ? m[1] : hours, unit = (m && m[2] ? m[2] : "hours").toUpperCase();
+    const cx = k ? W*0.75 : W*0.25, top = 110, tw = 330, th = 280, rot = (k ? 4 : -4) * Math.PI/180;
+    const warm = !k;
+    const paper = warm ? "#F3E4C2" : "#E6E6E6", ink = warm ? "#3A2610" : "#1E1E1E", sub = warm ? "#7A5A30" : "#555555";
+    ctx.save();
+    // string
+    ctx.strokeStyle = warm ? "rgba(90,60,25,.85)" : "rgba(60,60,60,.85)"; ctx.lineWidth = 3;
+    ctx.beginPath(); ctx.moveTo(cx, 0); ctx.lineTo(cx, top + 26); ctx.stroke();
+    ctx.translate(cx, top); ctx.rotate(rot);
+    // tag body with clipped top corners
+    ctx.shadowColor = "rgba(0,0,0,.45)"; ctx.shadowBlur = 22; ctx.shadowOffsetY = 8;
+    const x0 = -tw/2, c = 46;
+    ctx.beginPath(); ctx.moveTo(x0 + c, 0); ctx.lineTo(x0 + tw - c, 0); ctx.lineTo(x0 + tw, c); ctx.lineTo(x0 + tw, th);
+    ctx.lineTo(x0, th); ctx.lineTo(x0, c); ctx.closePath(); ctx.fillStyle = paper; ctx.fill();
+    ctx.shadowColor = "transparent";
+    ctx.strokeStyle = warm ? "rgba(90,60,25,.35)" : "rgba(0,0,0,.25)"; ctx.lineWidth = 2;
+    ctx.setLineDash([6, 6]); ctx.strokeRect(x0 + 14, 50, tw - 28, th - 64); ctx.setLineDash([]);
+    // hole
+    ctx.beginPath(); ctx.arc(0, 26, 11, 0, Math.PI*2); ctx.fillStyle = warm ? "#2a1d10" : "#333"; ctx.fill();
+    ctx.textAlign = "center"; ctx.textBaseline = "alphabetic"; ctx.fillStyle = sub;
+    ctx.font = `700 26px ${MONT}`; try { ctx.letterSpacing = "3px"; } catch(e){}
+    ctx.fillText(label.toUpperCase(), 0, 84); try { ctx.letterSpacing = "0px"; } catch(e){}
+    ctx.fillStyle = ink; let fs = 92; ctx.font = `800 ${fs}px ${MONT}`;
+    while (ctx.measureText(num).width > tw - 60 && fs > 40){ fs -= 4; ctx.font = `800 ${fs}px ${MONT}`; }
+    ctx.fillText(num, 0, 84 + 12 + fs*0.86);
+    ctx.font = `700 22px ${MONT}`; ctx.fillStyle = sub; try { ctx.letterSpacing = "2px"; } catch(e){}
+    ctx.fillText(unit + " OF WORK", 0, th - 52); try { ctx.letterSpacing = "0px"; } catch(e){}
+    if (price){ ctx.font = `500 24px ${MONT}`; ctx.fillText(price, 0, th - 22); }
+    ctx.restore();
+  });
+}
+
 function drawIllus(canvas, i){
   const ctx = canvas.getContext("2d"), p = pf(), d = deck(), s = d.slides[i], scale = p.size/100;
   ctx.save();
   if (!coverImage(ctx, s)) placeholder(ctx, "#1B2232", "#A8977A", "Image not generated yet");
   const fdef = (page().formats || []).find(x => x.id === d.format) || {};
   if (fdef.noText){ ctx.restore(); return; }  // image-only post: the caption tells the story
+  if (fdef.priceTags){ drawPriceTags(ctx, s.text); ctx.restore(); return; }
   const blocks = parseBlocks(fdef.noQuotes ? s.text.replace(/["“”]/g, "") : s.text).map(b => fdef.noLabels ? {...b, label:null} : b);
   if (i === 0 && blocks.length){
     const title = blocks[0].text.replace(/\*\*|__/g, "").toUpperCase();
@@ -1443,6 +1477,14 @@ function imagePrompt(P, st, s, i, hasRefs){
   parts.push("Style: " + (st === "photo" ? P.photoStyle : P.imageStyle));
   if (st === "photo") parts.push("Composition: vertical photo. Keep the main subject in the upper two-thirds; the bottom third should be darker and simpler because text will be placed there.");
   else parts.push(i === 0 ? "Composition: leave the top third as open, uncluttered background because a title will be added there; characters in the middle and lower part." : "Composition: keep the characters in the upper two-thirds; the bottom third should be simpler because dialogue text will be placed there.");
+  if (st === "illus" && /^\s*splitv\s*:/i.test(s.scene || "")){
+    parts[0] = parts[0].replace(/^\s*splitv\s*:\s*/i, "");
+    parts[1] = "Style: hand-drawn 2D illustration with fine ink lines, soft cel shading and a subtle paper texture, like a detailed storybook still life.";
+    parts[2] = "Composition: one vertical image split down the middle into a LEFT HALF and a RIGHT HALF by a clean, slightly torn-paper line from top to bottom. LEFT HALF: the object as it used to be made, in rich, warm, saturated full colour. RIGHT HALF: the same kind of object as it is made today, drawn entirely in black and white (greyscale only, no colour at all). Place each object in the lower two-thirds of its half, the same way in both halves so they mirror each other, close up so the materials are easy to see; keep the top third of each half plain and uncluttered because a price tag will be added there. Show only the objects on a simple surface: no animals, no people, no characters, no price tags.";
+    if (hasRefs) parts.push("The reference image is only a sample of the drawing style (fine ink lines, warm hand-drawn detail). Do not draw anything from it: no animals, no characters, no shop.");
+    parts.push("Do not include any text, numbers, letters, labels, tags, signs, logos or watermarks in the image.");
+    return parts.join("\n\n");
+  }
   if (st === "illus" && /^\s*split\s*:/i.test(s.scene || "")){
     parts[0] = parts[0].replace(/^\s*split\s*:\s*/i, "");
     parts[1] = "Style: hand-drawn 2D illustration with fine ink lines, soft cel shading and a subtle paper texture, like a detailed storybook still life.";
@@ -1477,7 +1519,7 @@ function setPic(slide, blob){
 }
 async function genSlideImage(pid, slide, i){
   const P = PAGES[pid], d = decks[pid];
-  const isFlash = d.style === "illus" && /^\s*(flashback|split)\s*:/i.test(slide.scene || "") && P.flashRef;
+  const isFlash = d.style === "illus" && /^\s*(flashback|split|splitv)\s*:/i.test(slide.scene || "") && P.flashRef;
   // Flashbacks use the flashback style sample as their only reference (no raven sheets).
   const refs = isFlash ? [{data: P.flashRef, mime_type: "image/jpeg"}] : await refPayload(pid);
   const o = imgOpt[pid] || {model: P.imgModel || "flare", quality: P.imgQuality || "medium"};
