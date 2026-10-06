@@ -101,8 +101,10 @@ Also read `state/oldcrow/config.json` (mode, Buffer IDs, windows, image settings
 ### 5. Fact-check (thennow, price, sold)
 - Search the web for every claim and figure. Fix or drop anything wrong; if the post's core claim
   can't be confirmed, choose a new topic and rewrite.
-- Caption ends with the hashtags, a blank line, `References:` and one line per source
-  `Publication: Headline` using the real headline of an article or page you actually read. No URLs.
+- Keep `sources` in history only. **Captions stay short and clean** (Facebook flags long,
+  info-heavy captions): 1 or 2 short sentences (max ~30 words) ending with a question, a blank
+  line, then 2 or 3 #oldcrow hashtags. No `References:` block, no sources, no links, no listing
+  every figure; a little mystery is fine. Facts are still checked, just not shown.
 
 ### 6. Make the images and slides
 - Check rules 3, 4 and 7 first.
@@ -144,6 +146,6 @@ Also read `state/oldcrow/config.json` (mode, Buffer IDs, windows, image settings
 
 ### 11. Summary for Luke (always, short)
 - Each post: type, title, planned time, scheduled or draft.
-- Fact-check sources used; anything swapped and why.
+- Anything that couldn't be confirmed and was swapped, and why.
 - Any errors (images, Buffer limit, GitHub) and what's needed from Luke.
 - A post idea when a good one comes up (always on Sundays).

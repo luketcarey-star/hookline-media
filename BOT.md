@@ -94,12 +94,11 @@ Read these before writing anything:
 
 ### 5. Fact-check (types list, myth, laws, history)
 - Search the web for every claim. Fix or drop anything wrong. Put the confirmed sources in
-  `sources` (publication, headline, URL).
-- The caption ends with the hashtags, a blank line, `References:` and one short line per source:
-  `Publication: Headline` using the real headline of an article you actually read (shorten long
-  ones). No URLs in the caption. Example:
-  `References:` / `CNBC: No, Starbucks isn't cheating customers by adding ice to drinks` /
-  `Mental Floss: The Politician Who Sued God`
+  `sources` (publication, headline, URL) in history only.
+- **Captions stay short and clean** (Facebook flags long, info-heavy captions): one short teasing
+  line (max ~20 words) ending with an open question, a blank line, then 2 or 3 hashtags starting
+  with #JuryJuice. No `References:` block, no sources, no case citations, no links, and no
+  explaining every detail; a little mystery is fine. Facts are still checked, just not shown.
 
 ### 6. Make the slides
 - First check hard rule 6 (`imagesPaused`). If images are paused, render photo posts as tweet style.
@@ -141,6 +140,6 @@ For each post, two `create_post` calls:
 
 ### 11. Summary for Luke (always, keep it short)
 - What was made: for each post, type, title, planned FB and IG times, draft or scheduled.
-- Fact-check: sources used, anything swapped out and why.
+- Fact-check: anything that couldn't be confirmed and was swapped out, and why.
 - Any errors or skipped steps.
 - Any post idea worth suggesting (always on Sundays; other days only if a good one came up).

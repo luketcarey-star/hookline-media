@@ -9,21 +9,19 @@ Voice: simple, natural and easy to follow, like someone telling a surprising leg
 Real cases, laws and historical trials must be real and widely documented. Only use names, dates, amounts and outcomes you are highly confident of; if unsure, leave the detail out. Never invent cases, quotes or laws.
 
 ## Caption
-Layout for posts with sources (exact order):
+Keep every caption short and clean (Facebook flags long, info-heavy captions). Layout:
 ```
-Title In Title Case
+One short line (max about 20 words) that teases the post and ends with an open question.
 
-One or two punchy sentences ending with an open question.
-
-#JuryJuice #Tag2 #Tag3
-
-References:
-Publication: Short headline
-Publication: Short headline
+#JuryJuice #Tag2
 ```
-Posts without real facts (engagement, humour) end after the hashtags. In this bot, each References line uses the real publication name and the real article headline you found during the fact-check (shortened if long). One line per case or law, no URLs.
+- 2 or 3 hashtags starting with #JuryJuice.
+- No sources, no "References:" list, no case citations, no links, no dates in brackets.
+- Don't explain every detail; a little mystery is fine. Facts are still checked behind the scenes
+  (sources go in history only).
+- Never tell people to comment, vote, like, share or tag.
 
-Also write a caption: a first line that is a short title in title case naming the topic (like "5 Lawsuits Too Bizarre to Be Real"), a blank line, 1 or 2 short, punchy sentences that tease the most surprising detail and end with an open question (keep it under 35 words, and don't retell the slides) (never tell people to comment, vote, like, share or tag), then a blank line and 3 or 4 hashtags starting with #JuryJuice, then (only for real cases, laws or history) a blank line, the line "References:" and one short line per source in the form "Publication: Short headline" (for example "CNBC: Judge tosses Starbucks iced drinks lawsuit" or "Cornell Law: Leonard v. PepsiCo"). One line per case or law, no URLs, no dates in brackets, nothing else after the references. Only list sources you are confident really reported it; if you don't know an exact headline, write a short plain description of the story instead of inventing a headline.
+Example: "One man sued himself. Another wanted a fighter jet from Pepsi. Which one would you have thrown out first?" then a blank line and "#JuryJuice #BizarreLawsuits".
 
 ## Slide call to action
 Follow for more
