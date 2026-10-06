@@ -157,12 +157,18 @@ limited_by_buffer = room < n
 n = min(n, room)
 taken = {pl: taken_times(pl) for pl in ("facebook", "instagram")}
 out = []
+# Tweet posts rotate backgrounds: black -> white (light) -> classic Twitter navy (dim) -> black...
+THEMES = ["black", "light", "dim"]
+last_theme = next((p["theme"] for p in reversed(hist["posts"]) if p.get("style") == "tweet" and p.get("theme") in THEMES), "dim")
 for s in plan_slots(n):
     fb = pick_time(s["window"], "facebook", taken["facebook"])
     ig = pick_time(s["window"], "instagram", taken["instagram"] + ([fb] if fb else []))
     if not fb or not ig:
         continue  # window already over
     taken["facebook"].append(fb); taken["instagram"].append(ig)
+    if s.get("style") == "tweet":
+        last_theme = THEMES[(THEMES.index(last_theme) + 1) % 3]
+        s = dict(s, theme=last_theme)
     out.append(dict(s, facebookAt=fb.isoformat(), instagramAt=ig.isoformat() if "instagram" in cfg.get("platforms", ["facebook", "instagram"]) else None))
 print(json.dumps({"page": PAGE, "date": day.isoformat(), "run": run, "bufferQueued": queued,
                   "limitedByBuffer": limited_by_buffer, "mode": cfg["mode"],

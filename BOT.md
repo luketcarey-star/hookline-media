@@ -113,6 +113,9 @@ Read these before writing anything:
   would go over, switch that post to tweet style.
 - Write a spec file and render:
   `{"page":"jury","style":"tweet"|"photo","caption":"...","slides":[{"text":"...","image":"img1.jpg"}]}`
+  Tweet-style posts: add `"theme"` from the plan (`black`, `light` = white with black text, `dim` =
+  classic Twitter navy). The planner rotates them so tweet posts cycle through all three; save
+  `theme` in history for every tweet post so the rotation continues.
   then `node render.js work/p1/spec.json posts/<date>/<n>-<type>/`.
 - Look at every rendered slide (read the JPGs). Fix overflowing or awkward text and re-render.
 
@@ -132,7 +135,7 @@ For each post, two `create_post` calls:
 
 ### 9. Record and clean up
 - Append each post to `state/history.json` → `posts`:
-  `{date, n, type, format, style, title, topic, slides, sources, imageFolder,
+  `{date, n, type, format, style, theme, title, topic, slides, sources, imageFolder,
     facebook: {postId, plannedAt}, instagram: {postId, plannedAt}, status: "draft"|"scheduled", metrics: {}}`
 - Delete `posts/<date>` folders older than `keepImagesDays` (already posted; Meta keeps its own copy).
 - Commit and push.

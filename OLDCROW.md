@@ -113,6 +113,9 @@ Also read `state/oldcrow/config.json` (mode, Buffer IDs, windows, image settings
 ### 6. Make the images and slides
 - Check rules 3, 4 and 7 first.
 - Write `work/p<n>/spec.json`: `{"page":"oldcrow","style":"<illus|tweet>","format":"<type>","caption":"...","slides":[{"text":"...","scene":"..."}]}`.
+  Tweet-style posts: add `"theme"` from the plan (`black`, `light` = white with black text, `dim` =
+  classic Twitter navy). The planner rotates them so tweet posts cycle through all three; save
+  `theme` in history for every tweet post so the rotation continues.
 - Tweet-style posts need no images: skip straight to `node render.js`.
 - `node scripts/hookline.js images work/p<n>/spec.json` → for each slide call `generate_image`
   with that `prompt` exactly as given (it ends with `REFERENCE_URL:` lines that the image server
@@ -140,7 +143,7 @@ Also read `state/oldcrow/config.json` (mode, Buffer IDs, windows, image settings
 
 ### 9. Record and clean up
 - Append each post to `state/oldcrow/history.json` → `posts`:
-  `{date, n, type, format, style, title, topic, slides, sources, imageFolder,
+  `{date, n, type, format, style, theme, title, topic, slides, sources, imageFolder,
     facebook: {postId, plannedAt}, status, metrics: {}}`
 - Delete `posts/oldcrow/<date>` folders older than `keepImagesDays`. Commit and push.
 

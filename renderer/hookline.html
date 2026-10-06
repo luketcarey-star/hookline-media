@@ -376,7 +376,7 @@ details.card .inner{display:flex;flex-direction:column;gap:14px;padding-top:16px
           </div>
           <div id="tweetOpts" style="display:flex;flex-direction:column;gap:14px">
             <div>
-              <div class="rowlab" style="margin-bottom:6px"><span>Tweet background</span></div>
+              <div class="rowlab" style="margin-bottom:6px"><span>Tweet background</span><span style="font-weight:400;opacity:.7">changes each new post</span></div>
               <div class="seg" id="segTheme" role="group" aria-label="Tweet slide background">
                 <button type="button" data-v="black">Black</button>
                 <button type="button" data-v="dim">Dim</button>
@@ -1340,6 +1340,8 @@ $("gen").onclick = async () => {
     d.checked = false;
     const topic = typeof out.topic === "string" && out.topic.trim() ? out.topic.trim() : (d.slides[0].text.replace(/\*\*|__/g,"").split(/\n/)[0].slice(0, 80));
     d.topic = topic; markMade(id, topic);
+    // Tweet posts rotate their background each new post: black, then white, then classic Twitter navy (Dim).
+    if (st === "tweet"){ const cyc = ["black","light","dim"]; prefs[id].theme = cyc[(cyc.indexOf(prefs[id].theme) + 1) % cyc.length]; store.set(pkey(id), prefs[id]); segs.forEach(fn => fn()); }
     if (id === cur){ $("topic").value = topic; $("caption").value = d.caption; renderCaption(); buildCarousel(); renderIdeas(); renderFacts(); }
      setStatus((slides.length === 1 ? "Done. Your post is ready." + (st !== "tweet" ? " Now press Generate 1 image under the preview." : "") : `Done. ${slides.length} slides written.` + (st !== "tweet" ? " Now press Generate images under the preview." : " Swipe through them.") + (f.real ? " Fact-check the cases before posting (see Fact check)." : "")) + " Topic: " + topic, "ok");
     // Picture styles: go straight on to making the pictures, so one press makes the whole post.
@@ -1659,7 +1661,7 @@ if (window.claude && claude.use){
 } else { refsReady = true; renderRefs(); renderAI(); }
 
 // ---- Bot hooks (added only to the bot's renderer copy) ----
-// Render: spec = {page, style, format?, caption?, slides:[{text, scene?, image?(data URL)}]} -> JPEG data URLs
+// Render: spec = {page, style, format?, theme?(black|light|dim), caption?, slides:[{text, scene?, image?(data URL)}]} -> JPEG data URLs
 window.hooklineRender = async (spec) => {
   await Promise.all(['400 56px "Inter"','700 56px "Inter"','400 80px "Bebas Neue"','500 44px "Montserrat"','700 44px "Montserrat"','800 100px "Montserrat"','italic 500 44px "Montserrat"'].map(f => document.fonts.load(f)));
   switchTo(spec.page);
@@ -1667,6 +1669,7 @@ window.hooklineRender = async (spec) => {
   d.style = spec.style; d.example = false; d.idx = 0; d.caption = spec.caption || "";
   if (spec.format) d.format = spec.format;
   d.slides = spec.slides.map(s => mkSlide(s.text, s.scene || ""));
+  if (spec.theme && THEMES[spec.theme]) prefs[spec.page].theme = spec.theme;
   for (let k = 0; k < spec.slides.length; k++){
     if (spec.slides[k].image){ const blob = await (await fetch(spec.slides[k].image)).blob(); await setPic(d.slides[k], blob); }
   }
