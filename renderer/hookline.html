@@ -568,11 +568,12 @@ Avoid broad lectures, preachy morals, blanket claims that the past was better, a
       {id:"sold", label:"Things we're sold: the history", count:7, real:true, noLabels:true,
        caption:`Also write a caption in the same voice: 2 or 3 short sentences that end with a question to the audience (never tell people to comment, vote, like, share or tag), then a blank line and 3 or 4 hashtags starting with #oldcrow, then a blank line, the line "References:" and one short line per source in the form "Publication or institution: Short headline or title" (for example "Smithsonian Magazine: How the diamond engagement ring became a must"). No URLs. Only list sources you are confident exist; if you don't know an exact headline, write a short plain description instead of inventing one.`,
        hint:"The real history behind something we're told or sold. Fact-checked before posting.",
-       guide:`The old raven explains the real history behind one belief or habit we were told or sold (like "drink 2 litres of water a day", diamond engagement rings, breakfast as the most important meal).
+       guide:`The old raven explains the real history behind one belief or habit we were told or sold (like "drink 2 litres of water a day", diamond engagement rings, breakfast as the most important meal). This is mostly the old raven talking, not a back-and-forth.
 - Slide 1: the belief, framed around one everyday object, as a hook or question (max 18 words).
-- Slide 2: the young raven states the belief as obvious ("Young:" line).
-- Middle slides: the old raven walks through where the belief really came from, one step per slide: who started it, when, and why (a company, an ad campaign, a misread study, an old custom). The young raven reacts or pushes back at least once.
-- Second-to-last slide: who benefits from the belief today, or what the young raven now sees differently in the object.
+- Every other slide is the old raven explaining, written as one paragraph starting with "Old:" followed by his words in double quotes (max 35 words). Calm, warm, plain words, like he's telling a story.
+- The young raven speaks at most once in the whole post (one short "Young:" line, for example stating the belief on slide 2 or reacting near the end). No other dialogue.
+- Middle slides walk through where the belief really came from, one step per slide: who started it, when, and why (a company, an ad campaign, a misread study, an old custom).
+- Second-to-last slide: the old raven says who benefits from the belief today, shown through the object.
 - Last slide: no labels; one reflective question to the reader, a blank line, then the call to action.
 - Every historical claim (names, dates, companies, campaigns, studies) must be real and well documented. If you are not highly confident of a detail, leave it out. Never invent quotes.
 - In the Illustrated style, every slide where the old raven explains the history is a FLASHBACK. Start that slide's "scene" with "FLASHBACK:" and describe the historical moment acted out by anthropomorphic animals in period clothing (for example a fox ad man pitching at a 1940s desk, rabbit shoppers at an old general store), never the two ravens and never humans. Animals stand in for roles, not for specific real people: no real person's likeness, no brand logos or readable signs. Slides that come back to the present (slide 1, slide 2, the second-to-last and last slides) show the two ravens in full colour as usual.`},
@@ -1106,7 +1107,7 @@ function switchTo(id){
   buildCarousel();
   if (!avatars[id] && avatarSrc(id)) loadAvatar(id, avatarSrc(id));
 }
-$("format").addEventListener("change", () => { deck().format = $("format").value; updateFormat(); syncStyleUI(); const f = fmt(); $("count").value = f.count || 7; $("countOut").textContent = $("count").value; });
+$("format").addEventListener("change", () => { deck().format = $("format").value; updateFormat(); syncStyleUI(); redrawAll(); const f = fmt(); $("count").value = f.count || 7; $("countOut").textContent = $("count").value; });
 $("topic").addEventListener("input", e => deck().topic = e.target.value);
 $("notes").addEventListener("input", e => deck().notes = e.target.value);
 $("count").addEventListener("input", e => $("countOut").textContent = e.target.value);
