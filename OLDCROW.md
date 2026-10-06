@@ -69,6 +69,10 @@ Also read `state/oldcrow/config.json` (mode, Buffer IDs, windows, image settings
 - `python3 scripts/plan_day.py <today> <am|pm> oldcrow`. It returns this run's posts (type,
   format, planned `facebookAt`), counting today's earlier posts (max 5 a day, max 2 carousels a
   day) and keeping posts 30+ minutes apart. Use them as given. No posts returned = day is full.
+- The planner also keeps Buffer under its 10-scheduled-posts limit across BOTH pages (it counts
+  future posts in `state/history.json` and `state/oldcrow/history.json`). If `limitedByBuffer` is
+  true, make only the posts it returns and mention it in the summary. Always record each scheduled
+  post with `"status": "scheduled"` and its `plannedAt` + `postId` so the other bot can count it.
 
 ### 4. Write each post
 - Write `avoid.json` (array of every earlier topic and title in history), then run

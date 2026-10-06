@@ -136,6 +136,25 @@ def plan_slots(n):
 
 
 n = max(0, min(cfg["postsPerRun"], cfg["postsPerDay"] - len(today_posts)))
+
+# Buffer's free plan holds at most 10 scheduled posts across ALL pages. Count what both bots
+# have queued for the future and only plan as many posts as still fit.
+BUFFER_LIMIT = 10
+queued = 0
+for hp in (ROOT / "state" / "history.json", ROOT / "state" / "oldcrow" / "history.json"):
+    if not hp.exists():
+        continue
+    for p in json.loads(hp.read_text())["posts"]:
+        if p.get("status") not in ("scheduled", "queued"):
+            continue
+        for pl in ("facebook", "instagram"):
+            t = (p.get(pl) or {}).get("plannedAt")
+            if t and (p.get(pl) or {}).get("postId") and dt.datetime.fromisoformat(t) > now:
+                queued += 1
+per_post = len(cfg.get("platforms", ["facebook", "instagram"]))
+room = max(0, (BUFFER_LIMIT - queued) // per_post)
+limited_by_buffer = room < n
+n = min(n, room)
 taken = {pl: taken_times(pl) for pl in ("facebook", "instagram")}
 out = []
 for s in plan_slots(n):
@@ -145,5 +164,6 @@ for s in plan_slots(n):
         continue  # window already over
     taken["facebook"].append(fb); taken["instagram"].append(ig)
     out.append(dict(s, facebookAt=fb.isoformat(), instagramAt=ig.isoformat() if "instagram" in cfg.get("platforms", ["facebook", "instagram"]) else None))
-print(json.dumps({"page": PAGE, "date": day.isoformat(), "run": run, "mode": cfg["mode"],
+print(json.dumps({"page": PAGE, "date": day.isoformat(), "run": run, "bufferQueued": queued,
+                  "limitedByBuffer": limited_by_buffer, "mode": cfg["mode"],
                   "alreadyToday": len(today_posts), "posts": out}, indent=2))

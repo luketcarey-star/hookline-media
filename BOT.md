@@ -61,6 +61,10 @@ Read these before writing anything:
   window, type, format, style, an optional topic hint and planned `facebookAt` / `instagramAt` times.
   It already counts today's earlier posts (max 6 a day) and keeps times 30+ minutes apart. Use them as given.
   If it returns no posts, today is full: skip to the summary.
+- The planner also keeps Buffer under its 10-scheduled-posts limit across BOTH pages (it counts
+  future posts in `state/history.json` and `state/oldcrow/history.json`). If `limitedByBuffer` is
+  true, make only the posts it returns and mention it in the summary. Always record each scheduled
+  post with `"status": "scheduled"` and its `plannedAt` + `postId` so the other bot can count it.
 - If a planned time is already in the past, add 1 to 3 hours (random minute) within the same day.
 
 ### 4. Write each post
