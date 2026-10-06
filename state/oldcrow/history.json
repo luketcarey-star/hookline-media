@@ -26,7 +26,7 @@
         "postId": "6ac5567b9b4b7d7d77d6cba6",
         "plannedAt": "2026-10-06T16:33:00-04:00"
       },
-      "status": "scheduled",
+      "status": "sent",
       "metrics": {}
     },
     {
@@ -108,6 +108,29 @@
         "plannedAt": "2026-10-06T17:07:00-04:00"
       },
       "status": "scheduled",
+      "metrics": {}
+    },
+    {
+      "date": "2026-10-06",
+      "n": 5,
+      "type": "question",
+      "format": "single",
+      "style": "illus",
+      "title": "How many chargers in your drawer fit something you still own?",
+      "topic": "A drawer of old chargers that fit nothing you own",
+      "slides": [
+        {
+          "text": "How many chargers in your drawer fit something you still own?",
+          "scene": "Medium close-up of the old raven alone at a wooden kitchen counter in warm late-afternoon light, an open kitchen drawer in front of him spilling a tangle of old, mismatched charging cables and plugs. He holds up one coiled cable in his wing, studying it with a calm, thoughtful, slightly amused expression. No text, no brand logos."
+        }
+      ],
+      "sources": [],
+      "imageFolder": "posts/oldcrow/2026-10-06/5-question",
+      "facebook": {
+        "postId": null,
+        "plannedAt": "2026-10-06T17:38:00-04:00"
+      },
+      "status": "pending",
       "metrics": {}
     }
   ],
