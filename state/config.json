@@ -1,22 +1,8 @@
 {
-  "postsPerDay": 3,
+  "postsPerDay": 6,
   "mode": "queue",
   "modeNote": "draft = save every post as a Buffer draft for Luke to approve. queue = schedule posts directly at their planned times. Only Luke changes this.",
   "timezone": "America/Toronto",
-  "windows": {
-    "morning": [
-      8,
-      12
-    ],
-    "afternoon": [
-      12,
-      17
-    ],
-    "evening": [
-      17,
-      22
-    ]
-  },
   "exploreShare": 0.3,
   "minPostsBeforeLearningType": 5,
   "minPostsBeforeLearningTime": 30,
@@ -80,5 +66,42 @@
   },
   "imagesPaused": false,
   "imagesPausedReason": "",
-  "modeChanged": "2026-10-05: Luke asked to auto-post Jury Juice"
+  "modeChanged": "2026-10-05: Luke asked to auto-post Jury Juice",
+  "postsPerRun": 3,
+  "runs": {
+    "am": {
+      "runsAround": "6:48",
+      "windows": {
+        "early": [
+          "08:00",
+          "10:00"
+        ],
+        "late-morning": [
+          "10:00",
+          "12:30"
+        ],
+        "midday": [
+          "12:30",
+          "14:30"
+        ]
+      }
+    },
+    "pm": {
+      "runsAround": "14:48",
+      "windows": {
+        "afternoon": [
+          "15:30",
+          "17:30"
+        ],
+        "early-evening": [
+          "17:30",
+          "19:30"
+        ],
+        "evening": [
+          "19:30",
+          "22:30"
+        ]
+      }
+    }
+  }
 }

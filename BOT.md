@@ -1,6 +1,8 @@
 # Jury Juice daily posting bot
 
-You are running Luke's Jury Juice posting bot. Each morning run makes today's posts for the
+You are running Luke's Jury Juice posting bot. It runs twice a day: the **am run** (around 6:48,
+posts between 8:00 and 14:30) and the **pm run** (around 14:48, posts between 15:30 and 22:30).
+The run is `am` if the local time is before noon, otherwise `pm`. Each run makes up to 3 posts for the
 Jury Juice **Facebook page** and **juryjuicetv Instagram**, and saves them to Buffer.
 Old Crow is NOT handled here. Work from this repo (`luketcarey-star/juryjuice-media`).
 
@@ -45,7 +47,7 @@ Read these before writing anything:
 - `cd` into the repo, `git pull`. Today's date = local date in America/Toronto.
 - Install nothing new unless needed; `playwright` (with Chromium) is preinstalled. Run renders with `node render.js`.
 
-### 2. Update analytics (skip if no posts yet)
+### 2. Update analytics (am run only; skip if no posts yet)
 - For each post in `state/history.json` that was sent 2 to 14 days ago and has a Buffer post ID,
   call Buffer `get_post` with `includeMetrics: true` (only for those posts; mind rate limits:
   max ~40 calls per run).
@@ -55,8 +57,10 @@ Read these before writing anything:
 - If a draft was never approved (still draft/not sent after 3 days), mark it `"status": "skipped"`.
 
 ### 3. Plan the day
-- Run `python3 scripts/plan_day.py <today>`. It returns 3 posts with window, type, format, style,
-  an optional topic hint and planned `facebookAt` / `instagramAt` times. Use them as given.
+- Run `python3 scripts/plan_day.py <today> <am|pm>`. It returns up to 3 posts for this run with
+  window, type, format, style, an optional topic hint and planned `facebookAt` / `instagramAt` times.
+  It already counts today's earlier posts (max 6 a day) and keeps times 30+ minutes apart. Use them as given.
+  If it returns no posts, today is full: skip to the summary.
 - If a planned time is already in the past, add 1 to 3 hours (random minute) within the same day.
 
 ### 4. Write each post
@@ -89,7 +93,7 @@ Read these before writing anything:
 - Look at every rendered slide (read the JPGs). Fix overflowing or awkward text and re-render.
 
 ### 7. Publish images
-- `git add posts/ state/ && git commit -m "Posts for <date>" && git push`.
+- `git add posts/ state/ && git commit -m "Posts for <date> <run>" && git push`.
 - Image URL: `https://raw.githubusercontent.com/luketcarey-star/juryjuice-media/main/posts/<date>/<n>-<type>/slideK.jpg`
 
 ### 8. Save to Buffer
@@ -109,7 +113,7 @@ For each post, two `create_post` calls:
 - Delete `posts/<date>` folders older than `keepImagesDays` (already posted; Meta keeps its own copy).
 - Commit and push.
 
-### 10. Weekly review (Sundays only)
+### 10. Weekly review (Sunday am run only)
 - Compare engagement by type, format+style, and posting hour per platform (enough data only).
 - Add 2 or 3 new post ideas to `state/history.json` → `ideas` (with date and reasoning).
 - Include the review in the summary.

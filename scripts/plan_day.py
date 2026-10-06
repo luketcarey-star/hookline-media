@@ -1,12 +1,16 @@
 #!/usr/bin/env python3
-"""Plan one day of Jury Juice posts.
+"""Plan one run of Jury Juice posts.
 
-Usage: python3 scripts/plan_day.py YYYY-MM-DD  > plan.json
+Usage: python3 scripts/plan_day.py YYYY-MM-DD am|pm  > plan.json
 
-Picks each post's type, format (carousel/single), style (tweet/photo) and a random
-posting time for Facebook and Instagram. Week 1 follows state/week1.json. After that,
-types and posting hours are chosen with a 70/30 explore-exploit mix based on the
-engagement rates saved in state/history.json.
+The bot runs twice a day. Each run makes up to `postsPerRun` posts in its own time
+windows (am run: 8:00 to 14:30, pm run: 15:30 to 22:30), never more than
+`postsPerDay` for the whole day (posts already in history for that date count).
+
+For each post it picks the type, format (carousel/single), style (tweet/photo) and a
+random posting time for Facebook and Instagram. The am run follows state/week1.json while
+that plan has entries for the date. Otherwise types and posting hours are chosen with a
+70/30 exploit-explore mix based on the engagement rates saved in state/history.json.
 """
 import json, random, sys, datetime as dt
 from collections import defaultdict
@@ -19,10 +23,17 @@ hist = json.loads((ROOT / "state/history.json").read_text())
 week1 = json.loads((ROOT / "state/week1.json").read_text())
 TZ = ZoneInfo(cfg["timezone"])
 day = dt.date.fromisoformat(sys.argv[1])
-rng = random.Random(f"jj-{day.isoformat()}")  # same plan if re-run the same day
+run = sys.argv[2] if len(sys.argv) > 2 else ("am" if dt.datetime.now(TZ).hour < 12 else "pm")
+rng = random.Random(f"jj-{day.isoformat()}-{run}")  # same plan if re-run
 EXPLORE = cfg["exploreShare"]
-WINDOWS = cfg["windows"]
-ORDER = ["morning", "afternoon", "evening"]
+WINDOWS = cfg["runs"][run]["windows"]          # {name: ["HH:MM", "HH:MM"]}
+now = dt.datetime.now(TZ)
+today_posts = [p for p in hist["posts"] if p.get("date") == day.isoformat()]
+
+
+def at(hhmm):
+    h, m = map(int, hhmm.split(":"))
+    return dt.datetime.combine(day, dt.time(h, m), TZ)
 
 
 def rate(post, platform=None):
@@ -47,31 +58,53 @@ def weighted_pick(options, scores, min_n):
     return rng.choice(list(options)), "explore"
 
 
-def pick_time(window, platform, avoid=None):
-    lo, hi = WINDOWS[window]
-    hours = list(range(lo, hi))
-    hour_scores = defaultdict(list)
-    for p in hist["posts"]:
+def taken_times(platform):
+    out = []
+    for p in today_posts:
         t = (p.get(platform) or {}).get("sentAt") or (p.get(platform) or {}).get("plannedAt")
-        r = rate(p, platform)
+        if t:
+            out.append(dt.datetime.fromisoformat(t).astimezone(TZ))
+    return out
+
+
+hour_scores = {pl: defaultdict(list) for pl in ("facebook", "instagram")}
+for p in hist["posts"]:
+    for pl in hour_scores:
+        t = (p.get(pl) or {}).get("sentAt") or (p.get(pl) or {}).get("plannedAt")
+        r = rate(p, pl)
         if t and r is not None:
-            hour_scores[dt.datetime.fromisoformat(t).astimezone(TZ).hour].append(r)
-    enough = sum(len(v) for v in hour_scores.values()) >= cfg["minPostsBeforeLearningTime"]
-    for _ in range(50):
+            hour_scores[pl][dt.datetime.fromisoformat(t).astimezone(TZ).hour].append(r)
+
+
+def pick_time(window, platform, taken):
+    lo, hi = at(WINDOWS[window][0]), at(WINDOWS[window][1])
+    lo = max(lo, now + dt.timedelta(minutes=20))
+    if lo >= hi:
+        return None
+    hours = sorted({(lo + dt.timedelta(minutes=k)).hour for k in range(0, int((hi - lo).total_seconds() // 60))})
+    enough = sum(len(v) for v in hour_scores[platform].values()) >= cfg["minPostsBeforeLearningTime"]
+    t = None
+    for _ in range(80):
         if enough:
-            h, _why = weighted_pick(hours, hour_scores, 2)
+            h, _ = weighted_pick(hours, hour_scores[platform], 2)
+            start = max(lo, dt.datetime.combine(day, dt.time(h, 0), TZ))
+            end = min(hi, start.replace(minute=0) + dt.timedelta(hours=1))
         else:
-            h = rng.choice(hours)
-        t = dt.datetime.combine(day, dt.time(h, rng.randrange(60)), TZ)
-        if avoid is None or abs((t - avoid).total_seconds()) >= 10 * 60:
+            start, end = lo, hi
+        span = int((end - start).total_seconds() // 60)
+        if span <= 0:
+            continue
+        t = start + dt.timedelta(minutes=rng.randrange(span))
+        if all(abs((t - x).total_seconds()) >= 30 * 60 for x in taken):
             return t
     return t
 
 
-def plan_slots():
+def plan_slots(n):
+    names = list(WINDOWS)[:n]
     key = day.isoformat()
-    if key in week1["days"]:
-        return [dict(s, why="week 1 plan") for s in week1["days"][key]]
+    if run == "am" and key in week1["days"] and not today_posts:
+        return [dict(s, window=names[i], why="week 1 plan") for i, s in enumerate(week1["days"][key][:n])]
     # Learned plan: score each type and each type+format+style combo by engagement.
     type_scores, combo_scores = defaultdict(list), defaultdict(list)
     for p in hist["posts"]:
@@ -80,9 +113,12 @@ def plan_slots():
             continue
         type_scores[p["type"]].append(r)
         combo_scores[(p["type"], p["format"], p["style"])].append(r)
-    slots, used = [], defaultdict(int)
-    for window in ORDER[: cfg["postsPerDay"]]:
-        options = [t for t in cfg["formats"] if used[t] < 1]
+    used = defaultdict(int)
+    for p in today_posts:
+        used[p["type"]] += 1
+    slots = []
+    for window in names:
+        options = [t for t in cfg["formats"] if used[t] < 1] or [t for t in cfg["formats"] if used[t] < 2]
         t, why = weighted_pick(options, type_scores, cfg["minPostsBeforeLearningType"])
         used[t] += 1
         combos = [tuple([t] + c) for c in cfg["formats"][t]]
@@ -92,9 +128,15 @@ def plan_slots():
     return slots
 
 
+n = max(0, min(cfg["postsPerRun"], cfg["postsPerDay"] - len(today_posts)))
+taken = {pl: taken_times(pl) for pl in ("facebook", "instagram")}
 out = []
-for s in plan_slots():
-    fb = pick_time(s["window"], "facebook")
-    ig = pick_time(s["window"], "instagram", avoid=fb)
+for s in plan_slots(n):
+    fb = pick_time(s["window"], "facebook", taken["facebook"])
+    ig = pick_time(s["window"], "instagram", taken["instagram"] + ([fb] if fb else []))
+    if not fb or not ig:
+        continue  # window already over
+    taken["facebook"].append(fb); taken["instagram"].append(ig)
     out.append(dict(s, facebookAt=fb.isoformat(), instagramAt=ig.isoformat()))
-print(json.dumps({"date": day.isoformat(), "mode": cfg["mode"], "posts": out}, indent=2))
+print(json.dumps({"date": day.isoformat(), "run": run, "mode": cfg["mode"],
+                  "alreadyToday": len(today_posts), "posts": out}, indent=2))
