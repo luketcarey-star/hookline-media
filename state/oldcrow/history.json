@@ -1,1 +1,90 @@
-{"posts": [], "ideas": []}
+{
+  "posts": [
+    {
+      "date": "2026-10-06",
+      "n": 1,
+      "type": "price",
+      "format": "single",
+      "style": "illus",
+      "title": "A Year of College in Hours of Work",
+      "topic": "A year of college in hours of work",
+      "slides": [
+        "1975 | 260 hours | $540\n2023 | 1,360 hours | $9,870"
+      ],
+      "sources": [
+        {
+          "item": "Public 4-year tuition and fees 1975-76 $542 and 2023-24 $9,872",
+          "source": "NCES Digest of Education Statistics Table 330.10"
+        },
+        {
+          "item": "Federal minimum wage $2.10 (1975), $7.25 (2009 onward)",
+          "source": "U.S. Department of Labor"
+        }
+      ],
+      "imageFolder": "posts/oldcrow/2026-10-06/1-price",
+      "facebook": {
+        "postId": "6ac5567b9b4b7d7d77d6cba6",
+        "plannedAt": "2026-10-06T16:33:00-04:00"
+      },
+      "status": "scheduled",
+      "metrics": {}
+    },
+    {
+      "date": "2026-10-06",
+      "n": 2,
+      "type": "sold",
+      "format": "carousel",
+      "style": "illus",
+      "title": "Why a Diamond Ring?",
+      "topic": "Why a diamond ring",
+      "slides": [
+        "WHY A DIAMOND RING?",
+        "Young: \"Every proposal I've heard about comes with a diamond ring. Has it always been that way?\"",
+        "Old: \"In the 1930s, only about one in ten engagement rings held a diamond. Sales were slow, so in 1938 the diamond company De Beers hired an ad agency, N.W. Ayer.\"",
+        "Old: \"In 1947, a copywriter named Frances Gerety wrote a line for them: 'A Diamond Is Forever.' It ran in De Beers ads from 1948.\"",
+        "Old: \"The line kept running. By the century's end, about eight in ten engagement rings held a diamond, and in 1999 Advertising Age named it the slogan of the century.\"",
+        "Old: \"Today the same line still helps sellers of natural diamonds stand apart from lab-grown ones. Whoever sells the ring benefits from the story that comes with it.\"",
+        "Which of your own traditions do you think began as a slogan?\n\nFollow for more."
+      ],
+      "sources": [
+        {
+          "item": "De Beers, N.W. Ayer 1938, slogan 1947, ads from 1948, 10% to 80% diamond share, Advertising Age 1999",
+          "source": "The Marketing Society; The Drum; Sotheby's"
+        }
+      ],
+      "imageFolder": "posts/oldcrow/2026-10-06/2-sold",
+      "facebook": {
+        "postId": "6ac5568138b9e9d5545ed27e",
+        "plannedAt": "2026-10-06T22:06:00-04:00"
+      },
+      "status": "scheduled",
+      "metrics": {}
+    },
+    {
+      "date": "2026-10-06",
+      "n": 3,
+      "type": "note",
+      "format": "carousel",
+      "style": "illus",
+      "title": "Why So Busy?",
+      "topic": "A calendar with every square filled in",
+      "slides": [
+        "WHY SO BUSY?",
+        "I once kept a calendar with every square filled in. Each square had a reason, yet I couldn't tell you what the whole month was for.",
+        "Somewhere along the way, we learned to answer \"How are you?\" with \"Busy.\" It sounds like an achievement, so we keep saying it.",
+        "Ask who gains when your days are full. A packed calendar leaves little time to wonder what you would choose if the squares were empty.",
+        "Tomorrow, try leaving one square empty on purpose. Notice what you reach for when nothing is expected of you.",
+        "What would you put in an empty square?\n\nFollow for more."
+      ],
+      "sources": [],
+      "imageFolder": "posts/oldcrow/2026-10-06/3-note",
+      "facebook": {
+        "postId": "6ac5568538b9e9d5545ed2fa",
+        "plannedAt": "2026-10-06T21:05:00-04:00"
+      },
+      "status": "scheduled",
+      "metrics": {}
+    }
+  ],
+  "ideas": []
+}
