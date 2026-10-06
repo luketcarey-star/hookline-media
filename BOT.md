@@ -21,7 +21,12 @@ Read these before writing anything:
    comment, vote, like, share or tag.
 3. **No realistic images of real people.** Photo posts about real cases show objects, places or
    generic anonymous scenes, never someone made to look like the real person.
-4. **Never repeat a topic** already in `state/history.json` (compare case names and laws, not just titles).
+4. **Never repeat a topic or a title.** Check `state/history.json` before writing: no case, law or
+   trial that appeared in any earlier post, and no hook or caption title that matches or closely
+   resembles an earlier one (e.g. never reuse "5 lawsuits too bizarre to be real"; vary the angle:
+   "Lawsuits judges threw out in minutes", "Companies sued over the dumbest things"). Save each
+   post's `title` in history. Also skip cases used in Hookline's built-in example (Brock v. Brock,
+   Leonard v. PepsiCo, Heckard v. Jordan, Junior Mints, Red Bull wings) for list posts.
 5. **Mode:** if `state/config.json` mode is `draft`, every post is saved with `saveToDraft: true`.
    Only switch behaviour if the file says `queue`. Never change the mode yourself.
 6. **OpenAI credit out = no more image prompts.** If `state/config.json` has `"imagesPaused": true`,
@@ -99,7 +104,7 @@ For each post, two `create_post` calls:
 
 ### 9. Record and clean up
 - Append each post to `state/history.json` → `posts`:
-  `{date, n, type, format, style, topic, slides, sources, imageFolder,
+  `{date, n, type, format, style, title, topic, slides, sources, imageFolder,
     facebook: {postId, plannedAt}, instagram: {postId, plannedAt}, status: "draft"|"scheduled", metrics: {}}`
 - Delete `posts/<date>` folders older than `keepImagesDays` (already posted; Meta keeps its own copy).
 - Commit and push.

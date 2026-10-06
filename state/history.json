@@ -45,7 +45,8 @@
       },
       "status": "sent",
       "metrics": {},
-      "note": "Posted immediately at Luke's request; use sentAt (not plannedAt) for time-of-day learning."
+      "note": "Posted immediately at Luke's request; use sentAt (not plannedAt) for time-of-day learning.",
+      "title": "5 Lawsuits Too Bizarre to Be Real"
     },
     {
       "date": "2026-10-06",
@@ -87,7 +88,8 @@
         "plannedAt": "2026-10-06T08:00:00-04:00"
       },
       "status": "scheduled",
-      "metrics": {}
+      "metrics": {},
+      "title": "5 Lawsuits Too Bizarre to Be Real"
     },
     {
       "date": "2026-10-06",
@@ -135,6 +137,40 @@
       },
       "status": "scheduled",
       "metrics": {}
+    },
+    {
+      "date": "2026-10-06",
+      "n": 4,
+      "type": "laws",
+      "format": "single",
+      "style": "photo",
+      "title": "Don't Feed the Pigeons in Venice",
+      "topic": "Venice ban on feeding pigeons in St. Mark's Square and public areas (2008, fines up to EUR 200)",
+      "slides": 1,
+      "sources": [
+        {
+          "item": "Venice pigeon feeding ban (2008)",
+          "source": "https://www.nbcnews.com/id/wbna24390018"
+        },
+        {
+          "item": "Still illegal, EUR 50-200 fine",
+          "source": "https://www.afar.com/magazine/brewing-coffee-on-the-rialto-bridge-and-other-unexpected-things-that-are-illegal"
+        }
+      ],
+      "imageFolder": "posts/2026-10-06/4-laws",
+      "facebook": {
+        "postId": "6ac4ffcba5491202d07fb3e3",
+        "plannedAt": "2026-10-06T10:03:55-04:00",
+        "sentAt": "2026-10-06T10:03:59-04:00"
+      },
+      "instagram": {
+        "postId": "6ac4ffbc0ee5068821434777",
+        "plannedAt": "2026-10-06T10:03:41-04:00",
+        "sentAt": "2026-10-06T10:03:41-04:00"
+      },
+      "status": "sent",
+      "metrics": {},
+      "note": "Extra post made by hand at Luke's request because the morning carousel reused an old title."
     }
   ],
   "ideas": []
