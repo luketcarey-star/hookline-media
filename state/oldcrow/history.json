@@ -152,10 +152,10 @@
       "caption": "Somewhere along the way, a short green lawn became the polite thing to own. What would you grow there if nobody was watching?\n\n#OldCrow #LawnCare #Gardening",
       "imageFolder": "posts/oldcrow/2026-10-07/2-question",
       "facebook": {
-        "postId": null,
+        "postId": "6ac62aad86b36af245de4cc6",
         "plannedAt": "2026-10-07T10:51:00-04:00"
       },
-      "status": "pending",
+      "status": "scheduled",
       "metrics": {},
       "note": "switched illus->tweet: image connector missing"
     }
