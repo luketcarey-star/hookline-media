@@ -82,6 +82,18 @@ Also read `state/oldcrow/config.json` (mode, Buffer IDs, windows, image settings
 - Save under `metrics.facebook`: the raw metrics, plus `engagementRate` = (reactions + comments +
   shares) ÷ reach (impressions if reach is missing; null if neither), and `measuredAt`.
 
+### 2b. Learn from Luke's insights (am run, once 6+ posts have metrics)
+- Rank every measured post in this page's history by `engagementRate` (also look at shares and
+  comments on their own: shares spread the page, comments show a caption landed).
+- Compare the top third with the bottom third and look for real patterns, not one-offs: hook and
+  title style, topic, post type, single vs. carousel, tweet vs. image, tweet background (`theme`),
+  caption length, kind of closing question, hashtags, posting hour.
+- Rewrite `state/oldcrow/learnings.md` (keep it under ~40 lines): **Do more**, **Do less**, **Test next**. Each line
+  names the evidence (e.g. "short question captions: 4.1% avg over 6 posts vs 2.3% for longer
+  ones"). Drop lines the newer data no longer supports. Only claim a pattern seen in 3+ posts.
+- If a post's comments show confusion or complaints (via Buffer metrics/notes when available),
+  note it there too.
+
 ### 3. Plan
 - `python3 scripts/plan_day.py <today> <am|pm> oldcrow`. It returns this run's posts (type,
   format, planned `facebookAt`), counting today's earlier posts (max 5 a day, max 1 carousel a day and 2 a week,
@@ -92,6 +104,12 @@ Also read `state/oldcrow/config.json` (mode, Buffer IDs, windows, image settings
   post with `"status": "scheduled"` and its `plannedAt` + `postId` so the other bot can count it.
 
 ### 4. Write each post
+- Before writing, read `state/oldcrow/learnings.md` and apply its **Do more / Do less** lines to the topic, hook,
+  slides and caption. About 1 post in 4, try one idea from **Test next** and save it on the post as
+  `"experiment": "<what was tested>"` in history so the next review can judge it. Also re-read the
+  3 best-performing captions in history and match what made them work (without copying them).
+- Luke's own rules always win over learnings: short captions, no sources in captions, good
+  searchable hashtags, no engagement bait, Meta rules, fact-checking, carousel limits.
 - Write `avoid.json` (array of every earlier topic and title in history), then run
   `node scripts/hookline.js write oldcrow <type> <style> avoid.json` (style from the plan: `illus`
   or `tweet`) and follow that prompt exactly.
@@ -150,6 +168,8 @@ Also read `state/oldcrow/config.json` (mode, Buffer IDs, windows, image settings
 ### 10. Weekly review (Sunday am run only)
 - Compare engagement by type and posting hour (once there's enough data). Add 2 or 3 post ideas to
   `ideas` with reasoning. Include it in the summary.
+- Report what the learnings file changed this week (what's working, what was dropped, what's being
+  tested next) in 2 or 3 plain lines.
 
 ### 11. Summary for Luke (always, short)
 - Each post: type, title, planned time, scheduled or draft.

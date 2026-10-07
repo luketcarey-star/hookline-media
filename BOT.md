@@ -73,6 +73,18 @@ Read these before writing anything:
   reach is missing; leave null if neither). Record `measuredAt`.
 - If a draft was never approved (still draft/not sent after 3 days), mark it `"status": "skipped"`.
 
+### 2b. Learn from Luke's insights (am run, once 6+ posts have metrics)
+- Rank every measured post in this page's history by `engagementRate` (also look at shares and
+  comments on their own: shares spread the page, comments show a caption landed).
+- Compare the top third with the bottom third and look for real patterns, not one-offs: hook and
+  title style, topic, post type, single vs. carousel, tweet vs. image, tweet background (`theme`),
+  caption length, kind of closing question, hashtags, posting hour.
+- Rewrite `state/learnings.md` (keep it under ~40 lines): **Do more**, **Do less**, **Test next**. Each line
+  names the evidence (e.g. "short question captions: 4.1% avg over 6 posts vs 2.3% for longer
+  ones"). Drop lines the newer data no longer supports. Only claim a pattern seen in 3+ posts.
+- If a post's comments show confusion or complaints (via Buffer metrics/notes when available),
+  note it there too.
+
 ### 3. Plan the day
 - Run `python3 scripts/plan_day.py <today> <am|pm>`. It returns up to 3 posts for this run with
   window, type, format, style, an optional topic hint and planned `facebookAt` / `instagramAt` times.
@@ -86,6 +98,12 @@ Read these before writing anything:
 - If a planned time is already in the past, add 1 to 3 hours (random minute) within the same day.
 
 ### 4. Write each post
+- Before writing, read `state/learnings.md` and apply its **Do more / Do less** lines to the topic, hook,
+  slides and caption. About 1 post in 4, try one idea from **Test next** and save it on the post as
+  `"experiment": "<what was tested>"` in history so the next review can judge it. Also re-read the
+  3 best-performing captions in history and match what made them work (without copying them).
+- Luke's own rules always win over learnings: short captions, no sources in captions, good
+  searchable hashtags, no engagement bait, Meta rules, fact-checking, carousel limits.
 - Follow `jury-juice-brief.md` for the post's type and style. Carousels use the type's default
   slide count (7) unless the content needs fewer; singles are exactly 1 slide.
 - If the topic hint is empty, choose a fresh topic for that type.
@@ -145,6 +163,8 @@ For each post, two `create_post` calls:
 - Compare engagement by type, format+style, and posting hour per platform (enough data only).
 - Add 2 or 3 new post ideas to `state/history.json` → `ideas` (with date and reasoning).
 - Include the review in the summary.
+- Report what the learnings file changed this week (what's working, what was dropped, what's being
+  tested next) in 2 or 3 plain lines.
 
 ### 11. Summary for Luke (always, keep it short)
 - What was made: for each post, type, title, planned FB and IG times, draft or scheduled.
