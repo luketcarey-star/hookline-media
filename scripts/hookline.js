@@ -1,6 +1,7 @@
 // Ask Hookline (the bot's renderer copy) for the exact prompts it would use.
 //
-//   node scripts/hookline.js write <page> <format> <style> [avoid.json]
+//   node scripts/hookline.js write <page> <format> <style> [avoid.json] [count]
+//       count 1 = a single standalone post (use it when the plan says format "single").
 //       Prints the writing prompt (topic auto-chosen; avoid.json = array of earlier topics/titles).
 //   node scripts/hookline.js images <spec.json>
 //       spec.json = {"page","style","format","slides":[{"text","scene"}]}
@@ -20,9 +21,9 @@ const REFS = {
   await page.goto("file://" + path.join(__dirname, "..", "renderer", "hookline.html"));
   await page.waitForFunction(() => typeof window.hooklineWritePrompt === "function");
   if (cmd === "write") {
-    const [pg, format, style, avoidFile] = args;
+    const [pg, format, style, avoidFile, count] = args;
     const avoid = avoidFile ? JSON.parse(fs.readFileSync(avoidFile, "utf8")) : [];
-    const out = await page.evaluate(a => window.hooklineWritePrompt(...a), [pg, format, style, 0, avoid]);
+    const out = await page.evaluate(a => window.hooklineWritePrompt(...a), [pg, format, style, +count || 0, avoid]);
     console.log(out);
   } else if (cmd === "images") {
     const spec = JSON.parse(fs.readFileSync(args[0], "utf8"));

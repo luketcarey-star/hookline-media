@@ -93,8 +93,8 @@ Read these before writing anything:
 ### 3. Plan the day
 - Run `python3 scripts/plan_day.py <today> <am|pm>`. It returns up to 3 posts for this run with
   window, type, format, style, an optional topic hint and planned `facebookAt` / `instagramAt` times.
-  It already counts today's earlier posts (max 6 a day; max 1 carousel a day and 4 a week, since
-  carousels do badly on Facebook, so it swaps extras for single posts) and keeps times 30+ minutes apart. Use them as given.
+  It already counts today's earlier posts (max 6 a day; max 1 carousel a day and 4 a week, and
+  carousels only ever go to Instagram, see step 8) and keeps times 30+ minutes apart. Use them as given.
   If it returns no posts, today is full: skip to the summary.
 - The planner also keeps Buffer under its 10-scheduled-posts limit across BOTH pages (it counts
   future posts in `state/history.json` and `state/oldcrow/history.json`). If `limitedByBuffer` is
@@ -149,6 +149,11 @@ Read these before writing anything:
 
 ### 8. Save to Buffer
 For each post, two `create_post` calls:
+- **No carousels on Facebook (Luke's rule).** Carousels go to the Jury Juice Instagram only. When
+  the plan says `carousel`, also make a single-image version of the same post for Facebook: one
+  standalone slide in the same style with the hook and payoff together (photo: up to 25 words;
+  tweet: the strongest line or two), rendered to `posts/<date>/<n>-<type>/fb/slide1.jpg`, with
+  the same caption. Record it as `facebook.format: "single"` in history. Singles go to both as is.
 - Facebook: channel `facebookChannelId`, `metadata: {facebook: {type: "post"}}`, `schedulingType: "automatic"`.
 - Instagram: channel `instagramChannelId`, `metadata: {instagram: {type: "post", shouldShareToFeed: true}}`, `schedulingType: "automatic"`.
 - Both: `text` = caption, `assets` = all slide URLs in order with short `altText`,

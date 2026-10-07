@@ -23,8 +23,8 @@ Also read `state/oldcrow/config.json` (mode, Buffer IDs, windows, image settings
 | thennow | Then vs. now: one split image (old object in colour on top, today's in black and white below), no text; caption explains | single | 1 |
 | price | The price in hours of work: split left/right with price tags; how much less work things took to afford back then | single | 1 |
 | question | One question from the old raven: Illustrated (question as the title over the old raven) about 2 in 3 times, or a Tweet slide (Old Crow tweet card with blue check, no image) about 1 in 3 | single | 1 or 0 |
-| sold | Things we're sold: the old raven explains the history, black-and-white animal flashbacks | carousel (~7) | ~7 |
-| note | The old raven's note to the reader | carousel (~6) | ~6 |
+| sold | Things we're sold: one slide, a short hook over a black-and-white animal flashback; the caption tells the history | single | 1 |
+| note | The old raven's short note to the reader, over the old raven with the object | single | 1 |
 
 ## Hard rules (never break these)
 1. **Real facts are verified.** For thennow, price and sold, every date, price, wage, company,
@@ -51,7 +51,7 @@ Also read `state/oldcrow/config.json` (mode, Buffer IDs, windows, image settings
 5. **Mode:** `queue` = schedule at the planned time; `draft` = also `saveToDraft: true`. Never change it.
 6. Never publish immediately (`shareNow`). Never touch Jury Juice posts or Jury Juice state.
    Never delete or edit Buffer posts you didn't create in this run.
-7. Max 16 images per run. If a carousel would go over, swap it for a single-image type.
+7. Max 16 images per run. Every Old Crow post is a single slide (no carousels).
 
 ## Alerts (Luke wants to know about EVERY problem)
 - If anything at all goes wrong in this run, the summary's FIRST line is `⚠️ PROBLEM: <one-line
@@ -101,8 +101,8 @@ Also read `state/oldcrow/config.json` (mode, Buffer IDs, windows, image settings
 
 ### 3. Plan
 - `python3 scripts/plan_day.py <today> <am|pm> oldcrow`. It returns this run's posts (type,
-  format, planned `facebookAt`), counting today's earlier posts (max 5 a day, max 1 carousel a day and 2 a week,
-  since carousels do badly on Facebook) and keeping posts 30+ minutes apart. Use them as given. No posts returned = day is full.
+  format, planned `facebookAt`), counting today's earlier posts (max 5 a day; **no carousels at all**, Luke's rule:
+  carousels do badly on Facebook) and keeping posts 30+ minutes apart. Use them as given. No posts returned = day is full.
 - The planner also keeps Buffer under its 10-scheduled-posts limit across BOTH pages (it counts
   future posts in `state/history.json` and `state/oldcrow/history.json`). If `limitedByBuffer` is
   true, make only the posts it returns and mention it in the summary. Always record each scheduled
@@ -116,8 +116,9 @@ Also read `state/oldcrow/config.json` (mode, Buffer IDs, windows, image settings
 - Luke's own rules always win over learnings: short captions, no sources in captions, good
   searchable hashtags, no engagement bait, Meta rules, fact-checking, carousel limits.
 - Write `avoid.json` (array of every earlier topic and title in history), then run
-  `node scripts/hookline.js write oldcrow <type> <style> avoid.json` (style from the plan: `illus`
-  or `tweet`) and follow that prompt exactly.
+  `node scripts/hookline.js write oldcrow <type> <style> avoid.json 1` (style from the plan: `illus`
+  or `tweet`; the final `1` makes it a single standalone slide) and follow that prompt exactly.
+  **Never make carousels for Old Crow** (Facebook only, and carousels do badly there).
   Produce the same JSON it asks for: `topic`, `slides` (`text` + `scene`), `caption`, and `sources`
   for real types.
 
