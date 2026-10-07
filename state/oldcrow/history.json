@@ -158,6 +158,64 @@
       "status": "scheduled",
       "metrics": {},
       "note": "switched illus->tweet: image connector missing"
+    },
+    {
+      "date": "2026-10-07",
+      "n": 3,
+      "type": "thennow",
+      "format": "single",
+      "style": "illus",
+      "title": "The Kitchen Chair",
+      "topic": "Kitchen chair: solid wood joinery vs particleboard flat-pack",
+      "slides": [
+        "THE KITCHEN CHAIR"
+      ],
+      "caption": "A kitchen chair used to be solid wood, joined to last a lifetime. Many today are pressed board held together with screws. How long do you expect a chair to last?\n\n#OldCrow #Furniture #VintageFurniture",
+      "sources": [
+        {
+          "item": "Older chairs: solid wood with mortise-and-tenon joints; many modern ones particleboard with cam-lock screws",
+          "source": "Furniture construction references (Studio Matrx: materials and manufacture; furniture joinery)"
+        }
+      ],
+      "imageFolder": "posts/oldcrow/2026-10-07/3-thennow",
+      "facebook": {
+        "postId": "6ac63cec825ce6f477e8afed",
+        "plannedAt": "2026-10-07T09:55:00-04:00"
+      },
+      "status": "scheduled",
+      "note": "made up by hand after am run skipped it (image tool not loaded)",
+      "metrics": {}
+    },
+    {
+      "date": "2026-10-07",
+      "n": 4,
+      "type": "price",
+      "format": "single",
+      "style": "illus",
+      "title": "A New House in Years of Work",
+      "topic": "A new house in years of work",
+      "slides": [
+        "1970 | 3.3 years | $23,400\n2025 | 6.4 years | $417,400"
+      ],
+      "caption": "In 1970 a new house cost about three years of an average worker's pay. Today it takes more than six. What would you do with those extra years?\n\n#OldCrow #HousingMarket #RealEstate",
+      "sources": [
+        {
+          "item": "Median sales price of new houses sold: $23,400 (1970), $417,400 (2025)",
+          "source": "U.S. Census Bureau via FRED MSPNHSUSA"
+        },
+        {
+          "item": "Avg hourly earnings, production & nonsupervisory: ~$3.40 (1970), ~$31.37 (2025); x2,080 h",
+          "source": "BLS CES via FRED CEU0500000008"
+        }
+      ],
+      "imageFolder": "posts/oldcrow/2026-10-07/4-price",
+      "facebook": {
+        "postId": "6ac63cef8c3015cd3eae459c",
+        "plannedAt": "2026-10-07T13:53:00-04:00"
+      },
+      "status": "scheduled",
+      "note": "made up by hand after am run skipped it (image tool not loaded)",
+      "metrics": {}
     }
   ],
   "ideas": []
