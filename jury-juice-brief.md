@@ -43,16 +43,20 @@ Keep every caption short and clean (Facebook flags long, info-heavy captions). L
 ```
 One short line (max about 20 words) that teases the post and ends with an open question.
 
-#JuryJuice #Tag2
+#JuryJuice #Tag2 #Tag3
+
+Source: Heien v. North Carolina (2014)
 ```
 - 2 or 3 hashtags: #JuryJuice first, then 1 or 2 popular, widely searched tags that name the
-  subject (e.g. #McDonalds #LawFacts, #GuineaPigs #WeirdLaws). No made-up or vague filler tags.
-- No sources, no "References:" list, no case citations, no links, no dates in brackets.
-- Don't explain every detail; a little mystery is fine. Facts are still checked behind the scenes
-  (sources go in history only).
+  subject (e.g. #TrafficStop #HOA). No made-up or vague filler tags.
+- **Real cases or laws only:** one short source line at the very bottom, after the hashtags:
+  `Source: <case name (year)>` for one, or `Sources: <case (year)>; <case (year)>` for several
+  (shortened case names, or "Publication, year" for news; for ordinances "City Code § x"). No
+  links, no headlines, no "References:" list. Questions get no source line.
+- Don't explain every detail; a little mystery is fine.
 - Never tell people to comment, vote, like, share or tag.
 
-Example: "One man sued himself. Another wanted a fighter jet from Pepsi. Which one would you have thrown out first?" then a blank line and "#JuryJuice #BizarreLawsuits".
+Example: "One brake light went all the way to the Supreme Court. Which of these would you have ruled differently?", a blank line, "#JuryJuice #TrafficStop #HOA", a blank line, "Sources: Heien v. North Carolina (2014); Rodriguez v. United States (2015)".
 
 ## Slide call to action
 Follow for more
@@ -62,23 +66,23 @@ Follow for more
 ### Real cases: police, HOA & county  (id: list, REAL FACTS: must be fact-checked, default slides: 7)
 A list of real, surprising cases about police, HOAs or county / city government (pick one of the three per post, or a clear mix like "the city vs. homeowners").
 - Slide 1: only a short hook using the actual number of case slides, like "5 traffic stops that ended up in court" or "4 HOA fights homeowners actually won". Nothing else on slide 1.
-- Every slide between the first and the last is one real case, written as a one-sentence hook stating the surprising part (max 14 words), then a blank line and one or two sentences with who or where and how it ended (max 30 words). Every slide that describes a real case or law ends with a third, separate paragraph giving its short source, exactly in the form "Source: <case name and year, or publication and year, or code section>" (max 8 words, for example "Source: Heien v. North Carolina (2014)" or "Source: AP News, 2019"). It is drawn small at the bottom of the slide.
+- Every slide between the first and the last is one real case, written as a one-sentence hook stating the surprising part (max 14 words), then a blank line and one or two sentences with who or where and how it ended (max 30 words).
 - On each case slide, wrap the 1 to 3 most striking phrases in **double asterisks** for bold. On at most two slides, you may instead underline one short punchline with __double underscores__.
 - The last slide is exactly: Follow for more
-- If this is a single post, it is ONE real case: a hook sentence, a blank line, who or where and how it ended, then the source paragraph.
+- If this is a single post, it is ONE real case: a hook sentence, a blank line then who or where and how it ended.
 - Only use cases you are highly confident really happened and were widely reported or decided by a court. If the creator's notes list cases or facts, use those.
 
 ### Weird laws, ordinances & HOA rules  (id: laws, REAL FACTS: must be fact-checked, default slides: 7)
 Strange rules that really exist today, from county / city codes, rules police actually enforce, or HOA rules that went to court.
 - Slide 1: a hook like "5 city rules you can get fined for" or "4 HOA rules courts actually upheld" (use the real number of rule slides).
-- Each middle slide is one rule: first paragraph names the place and the rule in plain words with the funniest part in **bold** (max 18 words); second paragraph gives the reason it exists or how it's actually enforced, if known (max 25 words). Every slide that describes a real case or law ends with a third, separate paragraph giving its short source, exactly in the form "Source: <case name and year, or publication and year, or code section>" (max 8 words, for example "Source: Heien v. North Carolina (2014)" or "Source: AP News, 2019"). It is drawn small at the bottom of the slide.
+- Each middle slide is one rule: first paragraph names the place and the rule in plain words with the funniest part in **bold** (max 18 words); second paragraph gives the reason it exists or how it's actually enforced, if known (max 25 words).
 - Only include rules you are highly confident are real and still in force, with a specific place. Many viral "weird law" lists are myths; skip anything you aren't sure about.
 - Last slide: Follow for more
 
 ### Strangest trials: police, HOA & county  (id: history, REAL FACTS: must be fact-checked, default slides: 7)
 Real court cases from the past (any era, including famous Supreme Court cases) about police stops and searches, HOAs or county / city government, picked for the strange or surprising twist.
 - Slide 1: a hook like "4 of the strangest police cases ever to reach court".
-- Each middle slide is one case: first paragraph says when, where and what was strange, with the strangest part in **bold** (max 18 words); second paragraph says how it ended (max 25 words). Every slide that describes a real case or law ends with a third, separate paragraph giving its short source, exactly in the form "Source: <case name and year, or publication and year, or code section>" (max 8 words, for example "Source: Heien v. North Carolina (2014)" or "Source: AP News, 2019"). It is drawn small at the bottom of the slide.
+- Each middle slide is one case: first paragraph says when, where and what was strange, with the strangest part in **bold** (max 18 words); second paragraph says how it ended (max 25 words).
 - Focus on the absurd or surprising part. Never describe violence, injuries, punishments or deaths; if a case is built around them, choose a different case.
 - Last slide: Follow for more
 

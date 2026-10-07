@@ -121,15 +121,13 @@ Read these before writing anything:
 
 ### 5. Fact-check (types list, laws, history)
 - Search the web for every claim. Fix or drop anything wrong.
-- **Short sources go on the slides, never in the caption.** Every slide that describes a real case or
-  law ends with a separate last paragraph `Source: <case and year / publication and year / code
-  section>` (max 8 words), using the source you actually confirmed. Hookline draws it small at the
-  bottom of the slide. Engagement questions have no source and nothing but the question itself. Put the confirmed sources in
-  `sources` (publication, headline, URL) in history only.
+- **Short sources go at the bottom of the caption** (Luke's rule), never on the slides: after the
+  hashtags, a blank line and `Source: <case (year)>` or `Sources: <case (year)>; <case (year)>`,
+  using the sources you actually confirmed. Engagement questions get no source line.
 - **Captions stay short and clean** (Facebook flags long, info-heavy captions): one short teasing
-  line (max ~20 words) ending with an open question, a blank line, then 2 or 3 hashtags starting
-  with #JuryJuice. No `References:` block, no sources, no case citations, no links, and no
-  explaining every detail; a little mystery is fine. Facts are still checked, just not shown.
+  line (max ~20 words) ending with an open question, a blank line, 2 or 3 hashtags starting with
+  #JuryJuice, then for real cases/laws a blank line and the one short source line above. No
+  `References:` block, no headlines, no links, and no explaining every detail.
 - **Hashtags:** the page tag first, then 1 or 2 popular, widely searched tags that name the post's
   actual subject, in CamelCase (e.g. #McDonalds #LawFacts, #GuineaPigs #WeirdLaws, #Nostalgia,
   #SlowLiving, #EngagementRing). Never made-up or niche tags nobody searches (#oldcrowasks,
