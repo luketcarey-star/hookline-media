@@ -8,7 +8,7 @@ Last updated: 2026-10-07 (starting point; no measured posts yet)
 - Single-image posts (Luke: carousels do badly on Facebook).
 
 ## Do less
-- Carousels (max 1 a day, 2 a week).
+- Carousels (none on Old Crow), tweet posts, then vs now and price posts (all dropped by Luke).
 - Source lists or citations in captions.
 
 ## Test next
