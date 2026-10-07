@@ -1,7 +1,7 @@
 {
   "page": "oldcrow",
-  "postsPerDay": 5,
-  "postsPerRun": 3,
+  "postsPerDay": 3,
+  "postsPerRun": 2,
   "mode": "queue",
   "modeNote": "queue = schedule posts directly at their planned times (Luke chose auto-posting). draft = save as Buffer drafts. Only Luke changes this.",
   "timezone": "America/Toronto",
@@ -9,34 +9,22 @@
     "am": {
       "runsAround": "7:12",
       "windows": {
-        "early": [
-          "08:00",
+        "morning": [
+          "08:30",
           "10:30"
         ],
-        "late-morning": [
-          "10:30",
-          "12:30"
-        ],
         "midday": [
-          "12:30",
-          "14:30"
+          "12:00",
+          "14:00"
         ]
       }
     },
     "pm": {
       "runsAround": "15:12",
       "windows": {
-        "afternoon": [
-          "15:30",
-          "18:30"
-        ],
         "evening": [
-          "18:30",
-          "22:30"
-        ],
-        "late": [
-          "21:00",
-          "22:30"
+          "18:00",
+          "21:00"
         ]
       }
     }
@@ -83,5 +71,6 @@
   "maxCarouselsPerWeek": 0,
   "maxPerDay": {
     "note": 1
-  }
+  },
+  "minGapMinutes": 150
 }

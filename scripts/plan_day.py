@@ -98,7 +98,7 @@ def pick_time(window, platform, taken):
         if span <= 0:
             continue
         t = start + dt.timedelta(minutes=rng.randrange(span))
-        if all(abs((t - x).total_seconds()) >= 30 * 60 for x in taken):
+        if all(abs((t - x).total_seconds()) >= cfg.get("minGapMinutes", 30) * 60 for x in taken):
             return t
     return t
 

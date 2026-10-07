@@ -15,13 +15,6 @@
         "format": "single",
         "style": "tweet",
         "topic": "Would you rather get a jury duty summons or a dentist appointment? style light question"
-      },
-      {
-        "window": "evening",
-        "type": "laws",
-        "format": "single",
-        "style": "photo",
-        "topic": "Switzerland's animal welfare rule that social animals like guinea pigs must not be kept alone"
       }
     ],
     "2026-10-07": [
@@ -38,13 +31,6 @@
         "format": "single",
         "style": "tweet",
         "topic": "jury duty summons meme"
-      },
-      {
-        "window": "evening",
-        "type": "list",
-        "format": "single",
-        "style": "photo",
-        "topic": "the $54 million lost pants lawsuit (Pearson v. Chung, Washington DC); photo of pants on a dry cleaner's rack, no people"
       }
     ],
     "2026-10-08": [
@@ -61,13 +47,6 @@
         "format": "single",
         "style": "tweet",
         "topic": "HOA question: the strangest HOA rule you've lived under, or would you buy in an HOA?"
-      },
-      {
-        "window": "evening",
-        "type": "laws",
-        "format": "carousel",
-        "style": "tweet",
-        "topic": "strange county or city ordinances still on the books (confirm each is real and in force)"
       }
     ],
     "2026-10-09": [
@@ -84,13 +63,6 @@
         "format": "single",
         "style": "tweet",
         "topic": "police question: should officers be allowed to ticket from unmarked cars?"
-      },
-      {
-        "window": "evening",
-        "type": "history",
-        "format": "single",
-        "style": "tweet",
-        "topic": "Heien v. North Carolina (2014): a traffic stop over one broken brake light reached the Supreme Court"
       }
     ],
     "2026-10-10": [
@@ -107,13 +79,6 @@
         "format": "single",
         "style": "tweet",
         "topic": "police question: the strangest reason you or someone you know got pulled over"
-      },
-      {
-        "window": "evening",
-        "type": "list",
-        "format": "carousel",
-        "style": "tweet",
-        "topic": "traffic stops that ended up in court over something tiny (calm, non-violent cases only)"
       }
     ],
     "2026-10-11": [
@@ -130,13 +95,6 @@
         "format": "single",
         "style": "tweet",
         "topic": "HOA question: the pettiest HOA letter you've ever gotten"
-      },
-      {
-        "window": "evening",
-        "type": "history",
-        "format": "carousel",
-        "style": "photo",
-        "topic": "Kelo v. City of New London (2005): the city took homes for a development that never got built"
       }
     ],
     "2026-10-12": [
@@ -153,13 +111,6 @@
         "format": "single",
         "style": "tweet",
         "topic": "county or city question: permits, property tax or a neighbour's code complaint"
-      },
-      {
-        "window": "evening",
-        "type": "list",
-        "format": "carousel",
-        "style": "tweet",
-        "topic": "homeowners who sued their HOA and won"
       }
     ]
   }
