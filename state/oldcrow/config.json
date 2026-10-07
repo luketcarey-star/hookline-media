@@ -72,5 +72,6 @@
   "maxPerDay": {
     "note": 1
   },
-  "minGapMinutes": 150
+  "minGapMinutes": 150,
+  "firstType": "sold"
 }
