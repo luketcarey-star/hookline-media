@@ -8,6 +8,36 @@ Jury Juice is a Facebook and Instagram page about the law in everyday life: real
 Voice: simple, natural and easy to follow, like someone telling a surprising legal story to a friend. Little legal jargon. Calm and factual, never sensational or shocking.
 Real cases, laws and historical trials must be real and widely documented. Only use names, dates, amounts and outcomes you are highly confident of; if unsure, leave the detail out. Never invent cases, quotes or laws.
 
+## Audience focus (Luke's rule: most posts are about these three)
+Luke's audience comes for **police**, **HOA** and **county / city government** stories. Make about
+4 in 5 posts about one of these, with police the biggest share (about half of all posts):
+- **Police:** court rulings on traffic stops, searches and arrests; lawsuits and settlements against
+  departments; odd or funny real police calls, tickets and arrests; "what the court decided" cases
+  about everyday encounters. Calm and factual.
+- **HOA:** fines, rules and lawsuits between homeowners and their HOA (flags, paint colours, lawn
+  length, parking, sheds, holiday lights), and who won.
+- **County / city:** code enforcement, permits, zoning, property tax, eminent domain, odd local
+  ordinances, and residents who fought city hall.
+Every post type works for these (real lawsuits, myth vs. fact, weird laws and ordinances,
+history's strangest trials, engagement questions, humour). The other ~1 in 5 can be any topic.
+
+### Police content: how to stay safe on Meta
+Police content is allowed; what gets pages restricted is how it's handled. Always:
+- No violence or injuries in words or pictures: no shootings, beatings, chases, wounds or deaths.
+  Skip cases built around them. Arrests in images are calm and non-violent.
+- No real officer's or suspect's face, and no imitation bodycam frames, mugshots, badges, police
+  logos or official documents in images. Use generic, anonymous scenes (a patrol car at night, a
+  traffic stop from behind, a courtroom).
+- Don't target individuals: name officers or residents only when the case was widely reported, and
+  never encourage anyone to contact, harass or "expose" them. No addresses or badge numbers.
+- Allegations stay allegations ("accused", "the lawsuit claims") unless there was a ruling.
+- Stay neutral: no pro- or anti-police campaigning, no politics, and nothing framed around race.
+  Let the facts and the ruling carry the story; the question at the end can ask what people think.
+- Never give legal advice or say what "your rights" are in general; tell what the court decided in
+  that case ("In this case, the court ruled...").
+- Crime topics already earn less from Meta's monetization; keep the tone calm and factual so
+  posts stay recommendable.
+
 ## Caption
 Keep every caption short and clean (Facebook flags long, info-heavy captions). Layout:
 ```

@@ -3,6 +3,7 @@
 Last updated: 2026-10-07 (starting point; no measured posts yet)
 
 ## Do more
+- Police, HOA and county / city government stories (Luke: that's what the audience follows; police most).
 - Short captions: one punchy line + a question (Luke's rule; Facebook flagged long captions).
 - Single-image posts (Luke: carousels do badly on Facebook).
 

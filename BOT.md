@@ -18,8 +18,9 @@ Read these before writing anything:
    (court records, major news outlets, government or legal sites, encyclopedias). If a fact can't
    be confirmed, cut it or replace the case. If a whole post can't be verified, replace it with
    another topic of the same type. Never guess.
-2. **Engagement and humour posts** never mention violence, crime, injuries, death, real people,
-   minors, politics or anything that could get the page restricted. Never ask people to
+2. **Engagement and humour posts** never mention violence, injuries, death, real people,
+   minors, politics or anything that could get the page restricted. Everyday police, HOA and
+   county topics (traffic stops, tickets, HOA letters, permits) are fine as long as nobody is hurt. Never ask people to
    comment, vote, like, share or tag.
 3. **No realistic images of real people.** Photo posts about real cases show objects, places or
    generic anonymous scenes, never someone made to look like the real person.
@@ -111,7 +112,9 @@ Read these before writing anything:
   searchable hashtags, no engagement bait, Meta rules, fact-checking, carousel limits.
 - Follow `jury-juice-brief.md` for the post's type and style. Carousels use the type's default
   slide count (7) unless the content needs fewer; singles are exactly 1 slide.
-- If the topic hint is empty, choose a fresh topic for that type.
+- If the topic hint is empty, choose a fresh topic for that type. **Follow the brief's "Audience
+  focus"**: about 4 in 5 posts on police, HOA or county/city government (police the biggest share),
+  and the brief's police safety rules on every police post.
 - Output for each post: `slides` (text, and `scene` for photo style), `caption`, and for real
   types a `sources` list (item + source URL or citation).
 - Run the humanizer rules over the slides and caption. Check the banned words list.
