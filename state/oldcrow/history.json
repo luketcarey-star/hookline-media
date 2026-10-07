@@ -270,6 +270,38 @@
       },
       "status": "scheduled",
       "metrics": {}
+    },
+    {
+      "date": "2026-10-07",
+      "n": 7,
+      "type": "sold",
+      "format": "single",
+      "style": "illus",
+      "title": "Who Made Breakfast So Important?",
+      "topic": "Breakfast as the most important meal of the day",
+      "slides": [
+        "WHO MADE BREAKFAST SO IMPORTANT?"
+      ],
+      "caption": "(see Buffer post)",
+      "sources": [
+        {
+          "item": "1917 Good Health article by Lenna Cooper; magazine edited by John Harvey Kellogg",
+          "source": "HuffPost Canada, 2014"
+        },
+        {
+          "item": "Edward Bernays bacon-and-eggs breakfast campaign",
+          "source": "HuffPost Canada, 2014"
+        }
+      ],
+      "imageFolder": "posts/oldcrow/2026-10-07/7-sold",
+      "facebook": {
+        "postId": "6ac6c5682977c961bdb958e4",
+        "plannedAt": "2026-10-07T20:25:00-04:00"
+      },
+      "status": "scheduled",
+      "metaCheck": "passed",
+      "note": "made by hand after the queue was cleared",
+      "metrics": {}
     }
   ],
   "ideas": []

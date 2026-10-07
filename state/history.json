@@ -392,6 +392,38 @@
       },
       "status": "scheduled",
       "metrics": {}
+    },
+    {
+      "date": "2026-10-07",
+      "n": 7,
+      "type": "list",
+      "format": "single",
+      "style": "photo",
+      "title": "One Broken Brake Light",
+      "topic": "Heien v. North Carolina (2014): traffic stop over one broken brake light",
+      "slides": [
+        "A driver was pulled over for **one broken brake light**. The law only required one. The **Supreme Court** still said the stop was fine."
+      ],
+      "caption": "One broken brake light took this traffic stop all the way to the Supreme Court. Would you have ruled the same way?\n\n#JuryJuice #TrafficStop #SupremeCourt\n\nSource: Heien v. North Carolina (2014)",
+      "sources": [
+        {
+          "item": "Heien v. North Carolina, 574 U.S. 54 (2014), 8-1: reasonable mistake of law can support a stop",
+          "source": "U.S. Supreme Court"
+        }
+      ],
+      "imageFolder": "posts/2026-10-07/7-list",
+      "facebook": {
+        "postId": "6ac6c5612977c961bdb95832",
+        "plannedAt": "2026-10-07T19:40:00-04:00"
+      },
+      "instagram": {
+        "postId": "6ac6c56401166a3e1c08294e",
+        "plannedAt": "2026-10-07T20:05:00-04:00"
+      },
+      "status": "scheduled",
+      "metaCheck": "passed",
+      "note": "made by hand after the queue was cleared",
+      "metrics": {}
     }
   ],
   "ideas": []
