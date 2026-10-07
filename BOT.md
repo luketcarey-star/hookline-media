@@ -74,7 +74,8 @@ Read these before writing anything:
 - Install nothing new unless needed; `playwright` (with Chromium) is preinstalled. Run renders with `node render.js`.
 
 ### 2. Update analytics (am run only; skip if no posts yet)
-- For each post in `state/history.json` that was sent 2 to 14 days ago and has a Buffer post ID,
+- For each post in `state/history.json` that was sent 1 to 14 days ago and has a Buffer post ID (refresh them every
+  day so the numbers keep growing),
   call Buffer `get_post` with `includeMetrics: true` (only for those posts; mind rate limits:
   max ~40 calls per run).
 - Save per platform under `metrics.facebook` / `metrics.instagram`: the raw metrics, plus
@@ -176,17 +177,30 @@ For each post, two `create_post` calls:
 
 ### 9. Record and clean up
 - Append each post to `state/history.json` → `posts`:
-  `{date, n, type, format, style, theme, title, topic, slides, sources, imageFolder,
+  `{date, n, type, topicGroup (police | hoa | county | other), format, style, theme, title, topic, slides, sources, imageFolder,
     facebook: {postId, plannedAt}, instagram: {postId, plannedAt}, status: "draft"|"scheduled", metrics: {}}`
 - Delete `posts/<date>` folders older than `keepImagesDays` (already posted; Meta keeps its own copy).
 - Commit and push.
 
-### 10. Weekly review (Sunday am run only)
-- Compare engagement by type, format+style, and posting hour per platform (enough data only).
-- Add 2 or 3 new post ideas to `state/history.json` → `ideas` (with date and reasoning).
-- Include the review in the summary.
-- Report what the learnings file changed this week (what's working, what was dropped, what's being
-  tested next) in 2 or 3 plain lines.
+### 10. Weekly report and tune-up (Sunday am run only)
+Write `reports/jury/<date>.md` (commit it) and put the short version at the top of the summary.
+1. **The week in numbers** (last 7 days vs the 7 before): posts made, total reach, reactions,
+   comments, shares, average engagement rate. Use Buffer `get_aggregated_post_metrics` for
+   the totals (Facebook and Instagram, Jury Juice channels) and the per-post `metrics` in `state/history.json`.
+2. **Top 3 and bottom 3 posts** of the week: title, type, style, time posted, reach, engagement
+   rate, and one line on why it likely worked or didn't (hook, topic, image, timing).
+3. **What's working:** engagement by post type, topic group (police / HOA / county / other), style, posting hour.
+   Only call something a pattern if it shows in 3+ posts.
+4. **What changes next week** (make these changes now, then list them):
+   - Rewrite `state/learnings.md` with the new Do more / Do less / Test next.
+   - The planner already shifts post types and hours toward what earns the most engagement; note
+     any big shift it will make.
+   - Add 2 or 3 new post ideas to `ideas` in `state/history.json`, based on the top posts.
+   - Never change Luke's rules to chase numbers (posts per day, platforms, no Facebook
+     carousels, caption style, fact-checking, Meta check). If the data suggests one of those should
+     change, recommend it to Luke in the report instead of doing it.
+5. Summary for Luke (push): 5 to 8 short lines: the headline numbers vs last week, the best post,
+   the weakest post, the 2 or 3 changes made, and any recommendation that needs his OK.
 
 ### 11. Summary for Luke (always, keep it short)
 - What was made: for each post, type, title, planned FB and IG times, draft or scheduled.

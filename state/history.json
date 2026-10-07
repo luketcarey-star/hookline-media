@@ -423,7 +423,8 @@
       "status": "scheduled",
       "metaCheck": "passed",
       "note": "made by hand after the queue was cleared",
-      "metrics": {}
+      "metrics": {},
+      "topicGroup": "police"
     }
   ],
   "ideas": []

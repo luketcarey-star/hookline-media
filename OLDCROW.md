@@ -84,7 +84,7 @@ No then vs. now, no price-in-hours posts, no tweet-style posts, no carousels, no
 - `playwright` (with Chromium) is preinstalled.
 
 ### 2. Update analytics (am run only; skip if no posts yet)
-- For each post in `state/oldcrow/history.json` sent 2 to 14 days ago with a Buffer post ID, call
+- For each post in `state/oldcrow/history.json` sent 1 to 14 days ago with a Buffer post ID (refresh them every day), call
   Buffer `get_post` with `includeMetrics: true` (max ~30 calls).
 - Save under `metrics.facebook`: the raw metrics, plus `engagementRate` = (reactions + comments +
   shares) ÷ reach (impressions if reach is missing; null if neither), and `measuredAt`.
@@ -180,11 +180,25 @@ No then vs. now, no price-in-hours posts, no tweet-style posts, no carousels, no
     facebook: {postId, plannedAt}, status, metrics: {}}`
 - Delete `posts/oldcrow/<date>` folders older than `keepImagesDays`. Commit and push.
 
-### 10. Weekly review (Sunday am run only)
-- Compare engagement by type and posting hour (once there's enough data). Add 2 or 3 post ideas to
-  `ideas` with reasoning. Include it in the summary.
-- Report what the learnings file changed this week (what's working, what was dropped, what's being
-  tested next) in 2 or 3 plain lines.
+### 10. Weekly report and tune-up (Sunday am run only)
+Write `reports/oldcrow/<date>.md` (commit it) and put the short version at the top of the summary.
+1. **The week in numbers** (last 7 days vs the 7 before): posts made, total reach, reactions,
+   comments, shares, average engagement rate. Use Buffer `get_aggregated_post_metrics` for
+   the totals (the Old Crow Facebook channel) and the per-post `metrics` in `state/oldcrow/history.json`.
+2. **Top 3 and bottom 3 posts** of the week: title, type, style, time posted, reach, engagement
+   rate, and one line on why it likely worked or didn't (hook, topic, image, timing).
+3. **What's working:** engagement by post type, topic, style, posting hour.
+   Only call something a pattern if it shows in 3+ posts.
+4. **What changes next week** (make these changes now, then list them):
+   - Rewrite `state/oldcrow/learnings.md` with the new Do more / Do less / Test next.
+   - The planner already shifts post types and hours toward what earns the most engagement; note
+     any big shift it will make.
+   - Add 2 or 3 new post ideas to `ideas` in `state/oldcrow/history.json`, based on the top posts.
+   - Never change Luke's rules to chase numbers (posts per day, platforms, no Facebook
+     carousels, caption style, fact-checking, Meta check). If the data suggests one of those should
+     change, recommend it to Luke in the report instead of doing it.
+5. Summary for Luke (push): 5 to 8 short lines: the headline numbers vs last week, the best post,
+   the weakest post, the 2 or 3 changes made, and any recommendation that needs his OK.
 
 ### 11. Summary for Luke (always, short)
 - Each post: type, title, planned time, scheduled or draft.
