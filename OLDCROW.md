@@ -127,10 +127,13 @@ No then vs. now, no price-in-hours posts, no tweet-style posts, no carousels, no
 ### 5. Fact-check (sold, and any fact in a note or question)
 - Search the web for every claim and figure. Fix or drop anything wrong; if the post's core claim
   can't be confirmed, choose a new topic and rewrite.
-- Keep `sources` in history only. **Captions stay short and clean** (Facebook flags long,
-  info-heavy captions): 1 or 2 short sentences (max ~30 words) ending with a question, a blank
-  line, then 2 or 3 hashtags starting with #OldCrow. No `References:` block, no sources, no links, no listing
-  every figure; a little mystery is fine. Facts are still checked, just not shown.
+- Keep `sources` in history only. **Captions must be engaging and inspiring** (Luke's rule; length
+  is free, quality is what matters): a strong first line that hooks, the story in 2 to 4 short
+  paragraphs (told or sold: where the belief came from, who started it, who benefits today), and a
+  reflective question at the end, in the old raven's warm voice. Every line earns its place. No
+  sources, links or `References:` in the caption, no engagement bait, never preachy.
+- **Told-or-sold images show only the title** (the belief, e.g. "WHO MADE BREAKFAST SO IMPORTANT?").
+  No subtitle or second line on the image; everything else goes in the caption.
 - **Hashtags:** the page tag first, then 1 or 2 popular, widely searched tags that name the post's
   actual subject, in CamelCase (e.g. #McDonalds #LawFacts, #GuineaPigs #WeirdLaws, #Nostalgia,
   #SlowLiving, #EngagementRing). Never made-up or niche tags nobody searches (#oldcrowasks,

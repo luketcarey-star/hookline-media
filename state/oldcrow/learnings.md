@@ -4,12 +4,12 @@ Last updated: 2026-10-07 (starting point; no measured posts yet)
 
 ## Do more
 - Told-or-sold posts with both ravens and one object (Luke: match the video themes; image posts only).
-- Short captions: one punchy line + a question (Luke's rule; Facebook flagged long captions).
+- Engaging, inspiring captions: a hook, the story in short paragraphs, a reflective question (Luke's rule for Old Crow; length is free).
 - Single-image posts (Luke: carousels do badly on Facebook).
 
 ## Do less
 - Carousels (max 1 a day, 2 a week).
-- Long, detailed captions or source lists.
+- Source lists or citations in captions.
 
 ## Test next
 - Different closing questions: "would you" vs. "did you know" vs. "what's yours".
