@@ -155,12 +155,40 @@ per_post = len(cfg.get("platforms", ["facebook", "instagram"]))
 room = max(0, (BUFFER_LIMIT - queued) // per_post)
 limited_by_buffer = room < n
 n = min(n, room)
+
+
+def enforce_carousel_caps(slots):
+    """Carousels do badly on Facebook: keep them rare. Swap any carousel over the daily or weekly cap
+    for a single-image version of the same type, or else for a single-image type."""
+    day_cap = cfg.get("maxCarouselsPerDay", 1)
+    week_cap = cfg.get("maxCarouselsPerWeek", 99)
+    week_start = (day - dt.timedelta(days=6)).isoformat()
+    in_day = sum(1 for p in today_posts if p.get("format") == "carousel")
+    in_week = sum(1 for p in hist["posts"] if p.get("format") == "carousel" and week_start <= p.get("date", "") <= day.isoformat())
+    out = []
+    for sl in slots:
+        if sl["format"] == "carousel" and (in_day >= day_cap or in_week >= week_cap):
+            singles = [c for c in cfg["formats"].get(sl["type"], []) if c[0] == "single"]
+            if singles:
+                c = rng.choice(singles)
+                sl = dict(sl, format="single", style=c[1], why=sl.get("why", "") + "; carousel cap -> single")
+            else:
+                used_types = {x["type"] for x in out} | {x["type"] for x in slots} | {p["type"] for p in today_posts}
+                opts = [t for t, cs in cfg["formats"].items() if any(c[0] == "single" for c in cs)]
+                t = rng.choice([t for t in opts if t not in used_types] or opts)
+                c = rng.choice([c for c in cfg["formats"][t] if c[0] == "single"])
+                sl = dict(sl, type=t, format="single", style=c[1], topic=None, why=sl.get("why", "") + f"; carousel cap -> {t}")
+        if sl["format"] == "carousel":
+            in_day += 1; in_week += 1
+        out.append(sl)
+    return out
+
 taken = {pl: taken_times(pl) for pl in ("facebook", "instagram")}
 out = []
 # Tweet posts rotate backgrounds: black -> white (light) -> classic Twitter navy (dim) -> black...
 THEMES = ["black", "light", "dim"]
 last_theme = next((p["theme"] for p in reversed(hist["posts"]) if p.get("style") == "tweet" and p.get("theme") in THEMES), "dim")
-for s in plan_slots(n):
+for s in enforce_carousel_caps(plan_slots(n)):
     fb = pick_time(s["window"], "facebook", taken["facebook"])
     ig = pick_time(s["window"], "instagram", taken["instagram"] + ([fb] if fb else []))
     if not fb or not ig:
