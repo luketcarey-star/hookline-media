@@ -124,6 +124,8 @@ def plan_slots(n):
         cap = cfg.get("maxCarouselsPerDay")
         carousels = sum(1 for p in today_posts if p.get("format") == "carousel") + sum(1 for x in slots if x["format"] == "carousel")
         allowed = [t for t in cfg["formats"] if not (cap is not None and carousels >= cap and all(c[0] == "carousel" for c in cfg["formats"][t]))]
+        caps = cfg.get("maxPerDay", {})
+        allowed = [t for t in allowed if used[t] < caps.get(t, 99)] or allowed
         options = [t for t in allowed if used[t] < 1] or [t for t in allowed if used[t] < 2] or allowed
         t, why = weighted_pick(options, type_scores, cfg["minPostsBeforeLearningType"])
         used[t] += 1

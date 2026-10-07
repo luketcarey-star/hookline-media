@@ -17,22 +17,22 @@ Everything about how Old Crow posts are written and drawn comes from Hookline it
 Also read `state/oldcrow/config.json` (mode, Buffer IDs, windows, image settings) and use the
 `meta-posting-rules` and `humanizer` skills if they are available.
 
-## Post types (Illustrated, except some question posts)
+## Post types (all single illustrated images with the ravens; Luke's rule)
+Every post is about one belief or habit we were **told or sold**, shown through the two ravens and
+one everyday object, so the images feel like stills from the Old Crow videos. Daily mix of 5:
+roughly 2 told or sold, 2 questions, 1 note.
 | id | what | format | images |
 |---|---|---|---|
-| thennow | Then vs. now: one split image (old object in colour on top, today's in black and white below), no text; caption explains | single | 1 |
-| price | The price in hours of work: split left/right with price tags; how much less work things took to afford back then | single | 1 |
-| question | One question from the old raven: Illustrated (question as the title over the old raven) about 2 in 3 times, or a Tweet slide (Old Crow tweet card with blue check, no image) about 1 in 3 | single | 1 or 0 |
-| sold | Things we're sold: one slide, a short hook over a black-and-white animal flashback; the caption tells the history | single | 1 |
-| note | The old raven's short note to the reader, over the old raven with the object | single | 1 |
+| sold | **Told or sold** (main type): both ravens in a warm everyday place, the young raven holding or pointing at the object, the old raven beside him; the belief as the title ("WHY A DIAMOND RING?"); the caption gives the real history and who benefits | single | 1 |
+| question | The old raven's question: the old raven alone with the object, his question as the title | single | 1 |
+| note | The old raven's short note about a told-or-sold belief, over the old raven with the object | single | 1 |
+No then vs. now, no price-in-hours posts, no tweet-style posts, no carousels, no animal flashbacks.
 
 ## Hard rules (never break these)
-1. **Real facts are verified.** For thennow, price and sold, every date, price, wage, company,
-   campaign and historical claim must be confirmed with web search against reliable sources
-   (government statistics, historical archives, encyclopedias, major newspapers, museums). For
-   price posts both tags must use the same country and sourced figures; if the data doesn't clearly
-   show it took less work back then, pick another item. If a fact can't be confirmed, cut it or
-   change the topic. Never guess or stretch numbers.
+1. **Real facts are verified.** For told-or-sold posts (and any note or question that states a
+   fact), every date, company, campaign, study and historical claim must be confirmed with web
+   search against reliable sources (historical archives, encyclopedias, major newspapers, museums,
+   government statistics). If a fact can't be confirmed, cut it or change the topic. Never guess.
 2. **Never repeat a topic or a title.** Check `state/oldcrow/history.json` (topics, titles, objects)
    and pass earlier topics in `avoid.json` to the writing prompt.
 3. **Images stay on model.** Every `generate_image` call uses model `sunburst`, quality `high`,
@@ -41,8 +41,8 @@ Also read `state/oldcrow/config.json` (mode, Buffer IDs, windows, image settings
    0 (the image connector hasn't been updated yet) or reference downloads fail, stop making images,
    make nothing for that post, and tell Luke at the top of the summary. Never post raven images
    made without the character sheets.
-4. **OpenAI credit out = no more image prompts.** If config has `"imagesPaused": true`, make only
-   tweet-style question posts (no images), and say so in the summary. If any
+4. **OpenAI credit out = no more image prompts.** If config has `"imagesPaused": true`, make no
+   posts at all (Old Crow is image-only) and say so at the top of the summary. If any
    `generate_image` call fails because the account is out of money ("insufficient_quota", "billing",
    "credit", "hard limit", "exceeded your current quota", or a 429 about quota), stop all image
    prompts immediately, set `"imagesPaused": true` and `"imagesPausedReason"` (date + error) in
@@ -122,7 +122,7 @@ Also read `state/oldcrow/config.json` (mode, Buffer IDs, windows, image settings
   Produce the same JSON it asks for: `topic`, `slides` (`text` + `scene`), `caption`, and `sources`
   for real types.
 
-### 5. Fact-check (thennow, price, sold)
+### 5. Fact-check (sold, and any fact in a note or question)
 - Search the web for every claim and figure. Fix or drop anything wrong; if the post's core claim
   can't be confirmed, choose a new topic and rewrite.
 - Keep `sources` in history only. **Captions stay short and clean** (Facebook flags long,
@@ -147,8 +147,8 @@ Also read `state/oldcrow/config.json` (mode, Buffer IDs, windows, image settings
   offers that field. The result
   names the saved file; copy it to `work/p<n>/img<k>.jpg` and add `"image":"img<k>.jpg"` to that slide.
 - `node render.js work/p<n>/spec.json posts/oldcrow/<date>/<n>-<type>/`.
-- Look at every rendered slide. Check the ravens look like the character sheets, split images are
-  really split (colour vs. black and white, no text in the art), price tags are readable and correct.
+- Look at every rendered slide. Check the ravens look like the character sheets (outfits, colours, eyes), the
+  object is clear, there is no text in the art, and the title is readable.
   Regenerate an image once if it's clearly wrong; if it's still wrong, swap the post for another
   type and say so in the summary.
 

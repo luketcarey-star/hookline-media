@@ -3,6 +3,7 @@
 Last updated: 2026-10-07 (starting point; no measured posts yet)
 
 ## Do more
+- Told-or-sold posts with both ravens and one object (Luke: match the video themes; image posts only).
 - Short captions: one punchy line + a question (Luke's rule; Facebook flagged long captions).
 - Single-image posts (Luke: carousels do badly on Facebook).
 
@@ -12,5 +13,4 @@ Last updated: 2026-10-07 (starting point; no measured posts yet)
 
 ## Test next
 - Different closing questions: "would you" vs. "did you know" vs. "what's yours".
-- Tweet backgrounds: black vs. white vs. navy.
 - Posting hours outside the usual windows' busiest times.
