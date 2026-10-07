@@ -458,85 +458,68 @@ const PAGES = {
             {id:"photo", label:"Photo story", hint:"One short sentence per slide (15 words max) in big capitals over a photo. Wrap words in <code>**double asterisks**</code> to make them orange. The picture comes from the image description below."}],
     photoStyle:"Realistic editorial news-style photograph, candid and emotional, natural light, true-to-life colours, sharp focus on the subject with a slightly shallow depth of field. Ordinary real people and everyday places, nothing glamorous or staged.",
     imageStyle:"Ordinary documentary-style photo, plain and unpolished, flat natural or fluorescent lighting, slightly washed-out colours, not cinematic. Courtrooms are beige wood-panelled with flat fluorescent light; police are ordinary patrol officers; code enforcement officers wear beige uniforms.",
-    voice:`Jury Juice is a Facebook and Instagram page about the law in everyday life: real, bizarre lawsuits that actually happened, myths about famous cases, weird laws, strange trials from history, light courtroom humour and simple questions about fairness.
+    voice:`Jury Juice is a Facebook and Instagram page about the law in everyday life, focused on three things its audience loves: police (traffic stops, searches, arrests, tickets and the lawsuits and court rulings that follow), HOAs (fines, rules and homeowner fights) and county / city government (code enforcement, permits, zoning, property and residents who fought city hall).
 Voice: simple, natural and easy to follow, like someone telling a surprising legal story to a friend. Little legal jargon. Calm and factual, never sensational or shocking.
-Real cases, laws and historical trials must be real and widely documented. Only use names, dates, amounts and outcomes you are highly confident of; if unsure, leave the detail out. Never invent cases, quotes or laws.`,
+Real cases, laws and rulings must be real and widely documented. Only use names, dates, amounts and outcomes you are highly confident of; if unsure, leave the detail out. Never invent cases, quotes or laws.
+Police posts: no violence, injuries or deaths (skip cases built around them); allegations stay allegations; never encourage anyone to contact or harass a named officer or resident; stay neutral, no politics and nothing framed around race; never say what "your rights" are in general, say what the court decided in that case.`,
     cta:"Follow for more",
     caption:`Also write a short, concise caption: one short line (max about 20 words) that teases the post and ends with an open question, then a blank line and 2 or 3 hashtags starting with #JuryJuice. Keep it short: no sources, no References list, no case citations, no links, and don't explain every detail; a little mystery is fine. (Facts are still checked behind the scenes.) Never tell people to comment, vote, like, share or tag. Hashtags: the page tag first, then 1 or 2 popular, widely searched tags that name the post's actual subject (e.g. #McDonalds #LawFacts #GuineaPigs #WeirdLaws #Nostalgia #SlowLiving #EngagementRing), in CamelCase. Never made-up or niche tags nobody searches (like #oldcrowasks #thingswearesold #notes #busy), never generic filler (#history #facts).`,
     real:true,
     formats:[
-      {id:"list", label:"Real lawsuits", count:7, cta:"Follow for more", real:true,
-       hint:"Real, widely reported lawsuits. Every case gets fact-checked before posting.",
-       guide:`A list of real, bizarre lawsuits.
-- Slide 1: only a short hook in the style "5 lawsuits too bizarre to be real", using the actual number of case slides. Nothing else on slide 1.
-- Every slide between the first and the last is one real case, written as exactly two paragraphs: a one-sentence hook stating the bizarre part (max 14 words), then one or two sentences with who or where and how it ended (max 30 words).
+      {id:"list", label:"Real cases: police, HOA & county", count:7, cta:"Follow for more", real:true,
+       hint:"Real, widely reported cases about police, HOAs or county / city government. Each slide shows a short source. Fact-checked before posting.",
+       guide:`A list of real, surprising cases about police, HOAs or county / city government (pick one of the three per post, or a clear mix like "the city vs. homeowners").
+- Slide 1: only a short hook using the actual number of case slides, like "5 traffic stops that ended up in court" or "4 HOA fights homeowners actually won". Nothing else on slide 1.
+- Every slide between the first and the last is one real case, written as a one-sentence hook stating the surprising part (max 14 words), then a blank line and one or two sentences with who or where and how it ended (max 30 words). Every slide that describes a real case or law ends with a third, separate paragraph giving its short source, exactly in the form "Source: <case name and year, or publication and year, or code section>" (max 8 words, for example "Source: Heien v. North Carolina (2014)" or "Source: AP News, 2019"). It is drawn small at the bottom of the slide.
 - On each case slide, wrap the 1 to 3 most striking phrases in **double asterisks** for bold. On at most two slides, you may instead underline one short punchline with __double underscores__.
 - The last slide is exactly: Follow for more
-- If this is a single post, it is ONE real case: a hook sentence, a blank line, then who or where and how it ended.
-- Only use cases you are highly confident really happened and were widely reported. If the creator's notes list cases or facts, use those.`},
-      {id:"myth", label:"Myth vs. fact: famous cases", count:7, cta:"Follow for more", real:true,
-       hint:"What most people get wrong about a famous case. Fact-checked before posting.",
-       guide:`Correct a popular myth about one famous, real legal case.
-- Slide 1: a hook like "What most people get wrong about the [case] lawsuit" (max 14 words).
-- Slide 2: the myth most people believe, starting with "**Myth:**".
-- Middle slides: the real facts, one per slide, each starting with "**Fact:**" (max 35 words each): who, what actually happened, what the court decided and why.
-- Second-to-last slide: what the case actually changed or teaches.
-- Last slide: Follow for more
-- Describe any injuries in plain, non-graphic words. Never describe wounds, burns or bodies in detail.`},
-      {id:"laws", label:"Weird laws still on the books", count:7, cta:"Follow for more", real:true,
-       hint:"Only laws we can confirm really exist. Fact-checked before posting.",
-       guide:`A list of strange laws that really exist today.
-- Slide 1: a hook like "5 weird laws that are still on the books" (use the real number of law slides).
-- Each middle slide is one law: first paragraph names the place and the rule in plain words with the funniest part in **bold** (max 18 words); second paragraph gives the reason it exists or how it's actually enforced, if known (max 25 words).
-- Only include laws you are highly confident are real and still in force, with a specific place. Many viral "weird law" lists are myths; skip anything you aren't sure about.
+- If this is a single post, it is ONE real case: a hook sentence, a blank line, who or where and how it ended, then the source paragraph.
+- Only use cases you are highly confident really happened and were widely reported or decided by a court. If the creator's notes list cases or facts, use those.`},
+      {id:"laws", label:"Weird laws, ordinances & HOA rules", count:7, cta:"Follow for more", real:true,
+       hint:"Real local ordinances, police-enforced rules and HOA rules people got fined for. Each slide shows a short source. Fact-checked before posting.",
+       guide:`Strange rules that really exist today, from county / city codes, rules police actually enforce, or HOA rules that went to court.
+- Slide 1: a hook like "5 city rules you can get fined for" or "4 HOA rules courts actually upheld" (use the real number of rule slides).
+- Each middle slide is one rule: first paragraph names the place and the rule in plain words with the funniest part in **bold** (max 18 words); second paragraph gives the reason it exists or how it's actually enforced, if known (max 25 words). Every slide that describes a real case or law ends with a third, separate paragraph giving its short source, exactly in the form "Source: <case name and year, or publication and year, or code section>" (max 8 words, for example "Source: Heien v. North Carolina (2014)" or "Source: AP News, 2019"). It is drawn small at the bottom of the slide.
+- Only include rules you are highly confident are real and still in force, with a specific place. Many viral "weird law" lists are myths; skip anything you aren't sure about.
 - Last slide: Follow for more`},
-      {id:"history", label:"History's strangest trials", count:7, cta:"Follow for more", real:true,
-       hint:"Real, documented trials from history. Fact-checked before posting.",
-       guide:`Real, strange trials from history.
-- Slide 1: a hook like "4 of the strangest trials in history".
-- Each middle slide is one trial: first paragraph says when, where and what was strange, with the strangest part in **bold** (max 18 words); second paragraph says how it ended (max 25 words).
-- Focus on the absurd or surprising part. Never describe punishments, executions, torture or violence; if a trial ended that way, choose a different trial.
+      {id:"history", label:"Strangest trials: police, HOA & county", count:7, cta:"Follow for more", real:true,
+       hint:"Real, documented court cases from the past about police, HOAs or local government with a strange twist. Each slide shows a short source. Fact-checked before posting.",
+       guide:`Real court cases from the past (any era, including famous Supreme Court cases) about police stops and searches, HOAs or county / city government, picked for the strange or surprising twist.
+- Slide 1: a hook like "4 of the strangest police cases ever to reach court".
+- Each middle slide is one case: first paragraph says when, where and what was strange, with the strangest part in **bold** (max 18 words); second paragraph says how it ended (max 25 words). Every slide that describes a real case or law ends with a third, separate paragraph giving its short source, exactly in the form "Source: <case name and year, or publication and year, or code section>" (max 8 words, for example "Source: Heien v. North Carolina (2014)" or "Source: AP News, 2019"). It is drawn small at the bottom of the slide.
+- Focus on the absurd or surprising part. Never describe violence, injuries, punishments or deaths; if a case is built around them, choose a different case.
 - Last slide: Follow for more`},
-      {id:"engage", label:"Quick engagement question", count:1, single:true,
-       hint:"One light, open question. Always a single post.",
-       guide:`One light, open question about everyday legal life or fairness: jury duty, contracts, neighbours, landlords, tipping, refunds, parking, small disputes.
-- At most 20 words. A question people can answer from their own experience or opinion.
-- Never mention crime, violence, injuries, death, real people, minors or anything sensitive.
-- Never tell people to comment, vote, like, share or tag. Just ask the question.`},
-      {id:"humour", label:"Courtroom humour (meme)", count:1, single:true,
-       hint:"An original, relatable joke about courts, jury duty or legal life. Always a single post.",
-       guide:`One original, relatable joke about courtroom life, jury duty, legal paperwork, lawyers' jargon, or petty everyday disputes.
-- Short meme text, at most 20 words, often in a setup/punchline shape ("Me after jury duty:", "When the judge says...").
-- No real people, no crime or violence, no insults about groups of people, no profanity.
-- If an image is used, describe an original scene (no existing meme templates, no logos).`}
+      {id:"engage", label:"Quick question: police, HOA & county", count:1, single:true, oneLine:true,
+       hint:"One open question about police, HOAs or local government. Just the question, nothing else on the slide.",
+       guide:`One open question about everyday life with police, HOAs or county / city government: traffic stops, tickets, speed traps, HOA letters and fines, permits, property tax, code enforcement, neighbours' complaints.
+- The slide text is ONLY the question itself: one sentence, at most 20 words. No second line, no explanation, no context sentence, no hashtags, no call to action.
+- A question people can answer from their own experience or opinion.
+- Never mention violence, injuries, death, real people, minors, politics or race.
+- Never tell people to comment, vote, like, share or tag. Just ask the question.`}
     ],
     ideas:[
-      {fmt:"list", title:"5 lawsuits over food that were too wild to win"},
-      {fmt:"list", title:"5 times someone sued a celebrity for the strangest reason"},
-      {fmt:"list", title:"5 lawsuits against big brands over their own ads"},
-      {fmt:"myth", title:"What most people get wrong about the hot coffee lawsuit"},
-      {fmt:"myth", title:"The truth behind the Pepsi Harrier jet lawsuit"},
-      {fmt:"laws", title:"5 weird laws that are still on the books in Canada"},
-      {fmt:"laws", title:"Strange laws about animals that really exist"},
-      {fmt:"history", title:"When animals were put on trial in medieval Europe"},
-      {fmt:"history", title:"The strangest lawsuits of the 1800s"},
-      {fmt:"engage", title:"Would you rather be judged by a jury or a single judge?"},
-      {fmt:"engage", title:"Jury duty: excited or dreading it?"},
-      {fmt:"humour", title:"Getting a jury duty summons the week of your vacation"},
-      {fmt:"humour", title:"Lawyers explaining a one-page contract in 40 pages"}
+      {fmt:"list", title:"5 traffic stops that ended up in the Supreme Court"},
+      {fmt:"list", title:"HOA fights homeowners actually won"},
+      {fmt:"list", title:"Times a city fined people for their own front yard"},
+      {fmt:"laws", title:"City rules you can get fined for without knowing"},
+      {fmt:"laws", title:"HOA rules that courts actually upheld"},
+      {fmt:"history", title:"The strangest police cases ever to reach court"},
+      {fmt:"history", title:"When a city took homes and the project never happened"},
+      {fmt:"engage", title:"What's the pettiest HOA letter you've ever gotten?"},
+      {fmt:"engage", title:"Should cities be allowed to ticket you for your lawn?"},
+      {fmt:"engage", title:"What's the strangest reason you've been pulled over?"}
     ],
     example:{
-      topic:"Lawsuits too bizarre to be real", format:"list",
+      topic:"Small things the police or the city took to court", format:"list",
       slides:[
-        "5 lawsuits too bizarre to be real",
-        "A man once **sued himself for $5 million**.\n\nRobert Lee Brock, a Virginia inmate, claimed he violated his own civil rights. The case was **dismissed** almost instantly.",
-        "A business student saw a **Pepsi commercial joke** offering a Harrier jet for points.\n\nHe raised **$700,000** to cash in 7 million points. The court ruled it was __clearly a joke__.",
-        "A Portland man sued **Michael Jordan and Nike's Phil Knight** for a combined $832 million.\n\nHis complaint? He was **tired of being mistaken** for Jordan. He later dropped it.",
-        "Someone sued over **underfilled Junior Mints boxes**.\n\nThe judge tossed it out, noting a reasonable customer **expects some empty space** in the box.",
-        "Red Bull faced a lawsuit over its **'gives you wings'** slogan.\n\nNo real wings, of course. The company **settled for $13 million**, offering buyers $10 each.",
+        "4 small things that ended up in court",
+        "A driver was stopped over **one broken brake light**.\n\nThe stop reached the U.S. Supreme Court, which ruled the officer's **reasonable mistake** about the law still counted.\n\nSource: Heien v. North Carolina (2014)",
+        "After a traffic ticket was done, an officer **kept the driver waiting for a drug dog**.\n\nThe Supreme Court ruled police **can't stretch a finished stop** without reasonable suspicion.\n\nSource: Rodriguez v. United States (2015)",
+        "A Florida village made a couple **dig up their front-yard vegetable garden**.\n\nThey lost in court, but in 2019 Florida passed a law **banning local veggie garden bans**.\n\nSource: Ricketts v. Village of Miami Shores (2017)",
+        "A city **took people's homes** for a private development.\n\nThe Supreme Court allowed it. The project was never built and the land __sat empty for years__.\n\nSource: Kelo v. City of New London (2005)",
         "Follow for more"
       ],
-      caption:"One man sued himself. Another wanted a fighter jet from Pepsi. Which one would you have thrown out first?\n\n#JuryJuice #BizarreLawsuits"
+      caption:"One brake light went all the way to the Supreme Court. Which of these would you have ruled differently?\n\n#JuryJuice #TrafficStop #HOA"
     }
   },
   oldcrow: {
@@ -681,6 +664,24 @@ const track = $("track");
 function smart(x){
   return x.replace(/(^|[\s(\[—-])"/g,"$1“").replace(/"/g,"”").replace(/(^|[\s(\[—-])'/g,"$1‘").replace(/'/g,"’");
 }
+// A "Source: ..." paragraph on a slide is drawn small at the bottom instead of in the main text.
+function splitSource(text){
+  let src = "";
+  const body = String(text || "").split(/\n[ \t]*\n+/).filter(b => {
+    const m = b.trim().match(/^(?:\*\*)?sources?:(?:\*\*)?\s*(.+)$/is);
+    if (m){ src = (src ? src + "; " : "") + m[1].replace(/\*\*|__/g, "").replace(/\s+/g, " ").trim(); return false; }
+    return true;
+  }).join("\n\n");
+  return {body, src};
+}
+function drawSourceLine(ctx, src, x, y, maxW, color, align){
+  if (!src) return;
+  ctx.save(); ctx.font = `500 24px ${INTER}`; ctx.fillStyle = color; ctx.textAlign = align || "left"; ctx.textBaseline = "alphabetic";
+  let t = "Source: " + src;
+  while (ctx.measureText(t).width > maxW && t.length > 12) t = t.slice(0, -2);
+  if (t !== "Source: " + src) t = t.replace(/\s*\S*$/, "") + "…";
+  ctx.fillText(t, x, y); ctx.restore();
+}
 function parseBlocks(text){
   const sp = page().speakers;
   return smart(String(text)).split(/\n[ \t]*\n+/).map(b => b.trim()).filter(Boolean).map(b => {
@@ -780,7 +781,9 @@ function drawTweet(canvas, i){
   const T = THEMES[p.theme] || THEMES.black, scale = p.size/100;
   const P = 120, AV = 100, LH = 1.5;
   const fq = (page().formats || []).find(x => x.id === d.format) || {};
-  const raw = fq.noQuotes ? d.slides[i].text.replace(/["“”]/g, "") : d.slides[i].text;
+  const sp = splitSource(fq.noQuotes ? d.slides[i].text.replace(/["“”]/g, "") : d.slides[i].text);
+  let raw = sp.body;
+  if (fq.oneLine) raw = (raw.split(/\n[ \t]*\n+/)[0] || raw).trim();
   const handle = "@" + (p.handle || "handle").replace(/^@+/, "");
   ctx.save();
   ctx.fillStyle = T.bg; ctx.fillRect(0,0,W,H);
@@ -800,7 +803,7 @@ function drawTweet(canvas, i){
 
   // Old Crow tweets show the lines only, with no small speaker labels above them.
   const blocks = parseBlocks(raw).map(b => page().speakers ? {...b, label:null} : b);
-  const maxW = W - P*2, maxH = H - 2*150 - AV - 90;
+  const maxW = W - P*2, maxH = H - 2*150 - AV - 90 - (sp.src ? 70 : 0);
   const measure = sz => {
     let h = 0;
     const items = blocks.map((b,k) => {
@@ -854,6 +857,7 @@ function drawTweet(canvas, i){
       y += size*LH;
     }
   });
+  drawSourceLine(ctx, sp.src, P, H - 70, maxW, T.sub, "left");
   ctx.restore();
 }
 
@@ -862,7 +866,8 @@ function drawPhoto(canvas, i){
   const ctx = canvas.getContext("2d"), p = pf(), d = deck(), s = d.slides[i], scale = p.size/100;
   ctx.save();
   if (!coverImage(ctx, s)) placeholder(ctx, "#1A1C20", "#8A9099", "Image not generated yet");
-  const text = smart(s.text.replace(/\n\s*\n/g, "\n"));
+  const sp = splitSource(s.text);
+  const text = smart(sp.body.replace(/\n\s*\n/g, "\n"));
   const P = 70, maxW = W - P*2;
   let sz = Math.round(104*scale), lines;
   const fontOf = () => `400 ${sz}px ${BEBAS}`;
@@ -896,6 +901,7 @@ function drawPhoto(canvas, i){
       ctx.fillText(wd.t, x, y); x += wd.w;
     }
   });
+  drawSourceLine(ctx, sp.src, W/2, H - 44, W - 120, "rgba(255,255,255,0.72)", "center");
   ctx.restore();
 }
 

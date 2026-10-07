@@ -34,7 +34,7 @@
       },
       {
         "window": "afternoon",
-        "type": "humour",
+        "type": "engage",
         "format": "single",
         "style": "tweet",
         "topic": "jury duty summons meme"
@@ -50,10 +50,10 @@
     "2026-10-08": [
       {
         "window": "morning",
-        "type": "myth",
+        "type": "list",
         "format": "carousel",
         "style": "tweet",
-        "topic": "a common traffic-stop myth, told through one real ruling (e.g. Rodriguez v. United States, 2015: a stop can't be stretched out to wait for a drug dog)"
+        "topic": "a traffic-stop ruling that surprised people (e.g. Rodriguez v. United States, 2015: a stop can't be stretched out to wait for a drug dog)"
       },
       {
         "window": "afternoon",
@@ -80,10 +80,10 @@
       },
       {
         "window": "afternoon",
-        "type": "humour",
+        "type": "engage",
         "format": "single",
         "style": "tweet",
-        "topic": "the HOA letter about your grass being a quarter inch too long"
+        "topic": "police question: should officers be allowed to ticket from unmarked cars?"
       },
       {
         "window": "evening",
@@ -110,10 +110,10 @@
       },
       {
         "window": "evening",
-        "type": "myth",
+        "type": "list",
         "format": "carousel",
         "style": "tweet",
-        "topic": "myths about police traffic stops, each answered with what a specific court ruled"
+        "topic": "traffic stops that ended up in court over something tiny (calm, non-violent cases only)"
       }
     ],
     "2026-10-11": [
@@ -126,10 +126,10 @@
       },
       {
         "window": "afternoon",
-        "type": "humour",
+        "type": "engage",
         "format": "single",
         "style": "tweet",
-        "topic": "when the HOA president also runs the neighbourhood Facebook group"
+        "topic": "HOA question: the pettiest HOA letter you've ever gotten"
       },
       {
         "window": "evening",

@@ -4,9 +4,10 @@
 Name: Jury Juice  ·  Handle on slides: @Juryjuice
 
 ## Voice
-Jury Juice is a Facebook and Instagram page about the law in everyday life: real, bizarre lawsuits that actually happened, myths about famous cases, weird laws, strange trials from history, light courtroom humour and simple questions about fairness.
+Jury Juice is a Facebook and Instagram page about the law in everyday life, focused on three things its audience loves: police (traffic stops, searches, arrests, tickets and the lawsuits and court rulings that follow), HOAs (fines, rules and homeowner fights) and county / city government (code enforcement, permits, zoning, property and residents who fought city hall).
 Voice: simple, natural and easy to follow, like someone telling a surprising legal story to a friend. Little legal jargon. Calm and factual, never sensational or shocking.
-Real cases, laws and historical trials must be real and widely documented. Only use names, dates, amounts and outcomes you are highly confident of; if unsure, leave the detail out. Never invent cases, quotes or laws.
+Real cases, laws and rulings must be real and widely documented. Only use names, dates, amounts and outcomes you are highly confident of; if unsure, leave the detail out. Never invent cases, quotes or laws.
+Police posts: no violence, injuries or deaths (skip cases built around them); allegations stay allegations; never encourage anyone to contact or harass a named officer or resident; stay neutral, no politics and nothing framed around race; never say what "your rights" are in general, say what the court decided in that case.
 
 ## Audience focus (Luke's rule: most posts are about these three)
 Luke's audience comes for **police**, **HOA** and **county / city government** stories. Make about
@@ -18,8 +19,7 @@ Luke's audience comes for **police**, **HOA** and **county / city government** s
   length, parking, sheds, holiday lights), and who won.
 - **County / city:** code enforcement, permits, zoning, property tax, eminent domain, odd local
   ordinances, and residents who fought city hall.
-Every post type works for these (real lawsuits, myth vs. fact, weird laws and ordinances,
-history's strangest trials, engagement questions, humour). The other ~1 in 5 can be any topic.
+Every post type is built around these three. The other ~1 in 5 can be any real legal story.
 
 ### Police content: how to stay safe on Meta
 Police content is allowed; what gets pages restricted is how it's handled. Always:
@@ -59,49 +59,35 @@ Follow for more
 
 ## Formats
 
-### Real lawsuits  (id: list, REAL FACTS: must be fact-checked, default slides: 7)
-A list of real, bizarre lawsuits.
-- Slide 1: only a short hook in the style "5 lawsuits too bizarre to be real", using the actual number of case slides. Nothing else on slide 1.
-- Every slide between the first and the last is one real case, written as exactly two paragraphs: a one-sentence hook stating the bizarre part (max 14 words), then one or two sentences with who or where and how it ended (max 30 words).
+### Real cases: police, HOA & county  (id: list, REAL FACTS: must be fact-checked, default slides: 7)
+A list of real, surprising cases about police, HOAs or county / city government (pick one of the three per post, or a clear mix like "the city vs. homeowners").
+- Slide 1: only a short hook using the actual number of case slides, like "5 traffic stops that ended up in court" or "4 HOA fights homeowners actually won". Nothing else on slide 1.
+- Every slide between the first and the last is one real case, written as a one-sentence hook stating the surprising part (max 14 words), then a blank line and one or two sentences with who or where and how it ended (max 30 words). Every slide that describes a real case or law ends with a third, separate paragraph giving its short source, exactly in the form "Source: <case name and year, or publication and year, or code section>" (max 8 words, for example "Source: Heien v. North Carolina (2014)" or "Source: AP News, 2019"). It is drawn small at the bottom of the slide.
 - On each case slide, wrap the 1 to 3 most striking phrases in **double asterisks** for bold. On at most two slides, you may instead underline one short punchline with __double underscores__.
 - The last slide is exactly: Follow for more
-- If this is a single post, it is ONE real case: a hook sentence, a blank line, then who or where and how it ended.
-- Only use cases you are highly confident really happened and were widely reported. If the creator's notes list cases or facts, use those.
+- If this is a single post, it is ONE real case: a hook sentence, a blank line, who or where and how it ended, then the source paragraph.
+- Only use cases you are highly confident really happened and were widely reported or decided by a court. If the creator's notes list cases or facts, use those.
 
-### Myth vs. fact: famous cases  (id: myth, REAL FACTS: must be fact-checked, default slides: 7)
-Correct a popular myth about one famous, real legal case.
-- Slide 1: a hook like "What most people get wrong about the [case] lawsuit" (max 14 words).
-- Slide 2: the myth most people believe, starting with "**Myth:**".
-- Middle slides: the real facts, one per slide, each starting with "**Fact:**" (max 35 words each): who, what actually happened, what the court decided and why.
-- Second-to-last slide: what the case actually changed or teaches.
-- Last slide: Follow for more
-- Describe any injuries in plain, non-graphic words. Never describe wounds, burns or bodies in detail.
-
-### Weird laws still on the books  (id: laws, REAL FACTS: must be fact-checked, default slides: 7)
-A list of strange laws that really exist today.
-- Slide 1: a hook like "5 weird laws that are still on the books" (use the real number of law slides).
-- Each middle slide is one law: first paragraph names the place and the rule in plain words with the funniest part in **bold** (max 18 words); second paragraph gives the reason it exists or how it's actually enforced, if known (max 25 words).
-- Only include laws you are highly confident are real and still in force, with a specific place. Many viral "weird law" lists are myths; skip anything you aren't sure about.
+### Weird laws, ordinances & HOA rules  (id: laws, REAL FACTS: must be fact-checked, default slides: 7)
+Strange rules that really exist today, from county / city codes, rules police actually enforce, or HOA rules that went to court.
+- Slide 1: a hook like "5 city rules you can get fined for" or "4 HOA rules courts actually upheld" (use the real number of rule slides).
+- Each middle slide is one rule: first paragraph names the place and the rule in plain words with the funniest part in **bold** (max 18 words); second paragraph gives the reason it exists or how it's actually enforced, if known (max 25 words). Every slide that describes a real case or law ends with a third, separate paragraph giving its short source, exactly in the form "Source: <case name and year, or publication and year, or code section>" (max 8 words, for example "Source: Heien v. North Carolina (2014)" or "Source: AP News, 2019"). It is drawn small at the bottom of the slide.
+- Only include rules you are highly confident are real and still in force, with a specific place. Many viral "weird law" lists are myths; skip anything you aren't sure about.
 - Last slide: Follow for more
 
-### History's strangest trials  (id: history, REAL FACTS: must be fact-checked, default slides: 7)
-Real, strange trials from history.
-- Slide 1: a hook like "4 of the strangest trials in history".
-- Each middle slide is one trial: first paragraph says when, where and what was strange, with the strangest part in **bold** (max 18 words); second paragraph says how it ended (max 25 words).
-- Focus on the absurd or surprising part. Never describe punishments, executions, torture or violence; if a trial ended that way, choose a different trial.
+### Strangest trials: police, HOA & county  (id: history, REAL FACTS: must be fact-checked, default slides: 7)
+Real court cases from the past (any era, including famous Supreme Court cases) about police stops and searches, HOAs or county / city government, picked for the strange or surprising twist.
+- Slide 1: a hook like "4 of the strangest police cases ever to reach court".
+- Each middle slide is one case: first paragraph says when, where and what was strange, with the strangest part in **bold** (max 18 words); second paragraph says how it ended (max 25 words). Every slide that describes a real case or law ends with a third, separate paragraph giving its short source, exactly in the form "Source: <case name and year, or publication and year, or code section>" (max 8 words, for example "Source: Heien v. North Carolina (2014)" or "Source: AP News, 2019"). It is drawn small at the bottom of the slide.
+- Focus on the absurd or surprising part. Never describe violence, injuries, punishments or deaths; if a case is built around them, choose a different case.
 - Last slide: Follow for more
 
-### Quick engagement question  (id: engage, always single, default slides: 1)
-One light, open question about everyday legal life or fairness: jury duty, contracts, neighbours, landlords, tipping, refunds, parking, small disputes.
-- At most 20 words. A question people can answer from their own experience or opinion.
-- Never mention crime, violence, injuries, death, real people, minors or anything sensitive.
+### Quick question: police, HOA & county  (id: engage, always single, default slides: 1)
+One open question about everyday life with police, HOAs or county / city government: traffic stops, tickets, speed traps, HOA letters and fines, permits, property tax, code enforcement, neighbours' complaints.
+- The slide text is ONLY the question itself: one sentence, at most 20 words. No second line, no explanation, no context sentence, no hashtags, no call to action.
+- A question people can answer from their own experience or opinion.
+- Never mention violence, injuries, death, real people, minors, politics or race.
 - Never tell people to comment, vote, like, share or tag. Just ask the question.
-
-### Courtroom humour (meme)  (id: humour, always single, default slides: 1)
-One original, relatable joke about courtroom life, jury duty, legal paperwork, lawyers' jargon, or petty everyday disputes.
-- Short meme text, at most 20 words, often in a setup/punchline shape ("Me after jury duty:", "When the judge says...").
-- No real people, no crime or violence, no insults about groups of people, no profanity.
-- If an image is used, describe an original scene (no existing meme templates, no logos).
 
 ## Photo story slide rules
 Every slide is a realistic photo with short overlay text in big capital letters. For every slide give:

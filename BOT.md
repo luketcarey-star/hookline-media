@@ -13,12 +13,12 @@ Read these before writing anything:
 - `state/config.json`: mode (draft or queue), Buffer IDs, windows, formats.
 
 ## Hard rules (never break these)
-1. **Real facts are verified.** For types list, myth, laws and history, every case, law, name,
+1. **Real facts are verified.** For types list, laws and history, every case, law, name,
    date, amount and outcome must be confirmed with web search against at least one reliable source
    (court records, major news outlets, government or legal sites, encyclopedias). If a fact can't
    be confirmed, cut it or replace the case. If a whole post can't be verified, replace it with
    another topic of the same type. Never guess.
-2. **Engagement and humour posts** never mention violence, injuries, death, real people,
+2. **Engagement questions** never mention violence, injuries, death, real people,
    minors, politics or anything that could get the page restricted. Everyday police, HOA and
    county topics (traffic stops, tickets, HOA letters, permits) are fine as long as nobody is hurt. Never ask people to
    comment, vote, like, share or tag.
@@ -119,8 +119,12 @@ Read these before writing anything:
   types a `sources` list (item + source URL or citation).
 - Run the humanizer rules over the slides and caption. Check the banned words list.
 
-### 5. Fact-check (types list, myth, laws, history)
-- Search the web for every claim. Fix or drop anything wrong. Put the confirmed sources in
+### 5. Fact-check (types list, laws, history)
+- Search the web for every claim. Fix or drop anything wrong.
+- **Short sources go on the slides, never in the caption.** Every slide that describes a real case or
+  law ends with a separate last paragraph `Source: <case and year / publication and year / code
+  section>` (max 8 words), using the source you actually confirmed. Hookline draws it small at the
+  bottom of the slide. Engagement questions have no source and nothing but the question itself. Put the confirmed sources in
   `sources` (publication, headline, URL) in history only.
 - **Captions stay short and clean** (Facebook flags long, info-heavy captions): one short teasing
   line (max ~20 words) ending with an open question, a blank line, then 2 or 3 hashtags starting
