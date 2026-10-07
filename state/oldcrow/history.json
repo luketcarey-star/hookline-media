@@ -155,7 +155,7 @@
         "postId": "6ac62aad86b36af245de4cc6",
         "plannedAt": "2026-10-07T10:51:00-04:00"
       },
-      "status": "scheduled",
+      "status": "sent",
       "metrics": {},
       "note": "switched illus->tweet: image connector missing"
     },
@@ -182,7 +182,7 @@
         "postId": "6ac63cec825ce6f477e8afed",
         "plannedAt": "2026-10-07T09:55:00-04:00"
       },
-      "status": "scheduled",
+      "status": "sent",
       "note": "made up by hand after am run skipped it (image tool not loaded)",
       "metrics": {}
     },
@@ -213,8 +213,62 @@
         "postId": "6ac63cef8c3015cd3eae459c",
         "plannedAt": "2026-10-07T13:53:00-04:00"
       },
-      "status": "scheduled",
+      "status": "sent",
       "note": "made up by hand after am run skipped it (image tool not loaded)",
+      "metrics": {}
+    },
+    {
+      "date": "2026-10-07",
+      "n": 5,
+      "type": "question",
+      "format": "single",
+      "style": "tweet",
+      "theme": "light",
+      "title": "When did you last eat lunch away from your desk?",
+      "topic": "Eating lunch at your desk",
+      "slides": [
+        "When did you last eat lunch away from your desk?"
+      ],
+      "caption": "A sandwich over the keyboard has started to feel normal. Where would you eat if the whole hour were yours?\n\n#OldCrow #WorkLifeBalance",
+      "sources": [],
+      "imageFolder": "posts/oldcrow/2026-10-07/5-question",
+      "facebook": {
+        "postId": "6ac69ad2819a4d01246b9f48",
+        "plannedAt": "2026-10-07T18:21:00-04:00"
+      },
+      "status": "scheduled",
+      "metrics": {}
+    },
+    {
+      "date": "2026-10-07",
+      "n": 6,
+      "type": "thennow",
+      "format": "single",
+      "style": "illus",
+      "theme": null,
+      "title": "The Glass Baking Dish",
+      "topic": "Glass baking dish: borosilicate vs tempered soda-lime",
+      "object": "glass baking dish",
+      "slides": [
+        "The glass baking dish"
+      ],
+      "caption": "The first glass baking dishes were borosilicate, made to take sudden heat. Many sold today are cheaper soda-lime glass that handles it less well. Would you move yours from fridge to oven?\n\n#OldCrow #Baking #Cookware",
+      "sources": [
+        {
+          "item": "Pyrex sold from 1915 in borosilicate glass; US consumer Pyrex moved to cheaper tempered soda-lime (from 1950s, almost all by 1998); borosilicate resists thermal shock about 3x better; soda-lime stronger when dropped; Consumer Reports Jan 2011 tests",
+          "source": "Wikipedia: Pyrex (citing Consumer Reports 2011, Bradt & Martens, Carter & Norton)"
+        },
+        {
+          "item": "World Kitchen changed US kitchenware to less expensive tempered soda-lime after 1998; soda-lime handles heat less well",
+          "source": "Iowa State University Extension AnswerLine, 'Glass Kitchenware Cautions' (2019)"
+        }
+      ],
+      "imageFolder": "posts/oldcrow/2026-10-07/6-thennow",
+      "facebook": {
+        "postId": "6ac69ad405769b096e3f70f1",
+        "plannedAt": "2026-10-07T18:55:00-04:00"
+      },
+      "status": "scheduled",
       "metrics": {}
     }
   ],
