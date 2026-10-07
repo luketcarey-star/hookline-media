@@ -57,7 +57,7 @@
         "postId": "6ac5568138b9e9d5545ed27e",
         "plannedAt": "2026-10-06T22:06:00-04:00"
       },
-      "status": "scheduled",
+      "status": "sent",
       "metrics": {}
     },
     {
@@ -82,7 +82,7 @@
         "postId": "6ac5568538b9e9d5545ed2fa",
         "plannedAt": "2026-10-06T21:05:00-04:00"
       },
-      "status": "scheduled",
+      "status": "sent",
       "metrics": {}
     },
     {
@@ -107,7 +107,7 @@
         "postId": "6ac556f49b4b7d7d77d6df74",
         "plannedAt": "2026-10-06T17:07:00-04:00"
       },
-      "status": "scheduled",
+      "status": "sent",
       "metrics": {}
     },
     {
@@ -130,8 +130,34 @@
         "postId": "6ac55e58544ff8353dfafc2c",
         "plannedAt": "2026-10-06T17:38:00-04:00"
       },
-      "status": "scheduled",
+      "status": "sent",
       "metrics": {}
+    },
+    {
+      "date": "2026-10-07",
+      "n": 2,
+      "type": "question",
+      "format": "single",
+      "style": "tweet",
+      "theme": "black",
+      "title": "Who decided your lawn had to be just grass?",
+      "topic": "Why lawns are just short grass",
+      "slides": [
+        {
+          "text": "Who decided **your lawn** had to be just grass?",
+          "scene": ""
+        }
+      ],
+      "sources": [],
+      "caption": "Somewhere along the way, a short green lawn became the polite thing to own. What would you grow there if nobody was watching?\n\n#OldCrow #LawnCare #Gardening",
+      "imageFolder": "posts/oldcrow/2026-10-07/2-question",
+      "facebook": {
+        "postId": null,
+        "plannedAt": "2026-10-07T10:51:00-04:00"
+      },
+      "status": "pending",
+      "metrics": {},
+      "note": "switched illus->tweet: image connector missing"
     }
   ],
   "ideas": []
