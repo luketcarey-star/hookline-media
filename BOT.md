@@ -13,6 +13,8 @@ Read these before writing anything:
 - `state/config.json`: mode (draft or queue), Buffer IDs, windows, formats.
 
 ## Hard rules (never break these)
+0. **Every post passes `META_CHECK.md`** (Meta Community Standards and monetization policies)
+   before it is saved to Buffer. Luke's pages are monetized; a failed check means fix or replace.
 1. **Real facts are verified.** For types list, laws and history, every case, law, name,
    date, amount and outcome must be confirmed with web search against at least one reliable source
    (court records, major news outlets, government or legal sites, encyclopedias). If a fact can't
@@ -147,6 +149,10 @@ Read these before writing anything:
   `theme` in history for every tweet post so the rotation continues.
   then `node render.js work/p1/spec.json posts/<date>/<n>-<type>/`.
 - Look at every rendered slide (read the JPGs). Fix overflowing or awkward text and re-render.
+
+### 6b. Meta check (every post, no exceptions)
+- Run the full checklist in `META_CHECK.md` on every finished post (slides, caption, hashtags,
+  alt text). Only posts that pass go any further. Fix or replace anything that fails.
 
 ### 7. Publish images
 - `git add posts/ state/ && git commit -m "Posts for <date> <run>" && git push`.

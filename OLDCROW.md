@@ -29,6 +29,8 @@ roughly 2 told or sold, 2 questions, 1 note.
 No then vs. now, no price-in-hours posts, no tweet-style posts, no carousels, no animal flashbacks.
 
 ## Hard rules (never break these)
+0. **Every post passes `META_CHECK.md`** (Meta Community Standards and monetization policies)
+   before it is saved to Buffer. Luke's pages are monetized; a failed check means fix or replace.
 1. **Real facts are verified.** For told-or-sold posts (and any note or question that states a
    fact), every date, company, campaign, study and historical claim must be confirmed with web
    search against reliable sources (historical archives, encyclopedias, major newspapers, museums,
@@ -151,6 +153,10 @@ No then vs. now, no price-in-hours posts, no tweet-style posts, no carousels, no
   object is clear, there is no text in the art, and the title is readable.
   Regenerate an image once if it's clearly wrong; if it's still wrong, swap the post for another
   type and say so in the summary.
+
+### 6b. Meta check (every post, no exceptions)
+- Run the full checklist in `META_CHECK.md` on every finished post (slides, caption, hashtags,
+  alt text). Only posts that pass go any further. Fix or replace anything that fails.
 
 ### 7. Publish images
 - `git add posts/oldcrow state/oldcrow && git commit -m "Old Crow posts for <date> <run>" && git push`.
