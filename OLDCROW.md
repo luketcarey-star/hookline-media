@@ -73,6 +73,11 @@ Also read `state/oldcrow/config.json` (mode, Buffer IDs, windows, image settings
 ## Steps
 
 ### 1. Setup
+- **Load the tools first.** In scheduled runs the Hookline Images and Buffer tools are often
+  "deferred": they exist but must be loaded before use. Before deciding a connector is missing,
+  call ToolSearch with `select:mcp__Hookline_Images__generate_image` (then a keyword search for
+  `generate_image` and for `Buffer create_post` if that finds nothing). Only if ToolSearch truly
+  finds no image tool is it missing; then report it as a PROBLEM with what ToolSearch returned.
 - `cd` into the repo, `git pull`. Today = local date in America/Toronto. Decide `am` or `pm`.
 - `playwright` (with Chromium) is preinstalled.
 

@@ -61,6 +61,11 @@ Read these before writing anything:
 ## Steps
 
 ### 1. Setup
+- **Load the tools first.** In scheduled runs the Hookline Images and Buffer tools are often
+  "deferred": they exist but must be loaded before use. Before deciding a connector is missing,
+  call ToolSearch with `select:mcp__Hookline_Images__generate_image` (then a keyword search for
+  `generate_image` and for `Buffer create_post` if that finds nothing). Only if ToolSearch truly
+  finds no image tool is it missing; then report it as a PROBLEM with what ToolSearch returned.
 - `cd` into the repo, `git pull`. Today's date = local date in America/Toronto.
 - Install nothing new unless needed; `playwright` (with Chromium) is preinstalled. Run renders with `node render.js`.
 
