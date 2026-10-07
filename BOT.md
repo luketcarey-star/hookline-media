@@ -185,11 +185,12 @@ For each post, two `create_post` calls:
 ### 10. Weekly report and tune-up (Sunday am run only)
 Write `reports/jury/<date>.md` (commit it) and put the short version at the top of the summary.
 1. **The week in numbers** (last 7 days vs the 7 before): posts made, total reach, reactions,
-   comments, shares, average engagement rate. Use Buffer `get_aggregated_post_metrics` for
-   the totals (Facebook and Instagram, Jury Juice channels) and the per-post `metrics` in `state/history.json`.
+   comments, shares, saves, average engagement rate, for Facebook and Instagram separately. Use
+   Buffer `get_aggregated_post_metrics` for the totals (both Jury Juice channels) and the per-post `metrics` in `state/history.json`.
 2. **Top 3 and bottom 3 posts** of the week: title, type, style, time posted, reach, engagement
    rate, and one line on why it likely worked or didn't (hook, topic, image, timing).
-3. **What's working:** engagement by post type, topic group (police / HOA / county / other), style, posting hour.
+3. **What's working:** engagement by post type, topic group (police / HOA / county / other), style, posting hour and
+   platform.
    Only call something a pattern if it shows in 3+ posts.
 4. **What changes next week** (make these changes now, then list them):
    - Rewrite `state/learnings.md` with the new Do more / Do less / Test next.
