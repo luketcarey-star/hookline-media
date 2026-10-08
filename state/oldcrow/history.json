@@ -422,7 +422,7 @@
         "postId": "6ac78050e63932e2c59d6ed8",
         "plannedAt": "2026-10-08T09:50:00-04:00"
       },
-      "status": "scheduled",
+      "status": "sent",
       "metaCheck": "passed (softened an unsupported line in caption)",
       "metrics": {}
     },
@@ -443,7 +443,7 @@
         "postId": "6ac7a173e63932e2c5a4841b",
         "plannedAt": "2026-10-08T13:05:00-04:00"
       },
-      "status": "scheduled",
+      "status": "sent",
       "metaCheck": "passed",
       "note": "made by hand: the am run planned it but didn't finish it",
       "metrics": {}
