@@ -425,6 +425,28 @@
       "status": "scheduled",
       "metaCheck": "passed (softened an unsupported line in caption)",
       "metrics": {}
+    },
+    {
+      "date": "2026-10-08",
+      "n": 2,
+      "type": "note",
+      "format": "single",
+      "style": "illus",
+      "title": "A Bigger House",
+      "topic": "A bigger house as something we're sold",
+      "slides": [
+        "A bigger house gave us more rooms to fill and more to pay for."
+      ],
+      "sources": [],
+      "imageFolder": "posts/oldcrow/2026-10-08/2-note",
+      "facebook": {
+        "postId": "6ac7a173e63932e2c5a4841b",
+        "plannedAt": "2026-10-08T13:05:00-04:00"
+      },
+      "status": "scheduled",
+      "metaCheck": "passed",
+      "note": "made by hand: the am run planned it but didn't finish it",
+      "metrics": {}
     }
   ],
   "ideas": []
