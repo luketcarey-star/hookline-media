@@ -417,10 +417,10 @@
       ],
       "imageFolder": "posts/oldcrow/2026-10-08/1-sold",
       "facebook": {
-        "postId": null,
+        "postId": "6ac78050e63932e2c59d6ed8",
         "plannedAt": "2026-10-08T09:50:00-04:00"
       },
-      "status": "pending",
+      "status": "scheduled",
       "metaCheck": "passed (softened an unsupported line in caption)",
       "metrics": {}
     }
