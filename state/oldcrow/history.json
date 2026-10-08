@@ -27,7 +27,17 @@
         "plannedAt": "2026-10-06T16:33:00-04:00"
       },
       "status": "sent",
-      "metrics": {}
+      "metrics": {
+        "facebook": {
+          "reactions": 0,
+          "comments": 0,
+          "engagementRate": 0.0,
+          "impressions": 93,
+          "shares": 0,
+          "clicks": 0,
+          "measuredAt": "2026-10-08T07:20-04:00"
+        }
+      }
     },
     {
       "date": "2026-10-06",
@@ -58,7 +68,17 @@
         "plannedAt": "2026-10-06T22:06:00-04:00"
       },
       "status": "sent",
-      "metrics": {}
+      "metrics": {
+        "facebook": {
+          "reactions": 0,
+          "comments": 0,
+          "engagementRate": 0.0,
+          "impressions": 83,
+          "shares": 0,
+          "clicks": 3,
+          "measuredAt": "2026-10-08T07:20-04:00"
+        }
+      }
     },
     {
       "date": "2026-10-06",
@@ -83,7 +103,17 @@
         "plannedAt": "2026-10-06T21:05:00-04:00"
       },
       "status": "sent",
-      "metrics": {}
+      "metrics": {
+        "facebook": {
+          "reactions": 3,
+          "comments": 0,
+          "engagementRate": 0.01764705882352941,
+          "impressions": 170,
+          "shares": 0,
+          "clicks": 9,
+          "measuredAt": "2026-10-08T07:20-04:00"
+        }
+      }
     },
     {
       "date": "2026-10-06",
@@ -108,7 +138,17 @@
         "plannedAt": "2026-10-06T17:07:00-04:00"
       },
       "status": "sent",
-      "metrics": {}
+      "metrics": {
+        "facebook": {
+          "reactions": 0,
+          "comments": 0,
+          "engagementRate": 0.0,
+          "impressions": 64,
+          "shares": 0,
+          "clicks": 1,
+          "measuredAt": "2026-10-08T07:20-04:00"
+        }
+      }
     },
     {
       "date": "2026-10-06",
@@ -131,7 +171,17 @@
         "plannedAt": "2026-10-06T17:38:00-04:00"
       },
       "status": "sent",
-      "metrics": {}
+      "metrics": {
+        "facebook": {
+          "reactions": 0,
+          "comments": 0,
+          "engagementRate": 0.0,
+          "impressions": 183,
+          "shares": 0,
+          "clicks": 2,
+          "measuredAt": "2026-10-08T07:20-04:00"
+        }
+      }
     },
     {
       "date": "2026-10-07",
@@ -156,7 +206,17 @@
         "plannedAt": "2026-10-07T10:51:00-04:00"
       },
       "status": "sent",
-      "metrics": {},
+      "metrics": {
+        "facebook": {
+          "reactions": 1,
+          "comments": 0,
+          "engagementRate": 0.02857142857142857,
+          "impressions": 35,
+          "shares": 0,
+          "clicks": 1,
+          "measuredAt": "2026-10-08T07:20-04:00"
+        }
+      },
       "note": "switched illus->tweet: image connector missing"
     },
     {
@@ -184,7 +244,17 @@
       },
       "status": "sent",
       "note": "made up by hand after am run skipped it (image tool not loaded)",
-      "metrics": {}
+      "metrics": {
+        "facebook": {
+          "reactions": 0,
+          "comments": 0,
+          "engagementRate": 0.0,
+          "impressions": 93,
+          "shares": 0,
+          "clicks": 0,
+          "measuredAt": "2026-10-08T07:20-04:00"
+        }
+      }
     },
     {
       "date": "2026-10-07",
@@ -215,7 +285,17 @@
       },
       "status": "sent",
       "note": "made up by hand after am run skipped it (image tool not loaded)",
-      "metrics": {}
+      "metrics": {
+        "facebook": {
+          "reactions": 0,
+          "comments": 0,
+          "engagementRate": 0.0,
+          "impressions": 15,
+          "shares": 0,
+          "clicks": 0,
+          "measuredAt": "2026-10-08T07:20-04:00"
+        }
+      }
     },
     {
       "date": "2026-10-07",
@@ -236,7 +316,7 @@
         "postId": "6ac69ad2819a4d01246b9f48",
         "plannedAt": "2026-10-07T18:21:00-04:00"
       },
-      "status": "scheduled",
+      "status": "missing-in-buffer",
       "metrics": {}
     },
     {
@@ -268,7 +348,7 @@
         "postId": "6ac69ad405769b096e3f70f1",
         "plannedAt": "2026-10-07T18:55:00-04:00"
       },
-      "status": "scheduled",
+      "status": "missing-in-buffer",
       "metrics": {}
     },
     {
@@ -298,9 +378,50 @@
         "postId": "6ac6c5682977c961bdb958e4",
         "plannedAt": "2026-10-07T20:25:00-04:00"
       },
-      "status": "scheduled",
+      "status": "sent",
       "metaCheck": "passed",
       "note": "made by hand after the queue was cleared",
+      "metrics": {
+        "facebook": {
+          "reactions": 0,
+          "comments": 0,
+          "engagementRate": null,
+          "impressions": 0,
+          "shares": 0,
+          "clicks": 0,
+          "measuredAt": "2026-10-08T07:20-04:00"
+        }
+      }
+    },
+    {
+      "date": "2026-10-08",
+      "n": 1,
+      "type": "sold",
+      "format": "single",
+      "style": "illus",
+      "theme": null,
+      "title": "Who Made Bad Breath a Problem?",
+      "topic": "Listerine and the halitosis campaign",
+      "slides": [
+        "WHO MADE BAD BREATH A PROBLEM?"
+      ],
+      "sources": [
+        {
+          "item": "Listerine 1879 antiseptic, floor cleaner",
+          "source": "Wikipedia Listerine; FOHBC Bridesmaid & Listerine 2007"
+        },
+        {
+          "item": "Halitosis campaign, Edna, $115,000 to $8 million in seven years",
+          "source": "FOHBC article citing James Twitchell; Smithsonian Magazine"
+        }
+      ],
+      "imageFolder": "posts/oldcrow/2026-10-08/1-sold",
+      "facebook": {
+        "postId": null,
+        "plannedAt": "2026-10-08T09:50:00-04:00"
+      },
+      "status": "pending",
+      "metaCheck": "passed (softened an unsupported line in caption)",
       "metrics": {}
     }
   ],
