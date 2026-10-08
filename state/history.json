@@ -456,7 +456,7 @@
         "postId": "6ac776f2444a36d3be1b2788",
         "plannedAt": "2026-10-08T09:09:00-04:00"
       },
-      "status": "scheduled",
+      "status": "sent",
       "metaCheck": "passed",
       "metrics": {}
     },
@@ -483,6 +483,46 @@
       "instagram": {
         "postId": "6ac776f7e63932e2c59b4b9f",
         "plannedAt": "2026-10-08T12:02:00-04:00"
+      },
+      "status": "sent",
+      "metaCheck": "passed",
+      "metrics": {}
+    },
+    {
+      "date": "2026-10-08",
+      "n": 3,
+      "type": "history",
+      "topicGroup": "county",
+      "format": "single",
+      "style": "tweet",
+      "theme": "black",
+      "title": "The Land That Sat Empty",
+      "topic": "Kelo v. City of New London (2005): city took homes for private development; Pfizer left in 2009, land stayed vacant",
+      "slides": [
+        {
+          "text": "In 2005, the Supreme Court ruled New London, Connecticut could **take homes for a private development**.\n\nThe homes came down. Then **Pfizer, the big neighbor the plan was built around, left town** in 2009, and the land sat empty for years."
+        }
+      ],
+      "caption": "A city won at the Supreme Court, then the project it fought for was never built. Was the ruling right?\n\n#JuryJuice #EminentDomain #SupremeCourt\n\nSource: Kelo v. City of New London (2005)",
+      "sources": [
+        {
+          "item": "2005 5-4 ruling; Pfizer leaving New London 2009; homes demolished for hotel/stores/condos never built",
+          "source": "https://thetech.com/2009/11/13/long4-v129-n53"
+        },
+        {
+          "item": "Fort Trumbull land still largely vacant; Kelo house relocated",
+          "source": "https://www.inversecondemnation.com/2025/07/property-rights-pilgrimage-the-kelo-property-and-house-twenty-years-on.html"
+        }
+      ],
+      "imageFolder": "posts/2026-10-08/3-history/",
+      "facebook": {
+        "postId": "6ac7e6035b76911adddd3ae0",
+        "plannedAt": "2026-10-08T19:41:00-04:00",
+        "format": "single"
+      },
+      "instagram": {
+        "postId": "6ac7e605d3b0be2fc4154000",
+        "plannedAt": "2026-10-08T18:38:00-04:00"
       },
       "status": "scheduled",
       "metaCheck": "passed",
