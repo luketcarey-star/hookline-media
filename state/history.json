@@ -1,493 +1,493 @@
 {
- "posts": [
-  {
-   "date": "2026-10-05",
-   "n": 1,
-   "type": "list",
-   "format": "carousel",
-   "style": "tweet",
-   "topic": "5 lawsuits too bizarre to be real: Chambers v. God, Crunch Berries, Starbucks ice, Pringles VAT, Velveeta cook time",
-   "slides": 7,
-   "sources": [
+  "posts": [
     {
-     "item": "Chambers v. God (2007-08)",
-     "source": "https://www.mentalfloss.com/history/government-politics/politician-who-sued-god"
+      "date": "2026-10-05",
+      "n": 1,
+      "type": "list",
+      "format": "carousel",
+      "style": "tweet",
+      "topic": "5 lawsuits too bizarre to be real: Chambers v. God, Crunch Berries, Starbucks ice, Pringles VAT, Velveeta cook time",
+      "slides": 7,
+      "sources": [
+        {
+          "item": "Chambers v. God (2007-08)",
+          "source": "https://www.mentalfloss.com/history/government-politics/politician-who-sued-god"
+        },
+        {
+          "item": "Sugawara v. PepsiCo, Crunch Berries (2009)",
+          "source": "https://consumerist.com/2009/06/04/alert-crunchberries-are-not-real-berries"
+        },
+        {
+          "item": "Starbucks iced drinks case (2016)",
+          "source": "https://www.cnbc.com/2016/08/23/no-starbucks-isnt-cheating-customers-by-adding-ice-to-drinks.html"
+        },
+        {
+          "item": "HMRC v Procter & Gamble UK [2009] EWCA Civ 407",
+          "source": "https://cms.law/en/gbr/legal-updates/are-pringles-crisps-the-court-of-appeal-decides"
+        },
+        {
+          "item": "Ramirez v. Kraft Heinz, Velveeta (2023)",
+          "source": "https://www.tastingtable.com/1354460/velveeta-shells-cheese-lawsuit-thrown-out"
+        }
+      ],
+      "imageFolder": "posts/2026-10-05/1-list",
+      "facebook": {
+        "postId": "6ac425df4e17d6a1b25b1dde",
+        "plannedAt": "2026-10-05T20:17:00-04:00",
+        "sentAt": "2026-10-05T18:35:45-04:00",
+        "url": "https://facebook.com/879850111887291_122137741827199899"
+      },
+      "instagram": {
+        "postId": "6ac425e638629554e344fc7b",
+        "plannedAt": "2026-10-05T19:38:00-04:00",
+        "sentAt": "2026-10-05T18:35:44-04:00",
+        "url": "https://www.instagram.com/p/DeIS5wdlOmO/"
+      },
+      "status": "sent",
+      "metrics": {},
+      "note": "Posted immediately at Luke's request; use sentAt (not plannedAt) for time-of-day learning.",
+      "title": "5 Lawsuits Too Bizarre to Be Real"
     },
     {
-     "item": "Sugawara v. PepsiCo, Crunch Berries (2009)",
-     "source": "https://consumerist.com/2009/06/04/alert-crunchberries-are-not-real-berries"
+      "date": "2026-10-06",
+      "n": 1,
+      "type": "list",
+      "format": "carousel",
+      "style": "tweet",
+      "topic": "5 lawsuits too bizarre to be real: Mayo v. Satan (1971), Leonard v. PepsiCo (Harrier jet), Red Bull gives you wings class action, Nutella balanced breakfast class action, Subway footlong (7th Cir. 2017)",
+      "slides": 7,
+      "sources": [
+        {
+          "item": "Mayo v. Satan and His Staff (1971)",
+          "source": "Atlas Obscura: Are You There God? I'd Like to Sue You https://www.atlasobscura.com/articles/lawsuits-against-god"
+        },
+        {
+          "item": "Leonard v. PepsiCo (SDNY, Aug 1999)",
+          "source": "Seattle Times: Judge: No Harrier Jet For Seattle Consumer; Mental Floss https://mentalfloss.com/posts/pepsi-harrier-jet-lawsuit-history"
+        },
+        {
+          "item": "Careathers v. Red Bull ($13M settlement)",
+          "source": "NBC News https://www.nbcnews.com/business/consumer/red-bull-drinkers-can-claim-10-over-gives-you-wings-n221901"
+        },
+        {
+          "item": "Hohenberg v. Ferrero (Nutella, $3M, 2012)",
+          "source": "NBC San Diego https://nbcsandiego.com/news/local/sd-mother-wins-nutella-lawsuit/1951487; WGBH https://wgbh.org/news/2012-04-26/nutella-maker-may-settle-deceptive-ad-lawsuit-for-3-million"
+        },
+        {
+          "item": "In re Subway Footlong Sandwich Litigation (7th Cir. 2017)",
+          "source": "Nation's Restaurant News https://www.nrn.com/restaurant-operations/appeals-court-rejects-subway-foot-long-settlement"
+        }
+      ],
+      "imageFolder": "posts/2026-10-06/1-list",
+      "facebook": {
+        "postId": "6ac4d4f5b26845c29743e480",
+        "plannedAt": "2026-10-06T11:38:00-04:00"
+      },
+      "instagram": {
+        "postId": "6ac4d4f9cd5ae4a005f83a0b",
+        "plannedAt": "2026-10-06T08:00:00-04:00"
+      },
+      "status": "deleted",
+      "metrics": {},
+      "title": "5 Lawsuits Too Bizarre to Be Real",
+      "note": "Both Buffer posts no longer exist (404 on 2026-10-06 pm run), presumably removed by Luke."
     },
     {
-     "item": "Starbucks iced drinks case (2016)",
-     "source": "https://www.cnbc.com/2016/08/23/no-starbucks-isnt-cheating-customers-by-adding-ice-to-drinks.html"
+      "date": "2026-10-06",
+      "n": 2,
+      "type": "engage",
+      "format": "single",
+      "style": "tweet",
+      "topic": "Jury duty summons vs dentist appointment would-you-rather",
+      "slides": 1,
+      "sources": [],
+      "imageFolder": "posts/2026-10-06/2-engage",
+      "facebook": {
+        "postId": "6ac4d4ff504ed07fb48900f5",
+        "plannedAt": "2026-10-06T15:28:00-04:00",
+        "sentAt": "2026-10-06T15:28:05-04:00"
+      },
+      "instagram": {
+        "postId": "6ac4d504504ed07fb4890358",
+        "plannedAt": "2026-10-06T16:51:00-04:00"
+      },
+      "status": "sent",
+      "metrics": {}
     },
     {
-     "item": "HMRC v Procter & Gamble UK [2009] EWCA Civ 407",
-     "source": "https://cms.law/en/gbr/legal-updates/are-pringles-crisps-the-court-of-appeal-decides"
+      "date": "2026-10-06",
+      "n": 3,
+      "type": "laws",
+      "format": "single",
+      "style": "photo",
+      "topic": "Switzerland: guinea pigs must not be kept alone (Animal Protection Ordinance)",
+      "slides": 1,
+      "sources": [
+        {
+          "item": "Swiss Animal Protection Ordinance, guinea pigs kept in groups",
+          "source": "swissinfo https://www.swissinfo.ch/eng/loo-flushing--explosives---gold_fact-check--lonely-guinea-pigs-and-other-quirky-swiss-rumours/45067078; Mental Floss https://www.mentalfloss.com/animals/pets/its-illegal-own-single-guinea-pig-switzerland"
+        }
+      ],
+      "imageFolder": "posts/2026-10-06/3-laws",
+      "facebook": {
+        "postId": "6ac4d508504ed07fb489062f",
+        "plannedAt": "2026-10-06T21:03:00-04:00"
+      },
+      "instagram": {
+        "postId": "6ac4d50bcd5ae4a005f84308",
+        "plannedAt": "2026-10-06T21:25:00-04:00"
+      },
+      "status": "sent",
+      "metrics": {}
     },
     {
-     "item": "Ramirez v. Kraft Heinz, Velveeta (2023)",
-     "source": "https://www.tastingtable.com/1354460/velveeta-shells-cheese-lawsuit-thrown-out"
+      "date": "2026-10-06",
+      "n": 4,
+      "type": "laws",
+      "format": "single",
+      "style": "photo",
+      "title": "Don't Feed the Pigeons in Venice",
+      "topic": "Venice ban on feeding pigeons in St. Mark's Square and public areas (2008, fines up to EUR 200)",
+      "slides": 1,
+      "sources": [
+        {
+          "item": "Venice pigeon feeding ban (2008)",
+          "source": "https://www.nbcnews.com/id/wbna24390018"
+        },
+        {
+          "item": "Still illegal, EUR 50-200 fine",
+          "source": "https://www.afar.com/magazine/brewing-coffee-on-the-rialto-bridge-and-other-unexpected-things-that-are-illegal"
+        }
+      ],
+      "imageFolder": "posts/2026-10-06/4-laws",
+      "facebook": {
+        "postId": "6ac4ffcba5491202d07fb3e3",
+        "plannedAt": "2026-10-06T10:03:55-04:00",
+        "sentAt": "2026-10-06T10:03:59-04:00"
+      },
+      "instagram": {
+        "postId": "6ac4ffbc0ee5068821434777",
+        "plannedAt": "2026-10-06T10:03:41-04:00",
+        "sentAt": "2026-10-06T10:03:41-04:00"
+      },
+      "status": "sent",
+      "metrics": {},
+      "note": "Extra post made by hand at Luke's request because the morning carousel reused an old title."
+    },
+    {
+      "date": "2026-10-06",
+      "n": 5,
+      "type": "humour",
+      "format": "single",
+      "style": "tweet",
+      "title": "Terms and Conditions Be Like",
+      "topic": "Terms and conditions nobody reads joke",
+      "slides": 1,
+      "sources": [],
+      "imageFolder": "posts/2026-10-06/5-humour",
+      "facebook": {
+        "postId": "6ac5436e8815e4f757092666",
+        "plannedAt": "2026-10-06T17:07:00-04:00"
+      },
+      "instagram": {
+        "postId": "6ac5436c0231af6af7beec45",
+        "plannedAt": "2026-10-06T15:35:00-04:00",
+        "sentAt": "2026-10-06T15:35:08-04:00"
+      },
+      "status": "sent",
+      "metrics": {}
+    },
+    {
+      "date": "2026-10-06",
+      "n": 6,
+      "type": "myth",
+      "format": "carousel",
+      "style": "tweet",
+      "title": "The McDonald's Coffee Case, Fact Checked",
+      "topic": "Liebeck v. McDonald's hot coffee myth",
+      "slides": 7,
+      "sources": [
+        {
+          "item": "Liebeck v. McDonald's facts",
+          "source": "https://www.findlaw.com/injury/product-liability/the-mcdonald-s-coffee-cup-case-separating-mcfacts-from-mcfiction.html"
+        },
+        {
+          "item": "Verdict, 20% fault, reduction to $480k, 158F",
+          "source": "https://sso.billmarler.com/blog/the-mcdonalds-coffee-case"
+        },
+        {
+          "item": "Damages summary",
+          "source": "https://www.quimbee.com/cases/liebeck-v-mcdonald-s-restaurants"
+        },
+        {
+          "item": "Parked car, 700 reports, $800 offer",
+          "source": "https://www.caoc.org/?pg=facts"
+        }
+      ],
+      "imageFolder": "posts/2026-10-06/6-myth",
+      "facebook": {
+        "postId": "6ac543788815e4f75709279b",
+        "plannedAt": "2026-10-06T18:44:00-04:00"
+      },
+      "instagram": {
+        "postId": "6ac543736cefee8493228fec",
+        "plannedAt": "2026-10-06T17:34:00-04:00"
+      },
+      "status": "sent",
+      "metrics": {}
+    },
+    {
+      "date": "2026-10-07",
+      "n": 1,
+      "type": "history",
+      "format": "single",
+      "style": "tweet",
+      "theme": "light",
+      "title": "The Weevils Who Got a Lawyer",
+      "topic": "Saint-Julien weevils trial 1587",
+      "slides": 1,
+      "sources": [
+        "curiousrambler.com: Rats and weevils have their day in court",
+        "discoverwildlife.com: weevil trial",
+        "historycollection.com: 15 animal trials that actually happened in court"
+      ],
+      "imageFolder": "posts/2026-10-07/1-history",
+      "caption": "A French village took its weevils to court, and the weevils' lawyer turned down the deal. Would you have taken it?\n\n#JuryJuice #LegalHistory #WeirdHistory",
+      "facebook": {
+        "postId": "6ac6267fdc114118aebcba85",
+        "plannedAt": "2026-10-07T09:56:00-04:00"
+      },
+      "instagram": {
+        "postId": "6ac626821d37bfff591062b5",
+        "plannedAt": "2026-10-07T09:06:00-04:00"
+      },
+      "status": "sent",
+      "metrics": {}
+    },
+    {
+      "date": "2026-10-07",
+      "n": 2,
+      "type": "humour",
+      "format": "single",
+      "style": "tweet",
+      "theme": "black",
+      "title": "Fair and Impartial, Until Lunch",
+      "topic": "jury selection joke",
+      "slides": 1,
+      "sources": [],
+      "imageFolder": "posts/2026-10-07/2-humour",
+      "caption": "Jury selection in a nutshell. What went through your mind when your summons arrived?\n\n#JuryJuice #JuryDuty #LegalHumor",
+      "facebook": {
+        "postId": "6ac626853f62a9ae41a12ae0",
+        "plannedAt": "2026-10-07T12:21:00-04:00"
+      },
+      "instagram": {
+        "postId": "6ac626880ea81feae6a68178",
+        "plannedAt": "2026-10-07T11:50:00-04:00"
+      },
+      "status": "sent",
+      "metrics": {}
+    },
+    {
+      "date": "2026-10-07",
+      "n": 3,
+      "type": "list",
+      "format": "single",
+      "style": "tweet",
+      "theme": "dim",
+      "title": "The $54 Million Pair of Pants",
+      "topic": "Pearson v. Chung (D.C. 2007), lost pants lawsuit",
+      "slides": 1,
+      "sources": [
+        "en.wikipedia.org/wiki/Pearson_v._Chung",
+        "abcnews.go.com/TheLaw/story?id=3303910",
+        "washingtontimes.com 2007-06-25"
+      ],
+      "imageFolder": "posts/2026-10-07/3-list",
+      "caption": "$54 million over one pair of pants. What would you have decided?\n\n#JuryJuice #BizarreLawsuits #DryCleaning",
+      "facebook": {
+        "postId": "6ac6268b0ea81feae6a68220",
+        "plannedAt": "2026-10-07T14:05:00-04:00"
+      },
+      "instagram": {
+        "postId": "6ac6268e2ff102be34be7d6f",
+        "plannedAt": "2026-10-07T12:39:00-04:00"
+      },
+      "status": "sent",
+      "metrics": {}
+    },
+    {
+      "date": "2026-10-07",
+      "n": 4,
+      "type": "myth",
+      "format": "carousel",
+      "style": "tweet",
+      "theme": "black",
+      "title": "The Monkey Selfie Lawsuit, Fact Checked",
+      "topic": "Naruto v. Slater (monkey selfie copyright)",
+      "slides": 7,
+      "sources": [
+        "abc7news.com/post/court-rejects-copyright-suit-over-monkey-selfies/3382516/",
+        "ktvu.com/news/monkey-selfie-case-ends-in-settlement"
+      ],
+      "imageFolder": "posts/2026-10-07/4-myth",
+      "caption": "A monkey, a camera and a lawsuit. Did the monkey really win the photos?\n\n#JuryJuice #MonkeySelfie #CopyrightLaw",
+      "facebook": {
+        "postId": "6ac69638223f8511230c2dd5",
+        "plannedAt": "2026-10-07T16:56:00-04:00"
+      },
+      "instagram": {
+        "postId": "6ac6963ba8c569b3dfae0a1c",
+        "plannedAt": "2026-10-07T15:50:00-04:00"
+      },
+      "status": "sent",
+      "metrics": {}
+    },
+    {
+      "date": "2026-10-07",
+      "n": 5,
+      "type": "laws",
+      "format": "single",
+      "style": "photo",
+      "theme": null,
+      "title": "Singapore's Chewing Gum Sales Ban",
+      "topic": "Singapore: sale of regular chewing gum banned since 1992",
+      "slides": 1,
+      "sources": [
+        "en.wikipedia.org/wiki/Chewing_gum_sales_ban_in_Singapore"
+      ],
+      "imageFolder": "posts/2026-10-07/5-laws",
+      "caption": "A tiny city with a big rule about gum. Would you have passed this law?\n\n#JuryJuice #Singapore #WeirdLaws",
+      "facebook": {
+        "postId": "6ac6963e62a632ed42a5940c",
+        "plannedAt": "2026-10-07T17:56:00-04:00"
+      },
+      "instagram": {
+        "postId": "6ac696419c24023398416218",
+        "plannedAt": "2026-10-07T18:54:00-04:00"
+      },
+      "status": "deleted-by-luke",
+      "metrics": {},
+      "note": "Luke deleted this from Buffer on purpose (Oct 7 evening). Not a problem."
+    },
+    {
+      "date": "2026-10-07",
+      "n": 6,
+      "type": "engage",
+      "format": "single",
+      "style": "tweet",
+      "theme": "light",
+      "title": "Read the lease or skim it",
+      "topic": "Lease reading habits question",
+      "slides": 1,
+      "sources": [],
+      "imageFolder": "posts/2026-10-07/6-engage",
+      "caption": "When you sign a lease, do you read every page or skim to the signature line?\n\n#JuryJuice #Renting #LeaseAgreement",
+      "facebook": {
+        "postId": "6ac696443f76f145e7bfc4d5",
+        "plannedAt": "2026-10-07T19:40:00-04:00"
+      },
+      "instagram": {
+        "postId": "6ac69647223f8511230c30ea",
+        "plannedAt": "2026-10-07T21:18:00-04:00"
+      },
+      "status": "deleted-by-luke",
+      "metrics": {},
+      "note": "Luke deleted this from Buffer on purpose (Oct 7 evening). Not a problem."
+    },
+    {
+      "date": "2026-10-07",
+      "n": 7,
+      "type": "list",
+      "format": "single",
+      "style": "photo",
+      "title": "One Broken Brake Light",
+      "topic": "Heien v. North Carolina (2014): traffic stop over one broken brake light",
+      "slides": [
+        "A driver was pulled over for **one broken brake light**. The law only required one. The **Supreme Court** still said the stop was fine."
+      ],
+      "caption": "One broken brake light took this traffic stop all the way to the Supreme Court. Would you have ruled the same way?\n\n#JuryJuice #TrafficStop #SupremeCourt\n\nSource: Heien v. North Carolina (2014)",
+      "sources": [
+        {
+          "item": "Heien v. North Carolina, 574 U.S. 54 (2014), 8-1: reasonable mistake of law can support a stop",
+          "source": "U.S. Supreme Court"
+        }
+      ],
+      "imageFolder": "posts/2026-10-07/7-list",
+      "facebook": {
+        "postId": "6ac6c5612977c961bdb95832",
+        "plannedAt": "2026-10-07T19:40:00-04:00"
+      },
+      "instagram": {
+        "postId": "6ac6c56401166a3e1c08294e",
+        "plannedAt": "2026-10-07T20:05:00-04:00"
+      },
+      "status": "sent",
+      "metaCheck": "passed",
+      "note": "made by hand after the queue was cleared",
+      "metrics": {},
+      "topicGroup": "police"
+    },
+    {
+      "date": "2026-10-08",
+      "n": 1,
+      "type": "list",
+      "topicGroup": "police",
+      "format": "single",
+      "style": "photo",
+      "title": "Kept Waiting for the Dog",
+      "topic": "Rodriguez v. United States (2015): traffic stop can't be prolonged for a drug-dog sniff",
+      "slides": [
+        "An officer finished a traffic stop but **kept the driver waiting** for a drug dog. The Supreme Court ruled that **wasn't allowed**."
+      ],
+      "caption": "A finished traffic stop, a waiting drug dog and a Supreme Court ruling. Would you have decided it the same way?\n\n#JuryJuice #TrafficStop #SupremeCourt\n\nSource: Rodriguez v. United States (2015)",
+      "sources": [
+        {
+          "item": "Rodriguez v. United States, 575 U.S. 348 (2015), 6-3",
+          "source": "U.S. Supreme Court (Justia/Cornell/UPI)"
+        }
+      ],
+      "imageFolder": "posts/2026-10-08/1-list",
+      "facebook": {
+        "postId": "6ac776f0cc46365fd37a82c0",
+        "plannedAt": "2026-10-08T08:34:00-04:00"
+      },
+      "instagram": {
+        "postId": "6ac776f2444a36d3be1b2788",
+        "plannedAt": "2026-10-08T09:09:00-04:00"
+      },
+      "status": "scheduled",
+      "metaCheck": "passed",
+      "metrics": {}
+    },
+    {
+      "date": "2026-10-08",
+      "n": 2,
+      "type": "engage",
+      "topicGroup": "hoa",
+      "format": "single",
+      "style": "tweet",
+      "theme": "dim",
+      "title": "Strangest HOA letter",
+      "topic": "HOA letter question",
+      "slides": [
+        "What is the most unexpected thing an HOA has ever sent you a letter about?"
+      ],
+      "caption": "HOA letters can get oddly specific. What's the strangest one you've heard of?\n\n#JuryJuice #HOA #Homeowners",
+      "sources": [],
+      "imageFolder": "posts/2026-10-08/2-engage",
+      "facebook": {
+        "postId": "6ac776f59117a76f3a2961a2",
+        "plannedAt": "2026-10-08T13:00:00-04:00"
+      },
+      "instagram": {
+        "postId": "6ac776f7e63932e2c59b4b9f",
+        "plannedAt": "2026-10-08T12:02:00-04:00"
+      },
+      "status": "scheduled",
+      "metaCheck": "passed",
+      "metrics": {}
     }
-   ],
-   "imageFolder": "posts/2026-10-05/1-list",
-   "facebook": {
-    "postId": "6ac425df4e17d6a1b25b1dde",
-    "plannedAt": "2026-10-05T20:17:00-04:00",
-    "sentAt": "2026-10-05T18:35:45-04:00",
-    "url": "https://facebook.com/879850111887291_122137741827199899"
-   },
-   "instagram": {
-    "postId": "6ac425e638629554e344fc7b",
-    "plannedAt": "2026-10-05T19:38:00-04:00",
-    "sentAt": "2026-10-05T18:35:44-04:00",
-    "url": "https://www.instagram.com/p/DeIS5wdlOmO/"
-   },
-   "status": "sent",
-   "metrics": {},
-   "note": "Posted immediately at Luke's request; use sentAt (not plannedAt) for time-of-day learning.",
-   "title": "5 Lawsuits Too Bizarre to Be Real"
-  },
-  {
-   "date": "2026-10-06",
-   "n": 1,
-   "type": "list",
-   "format": "carousel",
-   "style": "tweet",
-   "topic": "5 lawsuits too bizarre to be real: Mayo v. Satan (1971), Leonard v. PepsiCo (Harrier jet), Red Bull gives you wings class action, Nutella balanced breakfast class action, Subway footlong (7th Cir. 2017)",
-   "slides": 7,
-   "sources": [
-    {
-     "item": "Mayo v. Satan and His Staff (1971)",
-     "source": "Atlas Obscura: Are You There God? I'd Like to Sue You https://www.atlasobscura.com/articles/lawsuits-against-god"
-    },
-    {
-     "item": "Leonard v. PepsiCo (SDNY, Aug 1999)",
-     "source": "Seattle Times: Judge: No Harrier Jet For Seattle Consumer; Mental Floss https://mentalfloss.com/posts/pepsi-harrier-jet-lawsuit-history"
-    },
-    {
-     "item": "Careathers v. Red Bull ($13M settlement)",
-     "source": "NBC News https://www.nbcnews.com/business/consumer/red-bull-drinkers-can-claim-10-over-gives-you-wings-n221901"
-    },
-    {
-     "item": "Hohenberg v. Ferrero (Nutella, $3M, 2012)",
-     "source": "NBC San Diego https://nbcsandiego.com/news/local/sd-mother-wins-nutella-lawsuit/1951487; WGBH https://wgbh.org/news/2012-04-26/nutella-maker-may-settle-deceptive-ad-lawsuit-for-3-million"
-    },
-    {
-     "item": "In re Subway Footlong Sandwich Litigation (7th Cir. 2017)",
-     "source": "Nation's Restaurant News https://www.nrn.com/restaurant-operations/appeals-court-rejects-subway-foot-long-settlement"
-    }
-   ],
-   "imageFolder": "posts/2026-10-06/1-list",
-   "facebook": {
-    "postId": "6ac4d4f5b26845c29743e480",
-    "plannedAt": "2026-10-06T11:38:00-04:00"
-   },
-   "instagram": {
-    "postId": "6ac4d4f9cd5ae4a005f83a0b",
-    "plannedAt": "2026-10-06T08:00:00-04:00"
-   },
-   "status": "deleted",
-   "metrics": {},
-   "title": "5 Lawsuits Too Bizarre to Be Real",
-   "note": "Both Buffer posts no longer exist (404 on 2026-10-06 pm run), presumably removed by Luke."
-  },
-  {
-   "date": "2026-10-06",
-   "n": 2,
-   "type": "engage",
-   "format": "single",
-   "style": "tweet",
-   "topic": "Jury duty summons vs dentist appointment would-you-rather",
-   "slides": 1,
-   "sources": [],
-   "imageFolder": "posts/2026-10-06/2-engage",
-   "facebook": {
-    "postId": "6ac4d4ff504ed07fb48900f5",
-    "plannedAt": "2026-10-06T15:28:00-04:00",
-    "sentAt": "2026-10-06T15:28:05-04:00"
-   },
-   "instagram": {
-    "postId": "6ac4d504504ed07fb4890358",
-    "plannedAt": "2026-10-06T16:51:00-04:00"
-   },
-   "status": "sent",
-   "metrics": {}
-  },
-  {
-   "date": "2026-10-06",
-   "n": 3,
-   "type": "laws",
-   "format": "single",
-   "style": "photo",
-   "topic": "Switzerland: guinea pigs must not be kept alone (Animal Protection Ordinance)",
-   "slides": 1,
-   "sources": [
-    {
-     "item": "Swiss Animal Protection Ordinance, guinea pigs kept in groups",
-     "source": "swissinfo https://www.swissinfo.ch/eng/loo-flushing--explosives---gold_fact-check--lonely-guinea-pigs-and-other-quirky-swiss-rumours/45067078; Mental Floss https://www.mentalfloss.com/animals/pets/its-illegal-own-single-guinea-pig-switzerland"
-    }
-   ],
-   "imageFolder": "posts/2026-10-06/3-laws",
-   "facebook": {
-    "postId": "6ac4d508504ed07fb489062f",
-    "plannedAt": "2026-10-06T21:03:00-04:00"
-   },
-   "instagram": {
-    "postId": "6ac4d50bcd5ae4a005f84308",
-    "plannedAt": "2026-10-06T21:25:00-04:00"
-   },
-   "status": "sent",
-   "metrics": {}
-  },
-  {
-   "date": "2026-10-06",
-   "n": 4,
-   "type": "laws",
-   "format": "single",
-   "style": "photo",
-   "title": "Don't Feed the Pigeons in Venice",
-   "topic": "Venice ban on feeding pigeons in St. Mark's Square and public areas (2008, fines up to EUR 200)",
-   "slides": 1,
-   "sources": [
-    {
-     "item": "Venice pigeon feeding ban (2008)",
-     "source": "https://www.nbcnews.com/id/wbna24390018"
-    },
-    {
-     "item": "Still illegal, EUR 50-200 fine",
-     "source": "https://www.afar.com/magazine/brewing-coffee-on-the-rialto-bridge-and-other-unexpected-things-that-are-illegal"
-    }
-   ],
-   "imageFolder": "posts/2026-10-06/4-laws",
-   "facebook": {
-    "postId": "6ac4ffcba5491202d07fb3e3",
-    "plannedAt": "2026-10-06T10:03:55-04:00",
-    "sentAt": "2026-10-06T10:03:59-04:00"
-   },
-   "instagram": {
-    "postId": "6ac4ffbc0ee5068821434777",
-    "plannedAt": "2026-10-06T10:03:41-04:00",
-    "sentAt": "2026-10-06T10:03:41-04:00"
-   },
-   "status": "sent",
-   "metrics": {},
-   "note": "Extra post made by hand at Luke's request because the morning carousel reused an old title."
-  },
-  {
-   "date": "2026-10-06",
-   "n": 5,
-   "type": "humour",
-   "format": "single",
-   "style": "tweet",
-   "title": "Terms and Conditions Be Like",
-   "topic": "Terms and conditions nobody reads joke",
-   "slides": 1,
-   "sources": [],
-   "imageFolder": "posts/2026-10-06/5-humour",
-   "facebook": {
-    "postId": "6ac5436e8815e4f757092666",
-    "plannedAt": "2026-10-06T17:07:00-04:00"
-   },
-   "instagram": {
-    "postId": "6ac5436c0231af6af7beec45",
-    "plannedAt": "2026-10-06T15:35:00-04:00",
-    "sentAt": "2026-10-06T15:35:08-04:00"
-   },
-   "status": "sent",
-   "metrics": {}
-  },
-  {
-   "date": "2026-10-06",
-   "n": 6,
-   "type": "myth",
-   "format": "carousel",
-   "style": "tweet",
-   "title": "The McDonald's Coffee Case, Fact Checked",
-   "topic": "Liebeck v. McDonald's hot coffee myth",
-   "slides": 7,
-   "sources": [
-    {
-     "item": "Liebeck v. McDonald's facts",
-     "source": "https://www.findlaw.com/injury/product-liability/the-mcdonald-s-coffee-cup-case-separating-mcfacts-from-mcfiction.html"
-    },
-    {
-     "item": "Verdict, 20% fault, reduction to $480k, 158F",
-     "source": "https://sso.billmarler.com/blog/the-mcdonalds-coffee-case"
-    },
-    {
-     "item": "Damages summary",
-     "source": "https://www.quimbee.com/cases/liebeck-v-mcdonald-s-restaurants"
-    },
-    {
-     "item": "Parked car, 700 reports, $800 offer",
-     "source": "https://www.caoc.org/?pg=facts"
-    }
-   ],
-   "imageFolder": "posts/2026-10-06/6-myth",
-   "facebook": {
-    "postId": "6ac543788815e4f75709279b",
-    "plannedAt": "2026-10-06T18:44:00-04:00"
-   },
-   "instagram": {
-    "postId": "6ac543736cefee8493228fec",
-    "plannedAt": "2026-10-06T17:34:00-04:00"
-   },
-   "status": "sent",
-   "metrics": {}
-  },
-  {
-   "date": "2026-10-07",
-   "n": 1,
-   "type": "history",
-   "format": "single",
-   "style": "tweet",
-   "theme": "light",
-   "title": "The Weevils Who Got a Lawyer",
-   "topic": "Saint-Julien weevils trial 1587",
-   "slides": 1,
-   "sources": [
-    "curiousrambler.com: Rats and weevils have their day in court",
-    "discoverwildlife.com: weevil trial",
-    "historycollection.com: 15 animal trials that actually happened in court"
-   ],
-   "imageFolder": "posts/2026-10-07/1-history",
-   "caption": "A French village took its weevils to court, and the weevils' lawyer turned down the deal. Would you have taken it?\n\n#JuryJuice #LegalHistory #WeirdHistory",
-   "facebook": {
-    "postId": "6ac6267fdc114118aebcba85",
-    "plannedAt": "2026-10-07T09:56:00-04:00"
-   },
-   "instagram": {
-    "postId": "6ac626821d37bfff591062b5",
-    "plannedAt": "2026-10-07T09:06:00-04:00"
-   },
-   "status": "sent",
-   "metrics": {}
-  },
-  {
-   "date": "2026-10-07",
-   "n": 2,
-   "type": "humour",
-   "format": "single",
-   "style": "tweet",
-   "theme": "black",
-   "title": "Fair and Impartial, Until Lunch",
-   "topic": "jury selection joke",
-   "slides": 1,
-   "sources": [],
-   "imageFolder": "posts/2026-10-07/2-humour",
-   "caption": "Jury selection in a nutshell. What went through your mind when your summons arrived?\n\n#JuryJuice #JuryDuty #LegalHumor",
-   "facebook": {
-    "postId": "6ac626853f62a9ae41a12ae0",
-    "plannedAt": "2026-10-07T12:21:00-04:00"
-   },
-   "instagram": {
-    "postId": "6ac626880ea81feae6a68178",
-    "plannedAt": "2026-10-07T11:50:00-04:00"
-   },
-   "status": "sent",
-   "metrics": {}
-  },
-  {
-   "date": "2026-10-07",
-   "n": 3,
-   "type": "list",
-   "format": "single",
-   "style": "tweet",
-   "theme": "dim",
-   "title": "The $54 Million Pair of Pants",
-   "topic": "Pearson v. Chung (D.C. 2007), lost pants lawsuit",
-   "slides": 1,
-   "sources": [
-    "en.wikipedia.org/wiki/Pearson_v._Chung",
-    "abcnews.go.com/TheLaw/story?id=3303910",
-    "washingtontimes.com 2007-06-25"
-   ],
-   "imageFolder": "posts/2026-10-07/3-list",
-   "caption": "$54 million over one pair of pants. What would you have decided?\n\n#JuryJuice #BizarreLawsuits #DryCleaning",
-   "facebook": {
-    "postId": "6ac6268b0ea81feae6a68220",
-    "plannedAt": "2026-10-07T14:05:00-04:00"
-   },
-   "instagram": {
-    "postId": "6ac6268e2ff102be34be7d6f",
-    "plannedAt": "2026-10-07T12:39:00-04:00"
-   },
-   "status": "sent",
-   "metrics": {}
-  },
-  {
-   "date": "2026-10-07",
-   "n": 4,
-   "type": "myth",
-   "format": "carousel",
-   "style": "tweet",
-   "theme": "black",
-   "title": "The Monkey Selfie Lawsuit, Fact Checked",
-   "topic": "Naruto v. Slater (monkey selfie copyright)",
-   "slides": 7,
-   "sources": [
-    "abc7news.com/post/court-rejects-copyright-suit-over-monkey-selfies/3382516/",
-    "ktvu.com/news/monkey-selfie-case-ends-in-settlement"
-   ],
-   "imageFolder": "posts/2026-10-07/4-myth",
-   "caption": "A monkey, a camera and a lawsuit. Did the monkey really win the photos?\n\n#JuryJuice #MonkeySelfie #CopyrightLaw",
-   "facebook": {
-    "postId": "6ac69638223f8511230c2dd5",
-    "plannedAt": "2026-10-07T16:56:00-04:00"
-   },
-   "instagram": {
-    "postId": "6ac6963ba8c569b3dfae0a1c",
-    "plannedAt": "2026-10-07T15:50:00-04:00"
-   },
-   "status": "sent",
-   "metrics": {}
-  },
-  {
-   "date": "2026-10-07",
-   "n": 5,
-   "type": "laws",
-   "format": "single",
-   "style": "photo",
-   "theme": null,
-   "title": "Singapore's Chewing Gum Sales Ban",
-   "topic": "Singapore: sale of regular chewing gum banned since 1992",
-   "slides": 1,
-   "sources": [
-    "en.wikipedia.org/wiki/Chewing_gum_sales_ban_in_Singapore"
-   ],
-   "imageFolder": "posts/2026-10-07/5-laws",
-   "caption": "A tiny city with a big rule about gum. Would you have passed this law?\n\n#JuryJuice #Singapore #WeirdLaws",
-   "facebook": {
-    "postId": "6ac6963e62a632ed42a5940c",
-    "plannedAt": "2026-10-07T17:56:00-04:00"
-   },
-   "instagram": {
-    "postId": "6ac696419c24023398416218",
-    "plannedAt": "2026-10-07T18:54:00-04:00"
-   },
-   "status": "missing",
-   "metrics": {},
-   "note": "Buffer get_post returned 404 (not found) for both FB and IG IDs on 2026-10-08; not in Buffer post list, never published"
-  },
-  {
-   "date": "2026-10-07",
-   "n": 6,
-   "type": "engage",
-   "format": "single",
-   "style": "tweet",
-   "theme": "light",
-   "title": "Read the lease or skim it",
-   "topic": "Lease reading habits question",
-   "slides": 1,
-   "sources": [],
-   "imageFolder": "posts/2026-10-07/6-engage",
-   "caption": "When you sign a lease, do you read every page or skim to the signature line?\n\n#JuryJuice #Renting #LeaseAgreement",
-   "facebook": {
-    "postId": "6ac696443f76f145e7bfc4d5",
-    "plannedAt": "2026-10-07T19:40:00-04:00"
-   },
-   "instagram": {
-    "postId": "6ac69647223f8511230c30ea",
-    "plannedAt": "2026-10-07T21:18:00-04:00"
-   },
-   "status": "missing",
-   "metrics": {},
-   "note": "Buffer get_post returned 404 (not found) for both FB and IG IDs on 2026-10-08; not in Buffer post list, never published"
-  },
-  {
-   "date": "2026-10-07",
-   "n": 7,
-   "type": "list",
-   "format": "single",
-   "style": "photo",
-   "title": "One Broken Brake Light",
-   "topic": "Heien v. North Carolina (2014): traffic stop over one broken brake light",
-   "slides": [
-    "A driver was pulled over for **one broken brake light**. The law only required one. The **Supreme Court** still said the stop was fine."
-   ],
-   "caption": "One broken brake light took this traffic stop all the way to the Supreme Court. Would you have ruled the same way?\n\n#JuryJuice #TrafficStop #SupremeCourt\n\nSource: Heien v. North Carolina (2014)",
-   "sources": [
-    {
-     "item": "Heien v. North Carolina, 574 U.S. 54 (2014), 8-1: reasonable mistake of law can support a stop",
-     "source": "U.S. Supreme Court"
-    }
-   ],
-   "imageFolder": "posts/2026-10-07/7-list",
-   "facebook": {
-    "postId": "6ac6c5612977c961bdb95832",
-    "plannedAt": "2026-10-07T19:40:00-04:00"
-   },
-   "instagram": {
-    "postId": "6ac6c56401166a3e1c08294e",
-    "plannedAt": "2026-10-07T20:05:00-04:00"
-   },
-   "status": "sent",
-   "metaCheck": "passed",
-   "note": "made by hand after the queue was cleared",
-   "metrics": {},
-   "topicGroup": "police"
-  },
-  {
-   "date": "2026-10-08",
-   "n": 1,
-   "type": "list",
-   "topicGroup": "police",
-   "format": "single",
-   "style": "photo",
-   "title": "Kept Waiting for the Dog",
-   "topic": "Rodriguez v. United States (2015): traffic stop can't be prolonged for a drug-dog sniff",
-   "slides": [
-    "An officer finished a traffic stop but **kept the driver waiting** for a drug dog. The Supreme Court ruled that **wasn't allowed**."
-   ],
-   "caption": "A finished traffic stop, a waiting drug dog and a Supreme Court ruling. Would you have decided it the same way?\n\n#JuryJuice #TrafficStop #SupremeCourt\n\nSource: Rodriguez v. United States (2015)",
-   "sources": [
-    {
-     "item": "Rodriguez v. United States, 575 U.S. 348 (2015), 6-3",
-     "source": "U.S. Supreme Court (Justia/Cornell/UPI)"
-    }
-   ],
-   "imageFolder": "posts/2026-10-08/1-list",
-   "facebook": {
-    "postId": "6ac776f0cc46365fd37a82c0",
-    "plannedAt": "2026-10-08T08:34:00-04:00"
-   },
-   "instagram": {
-    "postId": "6ac776f2444a36d3be1b2788",
-    "plannedAt": "2026-10-08T09:09:00-04:00"
-   },
-   "status": "scheduled",
-   "metaCheck": "passed",
-   "metrics": {}
-  },
-  {
-   "date": "2026-10-08",
-   "n": 2,
-   "type": "engage",
-   "topicGroup": "hoa",
-   "format": "single",
-   "style": "tweet",
-   "theme": "dim",
-   "title": "Strangest HOA letter",
-   "topic": "HOA letter question",
-   "slides": [
-    "What is the most unexpected thing an HOA has ever sent you a letter about?"
-   ],
-   "caption": "HOA letters can get oddly specific. What's the strangest one you've heard of?\n\n#JuryJuice #HOA #Homeowners",
-   "sources": [],
-   "imageFolder": "posts/2026-10-08/2-engage",
-   "facebook": {
-    "postId": "6ac776f59117a76f3a2961a2",
-    "plannedAt": "2026-10-08T13:00:00-04:00"
-   },
-   "instagram": {
-    "postId": "6ac776f7e63932e2c59b4b9f",
-    "plannedAt": "2026-10-08T12:02:00-04:00"
-   },
-   "status": "scheduled",
-   "metaCheck": "passed",
-   "metrics": {}
-  }
- ],
- "ideas": []
+  ],
+  "ideas": []
 }

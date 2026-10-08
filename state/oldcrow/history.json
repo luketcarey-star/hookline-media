@@ -316,8 +316,9 @@
         "postId": "6ac69ad2819a4d01246b9f48",
         "plannedAt": "2026-10-07T18:21:00-04:00"
       },
-      "status": "missing-in-buffer",
-      "metrics": {}
+      "status": "deleted-by-luke",
+      "metrics": {},
+      "note": "Luke deleted this from Buffer on purpose (Oct 7 evening). Not a problem."
     },
     {
       "date": "2026-10-07",
@@ -348,8 +349,9 @@
         "postId": "6ac69ad405769b096e3f70f1",
         "plannedAt": "2026-10-07T18:55:00-04:00"
       },
-      "status": "missing-in-buffer",
-      "metrics": {}
+      "status": "deleted-by-luke",
+      "metrics": {},
+      "note": "Luke deleted this from Buffer on purpose (Oct 7 evening). Not a problem."
     },
     {
       "date": "2026-10-07",

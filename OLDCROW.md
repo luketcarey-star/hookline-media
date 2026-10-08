@@ -70,6 +70,14 @@ No then vs. now, no price-in-hours posts, no tweet-style posts, no carousels, no
   the OTHER page's config (`state/config.json` for Jury Juice, `state/oldcrow/config.json` for Old
   Crow). If its `lastRun` is more than 10 hours old (or missing after its first day), report
   `⚠️ PROBLEM: the <other page> bot hasn't run since <time>` so Luke can check its scheduled task.
+- **Posts Luke deletes are not a problem.** Luke sometimes deletes queued posts in Buffer on
+  purpose. If `get_post` says a post is not found (404) and it was never sent, mark it
+  `"status": "deleted-by-luke"` in history, skip it in every check and report, and don't raise a
+  PROBLEM for it. Posts already marked `deleted-by-luke` are ignored.
+- **Every planned post is accounted for.** If the plan gave N posts and you made fewer, save each
+  missing one in history as `"status": "skipped"` with `"skipReason"` (the exact reason), and say
+  in the summary which post was skipped and why, e.g. "Made 1 of 2: the note was skipped because
+  the image failed twice."
 - If nothing went wrong, start the summary with `✅ All good` instead.
 
 ## Steps
