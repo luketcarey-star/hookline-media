@@ -447,6 +447,38 @@
       "metaCheck": "passed",
       "note": "made by hand: the am run planned it but didn't finish it",
       "metrics": {}
+    },
+    {
+      "date": "2026-10-08",
+      "n": 3,
+      "type": "question",
+      "format": "single",
+      "style": "illus",
+      "theme": null,
+      "title": "Who taught you the date on the carton is the day it spoils?",
+      "topic": "Best-before dates on food as a spoil date",
+      "object": "yogurt cup",
+      "slides": [
+        {
+          "text": "Who taught you the date on the carton is the day it spoils?",
+          "scene": "Medium shot of the old raven alone in a warm, lamp-lit home kitchen at evening, standing at an open refrigerator. He holds a small plain unbranded yogurt carton close, tilting it to study the small printed date on the lid with a calm, curious, slightly amused expression. Fridge shelves behind him hold plain unlabeled jars and vegetables. Warm golden light. No readable text, no logos.",
+          "image": "img1.jpg"
+        }
+      ],
+      "caption": "There's a moment most of us know: the yogurt says yesterday, and it goes in the bin before anyone looks inside.\n\nMost of those dates were never about safety. In the US, the only date food law requires is the one on infant formula. A \"best if used by\" date is the maker's or the store's estimate of when the food tastes its best. Canada works much the same way: best-before dates are about quality, and true expiration dates are kept for a short list of things like meal replacements and nutritional supplements.\n\nThe FDA estimates that confusion over these labels accounts for about a fifth of the food thrown away at home. That's groceries someone worked hours to pay for.\n\nThe old raven still respects his fridge. Food that's been stored well should stay good past a best-before date, and food that has spoiled goes out, whatever the label says. He just likes to know what a number means before he lets it decide for him.\n\nWhat's the last thing you threw out only because of the date?\n\n#OldCrow #FoodWaste #ZeroWaste",
+      "sources": [
+        "https://www.fda.gov/news-events/fda-voices-perspectives-fda-leadership-and-experts/working-food-industry-reduce-confusion-over-date-labels/",
+        "https://www.usda.gov/sites/default/files/guidance-documents/FSIS.%20Food%20Product%20Dating.pdf",
+        "https://recalls-rappels.canada.ca/en/node/61386/revisions/3584375/view"
+      ],
+      "imageFolder": "posts/oldcrow/2026-10-08/3-question",
+      "facebook": {
+        "postId": "6ac7ed215b76911addde801e",
+        "plannedAt": "2026-10-08T19:56:00-04:00"
+      },
+      "status": "scheduled",
+      "metaCheck": "passed (avoided implying smell is a safety test, per CFIA)",
+      "metrics": {}
     }
   ],
   "ideas": []
