@@ -832,15 +832,15 @@
       "type": "list",
       "topicGroup": "hoa",
       "format": "single",
-      "style": "tweet",
-      "theme": "dim",
+      "style": "photo",
+      "theme": null,
       "plannedStyle": "photo",
       "styleNote": "switched photo->tweet: Hookline Images generate_image tool not available in this run",
       "title": "Foreclosed Over $800 in HOA Dues",
       "topic": "Texas HOA foreclosed on deployed soldier Michael Clauer's paid-off ~$300k home over ~$800 dues (sold for $3,500, 2008); confidential settlement returned home (2010)",
       "slides": [
         {
-          "text": "A Texas HOA **foreclosed on a soldier's paid-off $300,000 home** over $800 in dues.\n\nHe was serving in Iraq in 2008 when it **sold at auction for $3,500**. In 2010, a settlement **gave his family the house back**."
+          "text": "An HOA **foreclosed on a soldier's paid-off home** over $800 in dues while he served in Iraq. It sold for **$3,500**."
         }
       ],
       "caption": "Two missed HOA payments, a paid-off house and a soldier overseas. Should an HOA be able to foreclose over dues?\n\n#JuryJuice #HOA #RealEstate\n\nSources: NPR, 2010; Mother Jones, 2010",
@@ -854,7 +854,7 @@
           "source": "https://www.motherjones.com/politics/2010/08/michael-clauer-update/"
         }
       ],
-      "imageFolder": "posts/2026-10-09/1-list/",
+      "imageFolder": "posts/2026-10-09/1-list-photo",
       "facebook": {
         "postId": "6ac8c74c3cdd14dcd26a7569",
         "plannedAt": "2026-10-09T09:56:00-04:00",
@@ -866,7 +866,8 @@
       },
       "status": "scheduled",
       "metaCheck": "passed (soldier not named on slide or caption; no violence; settlement stated as settlement)",
-      "metrics": {}
+      "metrics": {},
+      "note": "switched from tweet to photo by hand (Luke asked; image tool had been off for the am run)"
     },
     {
       "date": "2026-10-09",
