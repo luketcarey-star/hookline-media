@@ -540,15 +540,26 @@
       "type": "sold",
       "format": "single",
       "style": "illus",
-      "title": null,
-      "topic": null,
+      "title": "Who Said 8 Glasses a Day?",
+      "topic": "Eight glasses of water a day",
       "facebook": {
-        "postId": null,
-        "plannedAt": "2026-10-09T08:50:00-04:00"
+        "postId": "6ac8eb9ba831a551439dfbe4",
+        "plannedAt": "2026-10-09T10:25:00-04:00"
       },
-      "status": "skipped",
-      "skipReason": "Hookline Images connector is connected but turned off for this scheduled task (enabledInChat: false); ToolSearch found no generate_image tool, and Old Crow posts are image-only.",
-      "metrics": {}
+      "status": "scheduled",
+      "metrics": {},
+      "slides": [
+        "WHO SAID 8 GLASSES A DAY?"
+      ],
+      "sources": [
+        {
+          "item": "1945 Food and Nutrition Board: 2.5 L/day for adults; most contained in prepared foods",
+          "source": "Inverse, citing Vincent Ho"
+        }
+      ],
+      "imageFolder": "posts/oldcrow/2026-10-09/1-sold",
+      "metaCheck": "passed",
+      "note": "made by hand: the am run skipped it because the image tool was switched off for scheduled tasks"
     },
     {
       "date": "2026-10-09",
@@ -556,15 +567,21 @@
       "type": "note",
       "format": "single",
       "style": "illus",
-      "title": null,
-      "topic": null,
+      "title": "The Old Phone",
+      "topic": "Phone upgrades we're invited to",
       "facebook": {
-        "postId": null,
+        "postId": "6ac8eb9fa831a551439dfc83",
         "plannedAt": "2026-10-09T12:34:00-04:00"
       },
-      "status": "skipped",
-      "skipReason": "Hookline Images connector is connected but turned off for this scheduled task (enabledInChat: false); ToolSearch found no generate_image tool, and Old Crow posts are image-only.",
-      "metrics": {}
+      "status": "scheduled",
+      "metrics": {},
+      "slides": [
+        "Nobody asked if the old phone still worked. They asked if we'd seen the new one."
+      ],
+      "sources": [],
+      "imageFolder": "posts/oldcrow/2026-10-09/2-note",
+      "metaCheck": "passed",
+      "note": "made by hand: the am run skipped it because the image tool was switched off for scheduled tasks"
     }
   ],
   "ideas": []
