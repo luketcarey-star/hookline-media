@@ -36,33 +36,6 @@
         "style": "tweet",
         "topic": "HOA fights that went to court (widely reported cases: flags, paint colours, Little Free Libraries, holiday lights) and who won"
       }
-    ],
-    "2026-10-10": [
-      {
-        "window": "morning",
-        "type": "laws",
-        "format": "single",
-        "style": "photo",
-        "topic": "county code-enforcement rules people get fined for (fence height, trash cans in view, parking on your own lawn)"
-      }
-    ],
-    "2026-10-11": [
-      {
-        "window": "morning",
-        "type": "list",
-        "format": "single",
-        "style": "photo",
-        "topic": "police department settlements over strange, non-violent arrests (calm cases only, widely reported)"
-      }
-    ],
-    "2026-10-12": [
-      {
-        "window": "morning",
-        "type": "laws",
-        "format": "carousel",
-        "style": "tweet",
-        "topic": "odd HOA rules that courts actually upheld"
-      }
     ]
   }
 }

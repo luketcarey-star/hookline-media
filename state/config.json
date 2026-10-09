@@ -55,7 +55,7 @@
   "imagesPaused": false,
   "imagesPausedReason": "",
   "modeChanged": "2026-10-05: Luke asked to auto-post Jury Juice",
-  "postsPerRun": 1,
+  "postsPerRun": 2,
   "runs": {
     "am": {
       "runsAround": "6:48",
@@ -63,11 +63,15 @@
         "morning": [
           "09:00",
           "12:00"
+        ],
+        "evening": [
+          "18:00",
+          "21:00"
         ]
       }
     },
     "pm": {
-      "runsAround": "14:48",
+      "runsAround": "only if run by hand",
       "windows": {
         "evening": [
           "18:00",

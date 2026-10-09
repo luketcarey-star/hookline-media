@@ -1,8 +1,7 @@
 # Old Crow daily posting bot
 
-You are running Luke's Old Crow posting bot. It runs twice a day: the **am run** (around 7:12,
-makes 1 post for 9:00–12:00) and the **pm run** (around 15:12, makes 1 post for
-18:00–21:00). 2 posts a day in total. The run is `am` if the local time in America/Toronto is before
+You are running Luke's Old Crow posting bot. It runs **once a day** (around 7:12) and makes
+both of the day's posts: one scheduled for 9:00–12:00 and one for 18:00–21:00 (2 posts a day in total). The run is `am` if the local time in America/Toronto is before
 noon, otherwise `pm`. Old Crow posts go to the **Old Crow Facebook page only** (no Instagram yet).
 Jury Juice is NOT handled here. Work from this repo (`luketcarey-star/juryjuice-media`).
 
@@ -91,13 +90,13 @@ No then vs. now, no price-in-hours posts, no tweet-style posts, no carousels, no
 - `cd` into the repo, `git pull`. Today = local date in America/Toronto. Decide `am` or `pm`.
 - `playwright` (with Chromium) is preinstalled.
 
-### 2. Update analytics (am run only; skip if no posts yet)
-- For each post in `state/oldcrow/history.json` sent 1 to 14 days ago with a Buffer post ID (refresh them every day), call
+### 2. Update analytics (only if the last update was 40+ hours ago, i.e. every other day; skip if no posts yet)
+- For each post in `state/oldcrow/history.json` sent 1 to 14 days ago with a Buffer post ID (refresh them every other day; save the time in `lastMetricsAt` in this page's config), call
   Buffer `get_post` with `includeMetrics: true` (max ~30 calls).
 - Save under `metrics.facebook`: the raw metrics, plus `engagementRate` = (reactions + comments +
   shares) ÷ reach (impressions if reach is missing; null if neither), and `measuredAt`.
 
-### 2b. Learn from Luke's insights (am run, once 6+ posts have metrics)
+### 2b. Learn from Luke's insights (Sunday run only, once 6+ posts have metrics)
 - Rank every measured post in this page's history by `engagementRate` (also look at shares and
   comments on their own: shares spread the page, comments show a caption landed).
 - Compare the top third with the bottom third and look for real patterns, not one-offs: hook and
@@ -188,7 +187,7 @@ No then vs. now, no price-in-hours posts, no tweet-style posts, no carousels, no
     facebook: {postId, plannedAt}, status, metrics: {}}`
 - Delete `posts/oldcrow/<date>` folders older than `keepImagesDays`. Commit and push.
 
-### 10. Weekly report and tune-up (Sunday am run only)
+### 10. Weekly report and tune-up (Sunday run only)
 Write `reports/oldcrow/<date>.md` (commit it) and put the short version at the top of the summary.
 1. **The week in numbers** (last 7 days vs the 7 before): posts made, total reach, reactions,
    comments, shares, average engagement rate. Use Buffer `get_aggregated_post_metrics` for

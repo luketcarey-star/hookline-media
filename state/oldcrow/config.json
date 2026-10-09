@@ -1,7 +1,7 @@
 {
   "page": "oldcrow",
   "postsPerDay": 2,
-  "postsPerRun": 1,
+  "postsPerRun": 2,
   "mode": "queue",
   "modeNote": "queue = schedule posts directly at their planned times (Luke chose auto-posting). draft = save as Buffer drafts. Only Luke changes this.",
   "timezone": "America/Toronto",
@@ -12,11 +12,15 @@
         "morning": [
           "09:00",
           "12:00"
+        ],
+        "evening": [
+          "18:00",
+          "21:00"
         ]
       }
     },
     "pm": {
-      "runsAround": "15:12",
+      "runsAround": "only if run by hand",
       "windows": {
         "evening": [
           "18:00",

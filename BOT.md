@@ -1,8 +1,7 @@
 # Jury Juice daily posting bot
 
-You are running Luke's Jury Juice posting bot. It runs twice a day: the **am run** (around 6:48,
-makes 1 post for 9:00–12:00) and the **pm run** (around 14:48, makes 1 post
-for 18:00–21:00). 2 posts a day in total, each on both Facebook and Instagram.
+You are running Luke's Jury Juice posting bot. It runs **once a day** (around 6:48) and makes
+both of the day's posts: one scheduled for 9:00–12:00 and one for 18:00–21:00 (2 posts a day in total), each on both Facebook and Instagram.
 The run is `am` if the local time is before noon, otherwise `pm`. Each post goes to the
 Jury Juice **Facebook page** and **juryjuicetv Instagram**, and saves them to Buffer.
 Old Crow is NOT handled here. Work from this repo (`luketcarey-star/juryjuice-media`).
@@ -81,9 +80,9 @@ Read these before writing anything:
 - `cd` into the repo, `git pull`. Today's date = local date in America/Toronto.
 - Install nothing new unless needed; `playwright` (with Chromium) is preinstalled. Run renders with `node render.js`.
 
-### 2. Update analytics (am run only; skip if no posts yet)
-- For each post in `state/history.json` that was sent 1 to 14 days ago and has a Buffer post ID (refresh them every
-  day so the numbers keep growing),
+### 2. Update analytics (only if the last update was 40+ hours ago, i.e. every other day; skip if no posts yet)
+- For each post in `state/history.json` that was sent 1 to 14 days ago and has a Buffer post ID (refresh them
+  every other day; save the time in `lastMetricsAt` in this page's config),
   call Buffer `get_post` with `includeMetrics: true` (only for those posts; mind rate limits:
   max ~40 calls per run).
 - Save per platform under `metrics.facebook` / `metrics.instagram`: the raw metrics, plus
@@ -91,7 +90,7 @@ Read these before writing anything:
   reach is missing; leave null if neither). Record `measuredAt`.
 - If a draft was never approved (still draft/not sent after 3 days), mark it `"status": "skipped"`.
 
-### 2b. Learn from Luke's insights (am run, once 6+ posts have metrics)
+### 2b. Learn from Luke's insights (Sunday run only, once 6+ posts have metrics)
 - Rank every measured post in this page's history by `engagementRate` (also look at shares and
   comments on their own: shares spread the page, comments show a caption landed).
 - Compare the top third with the bottom third and look for real patterns, not one-offs: hook and
@@ -104,7 +103,7 @@ Read these before writing anything:
   note it there too.
 
 ### 3. Plan the day
-- Run `python3 scripts/plan_day.py <today> <am|pm>`. It returns this run's posts (1 in each run) with
+- Run `python3 scripts/plan_day.py <today> <am|pm>`. It returns this run's posts (both of the day's posts) with
   window, type, format, style, an optional topic hint and planned `facebookAt` / `instagramAt` times.
   It already counts today's earlier posts (max 2 a day; max 1 carousel a day and 4 a week, and
   carousels only ever go to Instagram, see step 8) and keeps posts well spaced (one each in the morning, midday and evening windows, 2.5+ hours apart). Use them as given.
@@ -190,7 +189,7 @@ For each post, two `create_post` calls:
 - Delete `posts/<date>` folders older than `keepImagesDays` (already posted; Meta keeps its own copy).
 - Commit and push.
 
-### 10. Weekly report and tune-up (Sunday am run only)
+### 10. Weekly report and tune-up (Sunday run only)
 Write `reports/jury/<date>.md` (commit it) and put the short version at the top of the summary.
 1. **The week in numbers** (last 7 days vs the 7 before): posts made, total reach, reactions,
    comments, shares, saves, average engagement rate, for Facebook and Instagram separately. Use
