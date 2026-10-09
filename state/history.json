@@ -864,7 +864,7 @@
         "postId": "6ac8c74f84976ed3ee1ad8a3",
         "plannedAt": "2026-10-09T09:50:00-04:00"
       },
-      "status": "scheduled",
+      "status": "sent",
       "metaCheck": "passed (soldier not named on slide or caption; no violence; settlement stated as settlement)",
       "metrics": {},
       "note": "switched from tweet to photo by hand (Luke asked; image tool had been off for the am run)"
@@ -897,7 +897,7 @@
         "postId": "6ac8c75684976ed3ee1ad935",
         "plannedAt": "2026-10-09T13:25:00-04:00"
       },
-      "status": "scheduled",
+      "status": "sent",
       "metaCheck": "passed",
       "metrics": {}
     }
