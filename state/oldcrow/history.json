@@ -31,11 +31,13 @@
         "facebook": {
           "reactions": 0,
           "comments": 0,
-          "engagementRate": 0.0,
-          "impressions": 93,
+          "impressions": 109,
           "shares": 0,
           "clicks": 0,
-          "measuredAt": "2026-10-08T07:20-04:00"
+          "bufferEngagementRate": 0,
+          "engagementRate": 0.0,
+          "measuredAt": "2026-10-09T07:25-04:00",
+          "metricsUpdatedAt": "2026-10-08"
         }
       }
     },
@@ -72,11 +74,13 @@
         "facebook": {
           "reactions": 0,
           "comments": 0,
-          "engagementRate": 0.0,
-          "impressions": 83,
+          "impressions": 108,
           "shares": 0,
-          "clicks": 3,
-          "measuredAt": "2026-10-08T07:20-04:00"
+          "clicks": 5,
+          "bufferEngagementRate": 4.63,
+          "engagementRate": 0.0,
+          "measuredAt": "2026-10-09T07:25-04:00",
+          "metricsUpdatedAt": "2026-10-08"
         }
       }
     },
@@ -105,13 +109,15 @@
       "status": "sent",
       "metrics": {
         "facebook": {
-          "reactions": 3,
+          "reactions": 4,
           "comments": 0,
-          "engagementRate": 0.01764705882352941,
-          "impressions": 170,
+          "impressions": 191,
           "shares": 0,
           "clicks": 9,
-          "measuredAt": "2026-10-08T07:20-04:00"
+          "bufferEngagementRate": 6.81,
+          "engagementRate": 2.09,
+          "measuredAt": "2026-10-09T07:25-04:00",
+          "metricsUpdatedAt": "2026-10-08"
         }
       }
     },
@@ -142,11 +148,13 @@
         "facebook": {
           "reactions": 0,
           "comments": 0,
-          "engagementRate": 0.0,
-          "impressions": 64,
-          "shares": 0,
+          "impressions": 78,
+          "shares": 1,
           "clicks": 1,
-          "measuredAt": "2026-10-08T07:20-04:00"
+          "bufferEngagementRate": 2.56,
+          "engagementRate": 1.28,
+          "measuredAt": "2026-10-09T07:25-04:00",
+          "metricsUpdatedAt": "2026-10-08"
         }
       }
     },
@@ -173,13 +181,15 @@
       "status": "sent",
       "metrics": {
         "facebook": {
-          "reactions": 0,
+          "reactions": 1,
           "comments": 0,
-          "engagementRate": 0.0,
-          "impressions": 183,
+          "impressions": 212,
           "shares": 0,
           "clicks": 2,
-          "measuredAt": "2026-10-08T07:20-04:00"
+          "bufferEngagementRate": 1.42,
+          "engagementRate": 0.47,
+          "measuredAt": "2026-10-09T07:25-04:00",
+          "metricsUpdatedAt": "2026-10-08"
         }
       }
     },
@@ -210,11 +220,13 @@
         "facebook": {
           "reactions": 1,
           "comments": 0,
-          "engagementRate": 0.02857142857142857,
-          "impressions": 35,
+          "impressions": 77,
           "shares": 0,
           "clicks": 1,
-          "measuredAt": "2026-10-08T07:20-04:00"
+          "bufferEngagementRate": 2.6,
+          "engagementRate": 1.3,
+          "measuredAt": "2026-10-09T07:25-04:00",
+          "metricsUpdatedAt": "2026-10-08"
         }
       },
       "note": "switched illus->tweet: image connector missing"
@@ -248,11 +260,13 @@
         "facebook": {
           "reactions": 0,
           "comments": 0,
-          "engagementRate": 0.0,
-          "impressions": 93,
+          "impressions": 139,
           "shares": 0,
-          "clicks": 0,
-          "measuredAt": "2026-10-08T07:20-04:00"
+          "clicks": 1,
+          "bufferEngagementRate": 0.72,
+          "engagementRate": 0.0,
+          "measuredAt": "2026-10-09T07:25-04:00",
+          "metricsUpdatedAt": "2026-10-08"
         }
       }
     },
@@ -289,11 +303,13 @@
         "facebook": {
           "reactions": 0,
           "comments": 0,
-          "engagementRate": 0.0,
-          "impressions": 15,
+          "impressions": 64,
           "shares": 0,
           "clicks": 0,
-          "measuredAt": "2026-10-08T07:20-04:00"
+          "bufferEngagementRate": 0,
+          "engagementRate": 0.0,
+          "measuredAt": "2026-10-09T07:25-04:00",
+          "metricsUpdatedAt": "2026-10-08"
         }
       }
     },
@@ -385,13 +401,15 @@
       "note": "made by hand after the queue was cleared",
       "metrics": {
         "facebook": {
-          "reactions": 0,
+          "reactions": 2,
           "comments": 0,
-          "engagementRate": null,
-          "impressions": 0,
+          "impressions": 151,
           "shares": 0,
-          "clicks": 0,
-          "measuredAt": "2026-10-08T07:20-04:00"
+          "clicks": 2,
+          "bufferEngagementRate": 2.65,
+          "engagementRate": 1.32,
+          "measuredAt": "2026-10-09T07:25-04:00",
+          "metricsUpdatedAt": "2026-10-08"
         }
       }
     },
@@ -424,7 +442,19 @@
       },
       "status": "sent",
       "metaCheck": "passed (softened an unsupported line in caption)",
-      "metrics": {}
+      "metrics": {
+        "facebook": {
+          "reactions": 2,
+          "comments": 0,
+          "impressions": 116,
+          "shares": 0,
+          "clicks": 4,
+          "bufferEngagementRate": 5.17,
+          "engagementRate": 1.72,
+          "measuredAt": "2026-10-09T07:25-04:00",
+          "metricsUpdatedAt": "2026-10-08"
+        }
+      }
     },
     {
       "date": "2026-10-08",
@@ -446,7 +476,19 @@
       "status": "sent",
       "metaCheck": "passed",
       "note": "made by hand: the am run planned it but didn't finish it",
-      "metrics": {}
+      "metrics": {
+        "facebook": {
+          "reactions": 1,
+          "comments": 0,
+          "impressions": 0,
+          "shares": 0,
+          "clicks": 1,
+          "bufferEngagementRate": 0,
+          "engagementRate": null,
+          "measuredAt": "2026-10-09T07:25-04:00",
+          "metricsUpdatedAt": "2026-10-08"
+        }
+      }
     },
     {
       "date": "2026-10-08",
@@ -476,8 +518,52 @@
         "postId": "6ac7ed215b76911addde801e",
         "plannedAt": "2026-10-08T19:56:00-04:00"
       },
-      "status": "scheduled",
+      "status": "sent",
       "metaCheck": "passed (avoided implying smell is a safety test, per CFIA)",
+      "metrics": {
+        "facebook": {
+          "reactions": 0,
+          "comments": 0,
+          "impressions": 0,
+          "shares": 0,
+          "clicks": 0,
+          "bufferEngagementRate": 0,
+          "engagementRate": null,
+          "measuredAt": "2026-10-09T07:25-04:00",
+          "metricsUpdatedAt": "2026-10-08"
+        }
+      }
+    },
+    {
+      "date": "2026-10-09",
+      "n": 1,
+      "type": "sold",
+      "format": "single",
+      "style": "illus",
+      "title": null,
+      "topic": null,
+      "facebook": {
+        "postId": null,
+        "plannedAt": "2026-10-09T08:50:00-04:00"
+      },
+      "status": "skipped",
+      "skipReason": "Hookline Images connector is connected but turned off for this scheduled task (enabledInChat: false); ToolSearch found no generate_image tool, and Old Crow posts are image-only.",
+      "metrics": {}
+    },
+    {
+      "date": "2026-10-09",
+      "n": 2,
+      "type": "note",
+      "format": "single",
+      "style": "illus",
+      "title": null,
+      "topic": null,
+      "facebook": {
+        "postId": null,
+        "plannedAt": "2026-10-09T12:34:00-04:00"
+      },
+      "status": "skipped",
+      "skipReason": "Hookline Images connector is connected but turned off for this scheduled task (enabledInChat: false); ToolSearch found no generate_image tool, and Old Crow posts are image-only.",
       "metrics": {}
     }
   ],
