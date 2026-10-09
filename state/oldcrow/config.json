@@ -1,7 +1,7 @@
 {
   "page": "oldcrow",
-  "postsPerDay": 3,
-  "postsPerRun": 2,
+  "postsPerDay": 2,
+  "postsPerRun": 1,
   "mode": "queue",
   "modeNote": "queue = schedule posts directly at their planned times (Luke chose auto-posting). draft = save as Buffer drafts. Only Luke changes this.",
   "timezone": "America/Toronto",
@@ -10,12 +10,8 @@
       "runsAround": "7:12",
       "windows": {
         "morning": [
-          "08:30",
-          "10:30"
-        ],
-        "midday": [
-          "12:00",
-          "14:00"
+          "09:00",
+          "12:00"
         ]
       }
     },
@@ -69,9 +65,6 @@
   "formatsNote": "Listed combos are picked at random while testing; question is illustrated about 2 times in 3 and a tweet slide about 1 time in 3.",
   "lastRun": "2026-10-09T07:25-04:00",
   "maxCarouselsPerWeek": 0,
-  "maxPerDay": {
-    "note": 1
-  },
   "minGapMinutes": 150,
-  "firstType": "sold"
+  "rotateTypes": true
 }

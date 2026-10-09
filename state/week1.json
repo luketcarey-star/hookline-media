@@ -8,13 +8,6 @@
         "format": "carousel",
         "style": "tweet",
         "topic": "5 bizarre lawsuits, e.g. the state senator who sued God (Chambers v. God, 2007) (save the $54 million pants case for its own post on Oct 7)"
-      },
-      {
-        "window": "afternoon",
-        "type": "engage",
-        "format": "single",
-        "style": "tweet",
-        "topic": "Would you rather get a jury duty summons or a dentist appointment? style light question"
       }
     ],
     "2026-10-07": [
@@ -24,13 +17,6 @@
         "format": "carousel",
         "style": "photo",
         "topic": "4 strangest trials in history, e.g. the 1522 Autun trial where rats were summoned and defended by a lawyer (no trials ending in executions or violence)"
-      },
-      {
-        "window": "afternoon",
-        "type": "engage",
-        "format": "single",
-        "style": "tweet",
-        "topic": "jury duty summons meme"
       }
     ],
     "2026-10-08": [
@@ -40,13 +26,6 @@
         "format": "carousel",
         "style": "tweet",
         "topic": "a traffic-stop ruling that surprised people (e.g. Rodriguez v. United States, 2015: a stop can't be stretched out to wait for a drug dog)"
-      },
-      {
-        "window": "afternoon",
-        "type": "engage",
-        "format": "single",
-        "style": "tweet",
-        "topic": "HOA question: the strangest HOA rule you've lived under, or would you buy in an HOA?"
       }
     ],
     "2026-10-09": [
@@ -56,13 +35,6 @@
         "format": "carousel",
         "style": "tweet",
         "topic": "HOA fights that went to court (widely reported cases: flags, paint colours, Little Free Libraries, holiday lights) and who won"
-      },
-      {
-        "window": "afternoon",
-        "type": "engage",
-        "format": "single",
-        "style": "tweet",
-        "topic": "police question: should officers be allowed to ticket from unmarked cars?"
       }
     ],
     "2026-10-10": [
@@ -72,13 +44,6 @@
         "format": "single",
         "style": "photo",
         "topic": "county code-enforcement rules people get fined for (fence height, trash cans in view, parking on your own lawn)"
-      },
-      {
-        "window": "afternoon",
-        "type": "engage",
-        "format": "single",
-        "style": "tweet",
-        "topic": "police question: the strangest reason you or someone you know got pulled over"
       }
     ],
     "2026-10-11": [
@@ -88,13 +53,6 @@
         "format": "single",
         "style": "photo",
         "topic": "police department settlements over strange, non-violent arrests (calm cases only, widely reported)"
-      },
-      {
-        "window": "afternoon",
-        "type": "engage",
-        "format": "single",
-        "style": "tweet",
-        "topic": "HOA question: the pettiest HOA letter you've ever gotten"
       }
     ],
     "2026-10-12": [
@@ -104,13 +62,6 @@
         "format": "carousel",
         "style": "tweet",
         "topic": "odd HOA rules that courts actually upheld"
-      },
-      {
-        "window": "afternoon",
-        "type": "engage",
-        "format": "single",
-        "style": "tweet",
-        "topic": "county or city question: permits, property tax or a neighbour's code complaint"
       }
     ]
   }

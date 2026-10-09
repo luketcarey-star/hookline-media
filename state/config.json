@@ -1,5 +1,5 @@
 {
-  "postsPerDay": 3,
+  "postsPerDay": 2,
   "mode": "queue",
   "modeNote": "draft = save every post as a Buffer draft for Luke to approve. queue = schedule posts directly at their planned times. Only Luke changes this.",
   "timezone": "America/Toronto",
@@ -55,18 +55,14 @@
   "imagesPaused": false,
   "imagesPausedReason": "",
   "modeChanged": "2026-10-05: Luke asked to auto-post Jury Juice",
-  "postsPerRun": 2,
+  "postsPerRun": 1,
   "runs": {
     "am": {
       "runsAround": "6:48",
       "windows": {
         "morning": [
-          "08:30",
-          "10:30"
-        ],
-        "midday": [
-          "12:00",
-          "14:00"
+          "09:00",
+          "12:00"
         ]
       }
     },

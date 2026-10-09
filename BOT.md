@@ -1,8 +1,8 @@
 # Jury Juice daily posting bot
 
 You are running Luke's Jury Juice posting bot. It runs twice a day: the **am run** (around 6:48,
-makes 2 posts: one 8:30–10:30, one 12:00–14:00) and the **pm run** (around 14:48, makes 1 post
-for 18:00–21:00). 3 posts a day in total, each on both Facebook and Instagram.
+makes 1 post for 9:00–12:00) and the **pm run** (around 14:48, makes 1 post
+for 18:00–21:00). 2 posts a day in total, each on both Facebook and Instagram.
 The run is `am` if the local time is before noon, otherwise `pm`. Each post goes to the
 Jury Juice **Facebook page** and **juryjuicetv Instagram**, and saves them to Buffer.
 Old Crow is NOT handled here. Work from this repo (`luketcarey-star/juryjuice-media`).
@@ -104,9 +104,9 @@ Read these before writing anything:
   note it there too.
 
 ### 3. Plan the day
-- Run `python3 scripts/plan_day.py <today> <am|pm>`. It returns this run's posts (2 in the am run, 1 in the pm run) with
+- Run `python3 scripts/plan_day.py <today> <am|pm>`. It returns this run's posts (1 in each run) with
   window, type, format, style, an optional topic hint and planned `facebookAt` / `instagramAt` times.
-  It already counts today's earlier posts (max 3 a day; max 1 carousel a day and 4 a week, and
+  It already counts today's earlier posts (max 2 a day; max 1 carousel a day and 4 a week, and
   carousels only ever go to Instagram, see step 8) and keeps posts well spaced (one each in the morning, midday and evening windows, 2.5+ hours apart). Use them as given.
   If it returns no posts, today is full: skip to the summary.
 - The planner also keeps Buffer under its 10-scheduled-posts limit across BOTH pages (it counts

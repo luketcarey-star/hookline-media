@@ -128,8 +128,11 @@ def plan_slots(n):
         allowed = [t for t in allowed if used[t] < caps.get(t, 99)] or allowed
         options = [t for t in allowed if used[t] < 1] or [t for t in allowed if used[t] < 2] or allowed
         t, why = weighted_pick(options, type_scores, cfg["minPostsBeforeLearningType"])
-        if cfg.get("firstType") in options and not today_posts and not slots:
-            t, why = cfg["firstType"], "first post of the day"
+        if cfg.get("rotateTypes"):
+            # Always vary: pick the type posted least recently (never the same type twice in a row).
+            done = [p["type"] for p in hist["posts"] if p.get("status") not in ("skipped", "deleted-by-luke")] + [x["type"] for x in slots]
+            last_seen = {o: max([i for i, ty in enumerate(done) if ty == o], default=-1) for o in options}
+            t = min(options, key=lambda o: (last_seen[o], rng.random())); why = "rotation (least recently posted type)"
         used[t] += 1
         combos = [tuple([t] + c) for c in cfg["formats"][t]
                   if not (cap is not None and carousels >= cap and c[0] == "carousel")] or [tuple([t] + c) for c in cfg["formats"][t]]

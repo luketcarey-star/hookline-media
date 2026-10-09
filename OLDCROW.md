@@ -1,8 +1,8 @@
 # Old Crow daily posting bot
 
 You are running Luke's Old Crow posting bot. It runs twice a day: the **am run** (around 7:12,
-makes 2 posts: one 8:30–10:30, one 12:00–14:00) and the **pm run** (around 15:12, makes 1 post for
-18:00–21:00). 3 posts a day in total. The run is `am` if the local time in America/Toronto is before
+makes 1 post for 9:00–12:00) and the **pm run** (around 15:12, makes 1 post for
+18:00–21:00). 2 posts a day in total. The run is `am` if the local time in America/Toronto is before
 noon, otherwise `pm`. Old Crow posts go to the **Old Crow Facebook page only** (no Instagram yet).
 Jury Juice is NOT handled here. Work from this repo (`luketcarey-star/juryjuice-media`).
 
@@ -19,8 +19,8 @@ Also read `state/oldcrow/config.json` (mode, Buffer IDs, windows, image settings
 
 ## Post types (all single illustrated images with the ravens; Luke's rule)
 Every post is about one belief or habit we were **told or sold**, shown through the two ravens and
-one everyday object, so the images feel like stills from the Old Crow videos. Daily: 3 posts, normally one
-told or sold, one question and one note.
+one everyday object, so the images feel like stills from the Old Crow videos. Daily: 2 posts. **Always vary the type** (Luke's rule): the planner rotates told or sold,
+question and note so the same type never runs twice in a row.
 | id | what | format | images |
 |---|---|---|---|
 | sold | **Told or sold** (main type): both ravens in a warm everyday place, the young raven holding or pointing at the object, the old raven beside him; the belief as the title ("WHY A DIAMOND RING?"); the caption gives the real history and who benefits | single | 1 |
@@ -111,7 +111,7 @@ No then vs. now, no price-in-hours posts, no tweet-style posts, no carousels, no
 
 ### 3. Plan
 - `python3 scripts/plan_day.py <today> <am|pm> oldcrow`. It returns this run's posts (type,
-  format, planned `facebookAt`), counting today's earlier posts (max 3 a day; **no carousels at all**, Luke's rule:
+  format, planned `facebookAt`), counting today's earlier posts (max 2 a day; **no carousels at all**, Luke's rule:
   carousels do badly on Facebook) and keeping posts well spaced (morning, midday and evening, 2.5+ hours apart). Use them as given. No posts returned = day is full.
 - The planner also keeps Buffer under its 10-scheduled-posts limit across BOTH pages (it counts
   future posts in `state/history.json` and `state/oldcrow/history.json`). If `limitedByBuffer` is
