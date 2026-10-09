@@ -825,6 +825,80 @@
           "measuredAt": "2026-10-09T06:55-04:00"
         }
       }
+    },
+    {
+      "date": "2026-10-09",
+      "n": 1,
+      "type": "list",
+      "topicGroup": "hoa",
+      "format": "single",
+      "style": "tweet",
+      "theme": "dim",
+      "plannedStyle": "photo",
+      "styleNote": "switched photo->tweet: Hookline Images generate_image tool not available in this run",
+      "title": "Foreclosed Over $800 in HOA Dues",
+      "topic": "Texas HOA foreclosed on deployed soldier Michael Clauer's paid-off ~$300k home over ~$800 dues (sold for $3,500, 2008); confidential settlement returned home (2010)",
+      "slides": [
+        {
+          "text": "A Texas HOA **foreclosed on a soldier's paid-off $300,000 home** over $800 in dues.\n\nHe was serving in Iraq in 2008 when it **sold at auction for $3,500**. In 2010, a settlement **gave his family the house back**."
+        }
+      ],
+      "caption": "Two missed HOA payments, a paid-off house and a soldier overseas. Should an HOA be able to foreclose over dues?\n\n#JuryJuice #HOA #RealEstate\n\nSources: NPR, 2010; Mother Jones, 2010",
+      "sources": [
+        {
+          "item": "Paid-off ~$300k Texas home, two missed HOA payments, sold ~$3,500 at courthouse sale while he served in Iraq",
+          "source": "https://www.npr.org/transcripts/128078864"
+        },
+        {
+          "item": "$800 dues, sold May 2008 for $3,500, confidential settlement 2010, family gets house back",
+          "source": "https://www.motherjones.com/politics/2010/08/michael-clauer-update/"
+        }
+      ],
+      "imageFolder": "posts/2026-10-09/1-list/",
+      "facebook": {
+        "postId": "6ac8c74c3cdd14dcd26a7569",
+        "plannedAt": "2026-10-09T09:56:00-04:00",
+        "format": "single"
+      },
+      "instagram": {
+        "postId": "6ac8c74f84976ed3ee1ad8a3",
+        "plannedAt": "2026-10-09T09:50:00-04:00"
+      },
+      "status": "scheduled",
+      "metaCheck": "passed (soldier not named on slide or caption; no violence; settlement stated as settlement)",
+      "metrics": {}
+    },
+    {
+      "date": "2026-10-09",
+      "n": 2,
+      "type": "engage",
+      "topicGroup": "police",
+      "format": "single",
+      "style": "tweet",
+      "theme": "light",
+      "title": "Tickets from unmarked cars",
+      "topic": "police question: should officers be allowed to ticket from unmarked cars?",
+      "slides": [
+        {
+          "text": "Should police be allowed to write traffic tickets from unmarked cars?"
+        }
+      ],
+      "caption": "Unmarked cars catch plenty of speeders. Fair enforcement or a little sneaky?\n\n#JuryJuice #TrafficStop #Police",
+      "sources": [],
+      "imageFolder": "posts/2026-10-09/2-engage/",
+      "experiment": "sharper, opinion-based police/ticket question (Test next: quick questions)",
+      "facebook": {
+        "postId": "6ac8c75333f2b9fa8134907e",
+        "plannedAt": "2026-10-09T13:43:00-04:00",
+        "format": "single"
+      },
+      "instagram": {
+        "postId": "6ac8c75684976ed3ee1ad935",
+        "plannedAt": "2026-10-09T13:25:00-04:00"
+      },
+      "status": "scheduled",
+      "metaCheck": "passed",
+      "metrics": {}
     }
   ],
   "ideas": []
