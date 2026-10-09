@@ -546,7 +546,7 @@
         "postId": "6ac8eb9ba831a551439dfbe4",
         "plannedAt": "2026-10-09T10:25:00-04:00"
       },
-      "status": "scheduled",
+      "status": "sent",
       "metrics": {},
       "slides": [
         "WHO SAID 8 GLASSES A DAY?"
@@ -573,7 +573,7 @@
         "postId": "6ac8eb9fa831a551439dfc83",
         "plannedAt": "2026-10-09T12:34:00-04:00"
       },
-      "status": "scheduled",
+      "status": "sent",
       "metrics": {},
       "slides": [
         "Nobody asked if the old phone still worked. They asked if we'd seen the new one."
