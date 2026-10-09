@@ -1,0 +1,4 @@
+Image tool check
+Time: 2026-10-09 09:32:22 EDT
+ToolSearch ("select:mcp__Hookline_Images__generate_image"): found mcp__Hookline_Images__generate_image on first query; no connected-but-disabled message.
+generate_image (prompt "A plain red apple on a white table", model flare, quality low, aspect 1:1): returned an image (red apple on white table). Tool text: "Image generated with gpt-image-2.5-flare (low) at 1:1 using 0 reference image(s)."
