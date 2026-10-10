@@ -631,6 +631,48 @@
       "metaCheck": "passed",
       "note": "made by hand: morning run had no image tool",
       "metrics": {}
+    },
+    {
+      "date": "2026-10-11",
+      "n": 1,
+      "type": "note",
+      "format": "single",
+      "style": "illus",
+      "title": "The sale always ends soon",
+      "topic": "Sale deadlines and urgency",
+      "slides": [
+        "The sale always ends soon. Have you noticed another one always starts?"
+      ],
+      "sources": [],
+      "imageFolder": "posts/oldcrow/2026-10-11/1-note",
+      "facebook": {
+        "postId": null,
+        "plannedAt": "2026-10-11T11:10:00-04:00"
+      },
+      "status": "scheduled",
+      "metaCheck": "passed (regenerated note image: first version showed a red circle resembling a national flag)",
+      "metrics": {}
+    },
+    {
+      "date": "2026-10-11",
+      "n": 2,
+      "type": "question",
+      "format": "single",
+      "style": "illus",
+      "title": "What are you saving the good dishes for?",
+      "topic": "Saving the good dishes for a special occasion",
+      "slides": [
+        "What are you saving the good dishes for?"
+      ],
+      "sources": [],
+      "imageFolder": "posts/oldcrow/2026-10-11/2-question",
+      "facebook": {
+        "postId": null,
+        "plannedAt": "2026-10-11T20:39:00-04:00"
+      },
+      "status": "scheduled",
+      "metaCheck": "passed (regenerated note image: first version showed a red circle resembling a national flag)",
+      "metrics": {}
     }
   ],
   "ideas": []
