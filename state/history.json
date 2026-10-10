@@ -900,6 +900,73 @@
       "status": "sent",
       "metaCheck": "passed",
       "metrics": {}
+    },
+    {
+      "date": "2026-10-10",
+      "n": 1,
+      "type": "engage",
+      "topicGroup": "police",
+      "format": "single",
+      "style": "tweet",
+      "theme": "dim",
+      "title": "Quickest parking ticket",
+      "topic": "parking ticket question: shortest time before finding a ticket",
+      "slides": [
+        {
+          "text": "What's the shortest time you've ever left your car before finding a parking ticket on it?"
+        }
+      ],
+      "caption": "Some parking tickets show up before you're out of sight. What's your quickest one?\n\n#JuryJuice #ParkingTicket #Police",
+      "sources": [],
+      "imageFolder": "posts/2026-10-10/1-engage/",
+      "facebook": {
+        "postId": "6aca1876ed92ed8fa5c68014",
+        "plannedAt": "2026-10-10T11:47:00-04:00",
+        "format": "single"
+      },
+      "instagram": {
+        "postId": "6aca1879d9cab260a7bf41e6",
+        "plannedAt": "2026-10-10T09:04:00-04:00"
+      },
+      "status": "scheduled",
+      "metaCheck": "passed",
+      "metrics": {}
+    },
+    {
+      "date": "2026-10-10",
+      "n": 2,
+      "type": "laws",
+      "topicGroup": "hoa",
+      "format": "single",
+      "style": "tweet",
+      "theme": "black",
+      "title": "The Purple Swing Set",
+      "topic": "Lee's Summit, Missouri HOA vs purple play set (2015): judge let family keep it",
+      "slides": [
+        {
+          "text": "A Missouri HOA threatened a family with fines and even jail time over a **purple swing set**.\n\nThe HOA's rules said play equipment had to match the community's colors. In 2015, a judge let the family **keep it**."
+        }
+      ],
+      "caption": "An HOA threatened a family with jail over a purple swing set. Should color rules like that hold up?\n\n#JuryJuice #HOA #HomeownersAssociation\n\nSource: ABA Journal, 2015",
+      "sources": [
+        "ABA Journal 2015",
+        "Boston 25 News 2015",
+        "ConsumerAffairs 2015"
+      ],
+      "imageFolder": "posts/2026-10-10/2-laws/",
+      "facebook": {
+        "postId": "6aca187bd9cab260a7bf439b",
+        "plannedAt": "2026-10-10T19:15:00-04:00",
+        "format": "single"
+      },
+      "instagram": {
+        "postId": "6aca187eb07d37ac976cbd10",
+        "plannedAt": "2026-10-10T18:20:00-04:00"
+      },
+      "status": "scheduled",
+      "metaCheck": "passed",
+      "metrics": {},
+      "note": "Planned as photo; switched to tweet because Hookline Images generate_image tool was not found by ToolSearch"
     }
   ],
   "ideas": []
