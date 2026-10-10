@@ -928,7 +928,7 @@
         "postId": "6aca1879d9cab260a7bf41e6",
         "plannedAt": "2026-10-10T09:04:00-04:00"
       },
-      "status": "scheduled",
+      "status": "sent",
       "metaCheck": "passed",
       "metrics": {}
     },
@@ -967,6 +967,64 @@
       "metaCheck": "passed",
       "metrics": {},
       "note": "switched back to photo by hand after the image tool came back"
+    },
+    {
+      "date": "2026-10-11",
+      "format": "single",
+      "metrics": {},
+      "metaCheck": "passed",
+      "status": "scheduled",
+      "n": 1,
+      "type": "engage",
+      "topicGroup": "police",
+      "style": "tweet",
+      "theme": "black",
+      "title": "Wait at a traffic stop",
+      "topic": "traffic stop wait time question",
+      "slides": [
+        "How long did you wait at your last traffic stop before the officer came back to your window?"
+      ],
+      "sources": [],
+      "imageFolder": "posts/2026-10-11/1-engage",
+      "facebook": {
+        "postId": "6acaa506bba9419ccb156a68",
+        "plannedAt": "2026-10-11T09:46:00-04:00"
+      },
+      "instagram": {
+        "postId": "6acaa508bba9419ccb156ae4",
+        "plannedAt": "2026-10-11T10:58:00-04:00"
+      }
+    },
+    {
+      "date": "2026-10-11",
+      "format": "single",
+      "metrics": {},
+      "metaCheck": "passed",
+      "status": "scheduled",
+      "n": 2,
+      "type": "list",
+      "topicGroup": "police",
+      "style": "photo",
+      "title": "Plate Run, Revoked License",
+      "topic": "Kansas v. Glover (2020): deputy ran plate, owner's license revoked, stop upheld 8-1 (Thomas)",
+      "slides": [
+        "A deputy ran a plate, saw the owner's license was revoked, and pulled the truck over. The Supreme Court upheld the stop."
+      ],
+      "sources": [
+        {
+          "item": "Kansas v. Glover (2020)",
+          "source": "https://kansaslawreview.ku.edu/kansas-v-glover-us-supreme-court-decides-kansas-case-about-traffic-stops"
+        }
+      ],
+      "imageFolder": "posts/2026-10-11/2-list-photo",
+      "facebook": {
+        "postId": "6acaa50bd9cab260a7d88356",
+        "plannedAt": "2026-10-11T20:18:00-04:00"
+      },
+      "instagram": {
+        "postId": "6acaa50ef91f772d45a76422",
+        "plannedAt": "2026-10-11T18:58:00-04:00"
+      }
     }
   ],
   "ideas": []
