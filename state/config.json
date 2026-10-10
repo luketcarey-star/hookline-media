@@ -18,7 +18,7 @@
     "list": [
       [
         "carousel",
-        "tweet"
+        "photo"
       ],
       [
         "single",
@@ -28,7 +28,7 @@
     "laws": [
       [
         "carousel",
-        "tweet"
+        "photo"
       ],
       [
         "single",
@@ -42,7 +42,7 @@
       ],
       [
         "single",
-        "tweet"
+        "photo"
       ]
     ],
     "engage": [
@@ -58,7 +58,7 @@
   "postsPerRun": 2,
   "runs": {
     "am": {
-      "runsAround": "6:48",
+      "runsAround": "16:48 the day before",
       "windows": {
         "morning": [
           "09:00",
@@ -86,5 +86,9 @@
   "carouselsOnlyOn": [
     "instagram"
   ],
-  "minGapMinutes": 150
+  "minGapMinutes": 150,
+  "maxPerDay": {
+    "engage": 1
+  },
+  "photoNote": "Luke's rule (2026-10-10): majority photo posts. Real cases, weird laws and strangest trials are always photo style; only quick questions are tweet slides (max 1 a day)."
 }
