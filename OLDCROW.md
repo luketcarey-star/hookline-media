@@ -82,6 +82,11 @@ No then vs. now, no price-in-hours posts, no tweet-style posts, no carousels, no
 ## Steps
 
 ### 1. Setup
+- **If the image tool isn't found, wait and retry before giving up.** Run `sleep 180`, then
+  ToolSearch again; do this up to 3 times (about 10 minutes). Only then treat images as unavailable.
+  The 9:40 backup run will make any missing posts later, so record each post you couldn't make as
+  `"status": "skipped"` with `"skipReason": "image tool unavailable"` (Jury Juice: if you post a
+  text version instead, add `"imageFallback": true` so the backup can swap a photo in).
 - **Load the tools first.** In scheduled runs the Hookline Images and Buffer tools are often
   "deferred": they exist but must be loaded before use. Before deciding a connector is missing,
   call ToolSearch with `select:mcp__Hookline_Images__generate_image` (then a keyword search for

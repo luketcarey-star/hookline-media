@@ -582,6 +582,55 @@
       "imageFolder": "posts/oldcrow/2026-10-09/2-note",
       "metaCheck": "passed",
       "note": "made by hand: the am run skipped it because the image tool was switched off for scheduled tasks"
+    },
+    {
+      "date": "2026-10-10",
+      "n": 1,
+      "type": "question",
+      "format": "single",
+      "style": "illus",
+      "title": "Who told you a gift means more if it costs more?",
+      "topic": "Expensive gifts vs meaningful ones",
+      "slides": [
+        "Who told you a gift means more if it costs more?"
+      ],
+      "sources": [],
+      "imageFolder": "posts/oldcrow/2026-10-10/1-question",
+      "facebook": {
+        "postId": "6aca49babba9419ccb055b05",
+        "plannedAt": "2026-10-10T11:29:00-04:00"
+      },
+      "status": "scheduled",
+      "metaCheck": "passed",
+      "note": "made by hand: morning run had no image tool",
+      "metrics": {}
+    },
+    {
+      "date": "2026-10-10",
+      "n": 2,
+      "type": "sold",
+      "format": "single",
+      "style": "illus",
+      "title": "Why Do Light Bulbs Burn Out?",
+      "topic": "Phoebus cartel and the 1,000-hour light bulb",
+      "slides": [
+        "WHY DO LIGHT BULBS BURN OUT?"
+      ],
+      "sources": [
+        {
+          "item": "Phoebus cartel formed Dec 1924; 1,000-hour limit; fines; dissolved 1940; earlier bulbs up to 2,500 h",
+          "source": "Today I Found Out, 2020"
+        }
+      ],
+      "imageFolder": "posts/oldcrow/2026-10-10/2-sold",
+      "facebook": {
+        "postId": "6aca49beed92ed8fa5cfac0c",
+        "plannedAt": "2026-10-10T19:35:00-04:00"
+      },
+      "status": "scheduled",
+      "metaCheck": "passed",
+      "note": "made by hand: morning run had no image tool",
+      "metrics": {}
     }
   ],
   "ideas": []

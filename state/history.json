@@ -938,8 +938,8 @@
       "type": "laws",
       "topicGroup": "hoa",
       "format": "single",
-      "style": "tweet",
-      "theme": "black",
+      "style": "photo",
+      "theme": null,
       "title": "The Purple Swing Set",
       "topic": "Lee's Summit, Missouri HOA vs purple play set (2015): judge let family keep it",
       "slides": [
@@ -953,7 +953,7 @@
         "Boston 25 News 2015",
         "ConsumerAffairs 2015"
       ],
-      "imageFolder": "posts/2026-10-10/2-laws/",
+      "imageFolder": "posts/2026-10-10/2-laws-photo",
       "facebook": {
         "postId": "6aca187bd9cab260a7bf439b",
         "plannedAt": "2026-10-10T19:15:00-04:00",
@@ -966,7 +966,7 @@
       "status": "scheduled",
       "metaCheck": "passed",
       "metrics": {},
-      "note": "Planned as photo; switched to tweet because Hookline Images generate_image tool was not found by ToolSearch"
+      "note": "switched back to photo by hand after the image tool came back"
     }
   ],
   "ideas": []
