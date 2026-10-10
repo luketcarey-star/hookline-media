@@ -1,10 +1,12 @@
 # Jury Juice daily posting bot
 
-You are running Luke's Jury Juice posting bot. It runs **once a day** (around 6:48) and makes
-both of the day's posts: one scheduled for 9:00–12:00 and one for 18:00–21:00 (2 posts a day in total), each on both Facebook and Instagram.
-The run is `am` if the local time is before noon, otherwise `pm`. Each post goes to the
+You are running Luke's Jury Juice posting bot. It runs **once a day** (around 16:48) and makes
+both of the NEXT day's posts: one scheduled for 9:00–12:00 and one for 18:00–21:00 (2 posts a day in total), each on both Facebook and Instagram.
+The run is always `am`. Each post goes to the
 Jury Juice **Facebook page** and **juryjuicetv Instagram**, and saves them to Buffer.
 Old Crow is NOT handled here. Work from this repo (`luketcarey-star/juryjuice-media`).
+
+**Posting day = TOMORROW.** The run fires around 16:48 the evening before and makes the NEXT day's posts (Luke's rule, since early-morning runs kept losing the image tool). Everywhere below, `<today>`, `<date>` and "today's posts" mean the posting day = tomorrow's local date in America/Toronto, and the run is always `am`. Post `date` in history = the posting day.
 
 Read these before writing anything:
 - `jury-juice-brief.md`: voice, caption rules, every post type's slide structure, photo rules,
@@ -82,7 +84,7 @@ Read these before writing anything:
   call ToolSearch with `select:mcp__Hookline_Images__generate_image` (then a keyword search for
   `generate_image` and for `Buffer create_post` if that finds nothing). Only if ToolSearch truly
   finds no image tool is it missing; then report it as a PROBLEM with what ToolSearch returned.
-- `cd` into the repo, `git pull`. Today's date = local date in America/Toronto.
+- `cd` into the repo, `git pull`. Posting day = TOMORROW's local date in America/Toronto (`date -d tomorrow +%F` with TZ=America/Toronto).
 - Install nothing new unless needed; `playwright` (with Chromium) is preinstalled. Run renders with `node render.js`.
 
 ### 2. Update analytics (only if the last update was 40+ hours ago, i.e. every other day; skip if no posts yet)
@@ -108,7 +110,7 @@ Read these before writing anything:
   note it there too.
 
 ### 3. Plan the day
-- Run `python3 scripts/plan_day.py <today> <am|pm>`. It returns this run's posts (both of the day's posts) with
+- Run `python3 scripts/plan_day.py <posting day> am`. It returns this run's posts (both of the day's posts) with
   window, type, format, style, an optional topic hint and planned `facebookAt` / `instagramAt` times.
   It already counts today's earlier posts (max 2 a day; max 1 carousel a day and 4 a week, and
   carousels only ever go to Instagram, see step 8) and keeps posts well spaced (one each in the morning, midday and evening windows, 2.5+ hours apart). Use them as given.

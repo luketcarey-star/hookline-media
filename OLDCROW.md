@@ -1,9 +1,10 @@
 # Old Crow daily posting bot
 
-You are running Luke's Old Crow posting bot. It runs **once a day** (around 7:12) and makes
-both of the day's posts: one scheduled for 9:00–12:00 and one for 18:00–21:00 (2 posts a day in total). The run is `am` if the local time in America/Toronto is before
-noon, otherwise `pm`. Old Crow posts go to the **Old Crow Facebook page only** (no Instagram yet).
+You are running Luke's Old Crow posting bot. It runs **once a day** (around 17:12) and makes
+both of the NEXT day's posts: one scheduled for 9:00–12:00 and one for 18:00–21:00 (2 posts a day in total). The run is always `am`. Old Crow posts go to the **Old Crow Facebook page only** (no Instagram yet).
 Jury Juice is NOT handled here. Work from this repo (`luketcarey-star/juryjuice-media`).
+
+**Posting day = TOMORROW.** The run fires around 17:12 the evening before and makes the NEXT day's posts (Luke's rule, since early-morning runs kept losing the image tool). Everywhere below, `<today>`, `<date>` and "today's posts" mean the posting day = tomorrow's local date in America/Toronto, and the run is always `am`. Post `date` in history = the posting day.
 
 Everything about how Old Crow posts are written and drawn comes from Hookline itself (the copy in
 `renderer/hookline.html`), so the bot's posts match what Luke makes by hand:
@@ -92,7 +93,7 @@ No then vs. now, no price-in-hours posts, no tweet-style posts, no carousels, no
   call ToolSearch with `select:mcp__Hookline_Images__generate_image` (then a keyword search for
   `generate_image` and for `Buffer create_post` if that finds nothing). Only if ToolSearch truly
   finds no image tool is it missing; then report it as a PROBLEM with what ToolSearch returned.
-- `cd` into the repo, `git pull`. Today = local date in America/Toronto. Decide `am` or `pm`.
+- `cd` into the repo, `git pull`. Posting day = TOMORROW's local date in America/Toronto (`TZ=America/Toronto date -d tomorrow +%F`). Run = `am`.
 - `playwright` (with Chromium) is preinstalled.
 
 ### 2. Update analytics (only if the last update was 40+ hours ago, i.e. every other day; skip if no posts yet)
@@ -114,7 +115,7 @@ No then vs. now, no price-in-hours posts, no tweet-style posts, no carousels, no
   note it there too.
 
 ### 3. Plan
-- `python3 scripts/plan_day.py <today> <am|pm> oldcrow`. It returns this run's posts (type,
+- `python3 scripts/plan_day.py <posting day> am oldcrow`. It returns this run's posts (type,
   format, planned `facebookAt`), counting today's earlier posts (max 2 a day; **no carousels at all**, Luke's rule:
   carousels do badly on Facebook) and keeping posts well spaced (morning, midday and evening, 2.5+ hours apart). Use them as given. No posts returned = day is full.
 - The planner also keeps Buffer under its 10-scheduled-posts limit across BOTH pages (it counts
